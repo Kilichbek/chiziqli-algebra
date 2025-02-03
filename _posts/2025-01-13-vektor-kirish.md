@@ -39,10 +39,22 @@ Vektorning geometrik tushunchasi esa, vektorning nuqtadan boshlab boshqa nuqta y
 <center>
     <img src="../assets/vector.svg">
 </center>
+<small>Manba: [3blue1brown](https://www.3blue1brown.com/)</small>
 
+<br>
 
 ```python
-np.array([-1.1, 0.0, 3.6])
+import numpy as np
+
+# Vektor yaratish
+vektor = np.array([-1.1, 0.0, 3.6])
+print(vektor)
+
+# Vektorning o'lchami
+print(vektor.shape)
+
+# Vektorning elementlari
+print(vektor[0], vektor[1], vektor[2])
 ```
 
 1.1 Vektor ustida amallar
@@ -54,7 +66,12 @@ Chiziqli algebraning yuragida ikkita vektor ustida amallar bor. Bular:
 
 ### 1.1.1 Vektorlarni Qo'shish
 
-Ikkita vektorni (masalan, $\mathbf{v}$ va $\mathbf{w}$ ) bir biriga qo'shish uchun ularning mos elementlarini qo'shish kerak. Misol uchun, ikkita vektorning qo'shish amali quyidagicha:
+Ikkita vektorni (masalan, $\mathbf{v}$ va $\mathbf{w}$ ) bir biriga qo'shish uchun ularning mos elementlarini qo'shish kerak.
+
+
+$$ \mathbf{v} = \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} \quad \text{va} \quad \mathbf{w} = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}, \quad \mathbf{v} + \mathbf{w} = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} + \begin{bmatrix} w_1 \\ w_2  \end{bmatrix} = \begin{bmatrix} v_1 + w_1 \\ v_2 + w_2 \end{bmatrix} $$
+
+ Misol uchun, ikkita vektorning qo'shish amali quyidagicha:
 
 $$ \mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix} \quad \text{va} \quad \mathbf{w} = \begin{bmatrix} 4 \\ 5 \end{bmatrix}, \quad \mathbf{v} + \mathbf{w} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} + \begin{bmatrix} 4 \\ 5  \end{bmatrix} = \begin{bmatrix} 5 \\ 7 \end{bmatrix} $$
 
@@ -67,23 +84,59 @@ $$ \mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix} \quad \text{va} \quad \mat
 <center>
     <img src="../assets/vector_add.svg">
 </center>
+<small>Manba: [3blue1brown](https://www.3blue1brown.com/)</small>
 
 
+
+<br>
+
+```python
+import numpy as np
+
+# Vektor yaratish
+vektor1 = np.array([-1.1, 0.0, 3.6])
+vektor2 = np.array([1.1, 0.0, 3.6])
+
+# Vektorlarni qo'shish
+vektor3 = vektor1 + vektor2
+print(vektor3)
+```
 
 ### 1.1.2 Vektorlarni songa ko'paytirish
 
-Vektorni ma'lum bir songa ($\alpha \in \mathbb{R}$) ko'paytirish uchun, vektorning har bir elementini ushbu songa ko'paytiramiz. Misol uchun:
+Vektorni ma'lum bir songa ($\alpha \in \mathbb{R}$) ko'paytirish uchun, vektorning har bir elementini ushbu songa ko'paytiramiz.
+
+$$ \mathbf{v} = \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} \quad \text{va} \quad \alpha, \quad \alpha \cdot \mathbf{v} = \alpha \cdot \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} = \begin{bmatrix} \alpha \cdot v_1 \\ \alpha \cdot v_2 \end{bmatrix} $$
+
+
+Misol uchun:
 
 $$ \mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix}, \quad \alpha = 3, \quad \alpha \cdot \mathbf{v} = 3 \cdot \begin{bmatrix} 1 \\ 2  \end{bmatrix} = \begin{bmatrix} 3 \\ 6 \end{bmatrix} $$
 
 <center>
     <img src="../assets/vector_scale.svg">
 </center>
+<small>Manba: [3blue1brown](https://www.3blue1brown.com/)</small>
 
+
+```python
+import numpy as np
+
+vektor = np.array([-1.1, 0.0, 3.6])
+alpha = 3.0
+
+# Vektorlarni songa ko'paytirish
+vektor_scaled = alpha * vektor
+print(vektor_scaled)
+```
 
 1.2 Vektor Normalari va Skalyar Ko'paytirish
 -------------
 Vektorlarning songa ko'paytirish va qo'shish amallarini o'rganishdan keyin, vektorlarning normalari va skalyar ko'paytirishini o'rganamiz.
+
+
+<br>
+
 
 ### 1.2.1 Vektorlarni Skalyar Ko'paytirish
 
@@ -100,6 +153,22 @@ $$ = \mathbf{a}^T \mathbf{b}$$
 
 Misol: agar $\mathbf{a} = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}$ va $\mathbf{b} = \begin{bmatrix} 4 & 5 & 6 \end{bmatrix}$ bo'lsa,
 $$\mathbf{a} \cdot \mathbf{b} = 1 \cdot 4 + 2 \cdot 5 + 3 \cdot 6 = 4 + 10 + 18 = 32$$
+
+
+```python
+import numpy as np
+
+vektor1 = np.array([1, 2, 3])
+vektor2 = np.array([4, 5, 6])
+
+# Skalyar ko'paytirish
+skalyar = np.dot(vektor1, vektor2)
+
+# yoki
+skalyar = vektor1 @ vektor2
+
+print(skalyar)
+```
 
 ### 1.2.2 Vektor Normasi
 
@@ -121,11 +190,34 @@ $$\| \mathbf{v} \|_2 = \sqrt{v_1^2 + v_2^2 + \ldots + v_n^2} = \sqrt{\sum_{i=1}^
 $$\| \mathbf{v} \|_{\infty} = \max \{ |v_1|, |v_2|, \ldots, |v_n| \}$$
 
 
+
+```python
+import numpy as np
+
+vektor = np.array([1, 2, 3])
+l1_norma = np.linalg.norm(vektor, ord=1) # L1 norma
+l2_norma = np.linalg.norm(vektor, ord=2) # L2 norma
+l_inf_norma = np.linalg.norm(vektor, ord=np.inf) # L-inf norma
+
+```
+
+
 ### 1.2.3 Vektor Normalari Amalda Qo'llanilishi
 
 Birlik vektor (normalangan vektor):
 
-$$ \boxed{\mathbf {\hat {u}} ={\frac {\mathbf {u} }{\|\mathbf {u} \|}} = 1}$$
+$$ \boxed{\mathbf {\hat {u}} ={\frac {\mathbf {u} }{\|\mathbf {u} \|}}}$$
+
+va uzunligi 1 ga teng bo'lgan vektor $$\|\mathbf {\hat {u}} \| = 1$$
+
+```python
+import numpy as np
+
+vektor = np.array([1, 2, 3])
+birlik_vektor = vektor / np.linalg.norm(vektor)
+print(birlik_vektor)
+print("uzunligi:", np.linalg.norm(birlik_vektor))
+```
 
 
 Masofa (Distance) formulasi:
@@ -136,6 +228,20 @@ $$\boxed{d(\mathbf{v}, \mathbf{w}) = \| \mathbf{v} - \mathbf{w} \|}$$
 Ikki vektor orasidagi burchak (Angle between vectors) formulasi:
 
 $$\boxed{\cos \theta = \frac{\mathbf{v} \cdot \mathbf{w}}{\| \mathbf{v} \| \| \mathbf{w} \|}}$$
+
+
+```python
+import numpy as np
+
+vektor1 = np.array([1, 2, 3])
+vektor2 = np.array([4, 5, 6])
+
+# Masofa
+masofa = np.linalg.norm(vektor1 - vektor2)
+
+# Kosinus burchak
+cos_theta = np.dot(vektor1, vektor2) / (np.linalg.norm(vektor1) * np.linalg.norm(vektor2))
+```
 
 
 1.3 Chiziqli kombinatsiya va Chiziqli bog'liqlik
