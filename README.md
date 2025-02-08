@@ -4,7 +4,7 @@ title: Chiziqli Algebra
 permalink: /
 ---
 
-<center><img src="assets/linear_subspace.svg" ></center>
+<center><img src="assets/logo.png" ></center>
 
 
 **Chiziqli algebra** - bu vektorlar, matritsalar va umuman vektor fazolari va chiziqli o'zgarishlar bilan shug'ullanadigan matematika yo'nalishi. 
@@ -19,3 +19,8 @@ O'quvchidan talab qilinadigan narsalar:
 
 Ushbu kursda biz quyidagi mavzularni ko'ramiz:
 1. Vektor asoslari va vektor algebra
+2. Matritsa asoslari
+
+
+### Hissa qo'shganlar:
+

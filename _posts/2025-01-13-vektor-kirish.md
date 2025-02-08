@@ -31,7 +31,7 @@ $$ \mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix} $$
 
 > ##### Diqqat!
 >
->Butun darsda vektorlar $v$ qalinlashtirilgan shaklda bilan ko'rsatiladi.
+>Butun darsda vektorlar $\mathbf{v}$ qalinlashtirilgan shaklda bilan ko'rsatiladi.
 >Sonlar esa $v$ kursiv shaklda ko'rsatiladi.
 {: .block-warning }
 
