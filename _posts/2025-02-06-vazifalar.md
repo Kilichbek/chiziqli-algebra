@@ -74,8 +74,8 @@ Tasavvur qiling siz Netflix  companiyasida ishlayapsiz. Ma'lumotlar bazasi:
 Vazifa 2: Matritsa Asoslari
 -------------
 
-### 2.1.1 Matritsa yaratish
-Quyidagi berilgan matritsa elementlarini shunda o'zgartiringki, natijada berilga kulgan smaylik rasmi chiqsin.
+### 2.1.1  Matritsani elementlarini o'zgartirish
+Quyidagi berilgan matritsa elementlarini shunda o'zgartiringki, natijada berilgan kulgan smaylik rasmi chiqsin.
 Izoh: siz pikselni o'zgartirishda, matritsa elementlarini o'zgartirish orqali rasmda o'zgarishni ko'rsatishingiz mumkin.
 Buning uchun 0 va 1 sonlaridan foydalanishingiz mumkin. 0 - oq rang, 1 - qora rang.
 
@@ -115,10 +115,10 @@ np.ones((m, n)) # bir elementlar bilan to'ldirilgan m x n matritsa
 
 Quyidagi matritsalarni yaratib, ular ustida amallar bajarib ko'ring:
 
-1. $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}$ matritsalarni yarating.
+1. $$A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$$, $$B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}$$ matritsalarni yarating.
 2. $A + B$ va $A - B$ amallarini toping
 3. $A B$ amalini toping
-4. $A \textbf{v}$ amalini toping, $\textbf{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$
+4. $A \textbf{v}$ amalini toping, $$\textbf{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$$
 5. $A B \textbf{v}$ amalini toping
 6. $A \odot B $ amalini toping
 7. $A^T$ va $B^T$ amallarini toping
