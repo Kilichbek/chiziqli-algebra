@@ -1,7 +1,7 @@
 ---
 title: Vazifalar
 author: Qilichbek Haydarov
-date: 2025-01-13
+date: 2025-03-02
 category: Jekyll
 layout: post
 ---
