@@ -203,3 +203,149 @@ Bu yerda:
 >
 > [**Vazifa 2: Matritsa Asoslari**](https://colab.research.google.com/drive/1Ql_fE5xR_Lys8y9Wq3DYCFTH0Hr_sKOU?usp=sharing)
 {: .block-warning }
+
+
+-------
+
+Vazifa 3: Transformatsiya va Chiziqli Tenglamalar Tizimi
+-------------
+
+### Vazifa 3.1.1 Chiziqli Transformatsiya (Linear Transformation)
+
+Quyidagi funksiyalardan qaysinisi chiziqli transformatsiya (linear transformation) hisoblanadi?
+1. $f_1: \mathbb{R}^2 \to \mathbb{R}^2, f_1(x, y) = (x, -y)$
+2. $f_2: \mathbb{R}^3 \to \mathbb{R}^3, f_2(x, y, z) = (xy, x, y)$
+
+### Vazifa 3.1.2 Chiziqli Transformatsiyalarni amalga oshirish
+
+1. siljish (shear) y-o'qi bo'yicha $m = 1.5$
+2. aks (reflection) y o'qiga nisbatan
+3. siqish (squeeze) y o'qiga nisbatan $k = 0.2$ va x o'qiga nisbatan $l = 0.5$
+4. masshtablash (scaling) $s = 2$
+5. aylantirish (rotation) $\theta = 45^\circ$
+
+```python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+transformations = {
+    'Siljish': , # matritsa yozing
+    'Aks': , # matritsa yozing
+    'Siqish': , # matritsa yozing
+    'Masshtablash': , # matritsa yozing
+    'Aylantirish 45°': # matritsa yozing
+}
+
+
+x = np.array([[1], [1]])
+fig, axs = plt.subplots(1, 5, figsize=(12, 3))
+
+for ax, (title, A) in zip(axs.flatten(), transformations.items()):
+    y = A @ x
+    ax.quiver(0, 0, x[0], x[1], angles='xy', scale_units='xy', scale=1, color='blue', label='Original Vektor')
+    ax.quiver(0, 0, y[0], y[1], angles='xy', scale_units='xy', scale=1, color='red', label='O\'zgargan Vector')
+    ax.set_xlim(-3, 3)
+    ax.set_ylim(-3, 3)
+    ax.axhline(0, color='black', linewidth=0.5)
+    ax.axvline(0, color='black', linewidth=0.5)
+    ax.grid(True)
+    ax.set_title(title)
+
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+### Vazifa 3.2.1: Chiziqli Tenglamalar Tizimini yechish
+Berilgan chiziqning tenglamalar tizimini yeching:
+1. Gauss usuli orqali
+
+$$\begin{cases}
+x_1 + x_2 - 2x_3 = 1 \\
+2x_1 - 3x_2 + x_3 = -8 \\
+3x_1 + x_2 + 4x_3 = 3
+\end{cases}$$
+
+2. Teskari matritsa orqali
+
+$$\begin{cases}
+x + 2y = 4 \\
+3x − 5y = 2
+\end{cases}$$
+
+
+
+### 3.3 🏦 **Mini-Loyiha: Iqtisodiy Tarmoqlararo Muvozanat** 📊  
+
+🎯 **Maqsad**  
+Leontief Kirim-Chiqim Modeli yordamida **iqtisodiy tarmoqlarning o‘zaro bog‘liqligini** tahlil qilish va **ishlab chiqarish talablarini bashorat qilish**.  
+
+---
+
+**📖 Leontief Kirim-Chiqim Modeli**  
+Bu model **iqtisodiyotdagi tarmoqlar o‘rtasidagi resurs almashinuvini** ifodalaydi.  
+Har bir tarmoq:  
+✅ O‘z mahsulotining bir qismini boshqa tarmoqlarga yetkazib beradi.  
+✅ Ishlab chiqarish jarayonida boshqa tarmoqlarning mahsulotlaridan foydalanadi.  
+
+👨‍💼 **Misol**: Sizda uchta iqtisodiy tarmoq mavjud:  
+- 🌾 **Qishloq xo‘jaligi**  
+- 🏭 **Sanoat**  
+- 🏢 **Xizmatlar**  
+
+Har bir tarmoq o‘z ishlab chiqarish jarayonida **boshqa tarmoqlarning mahsulotlariga ehtiyoj sezadi**.  
+Quyidagi jadval **1 milliard so‘mlik mahsulot ishlab chiqarish uchun boshqa tarmoqlardan qancha xarajat talab qilinishini** ko‘rsatadi:  
+
+| **Tarmoq** | 🌾 Qishloq xo‘jaligi | 🏢 Xizmatlar | 🏭 Sanoat |
+|------------|----------------------|-------------|----------|
+| **🌾 Qishloq xo‘jaligi** | 0.01 | 0.002 | 0.04 |
+| **🏢 Xizmatlar** | 0.02 | 0.004 | 0 |
+| **🏭 Sanoat** | 0 | 0.01 | 0.02 |
+
+🔹 **Tushuntirish**:  
+Masalan, **1 milliard so‘mlik** tovar ishlab chiqarish uchun:  
+- **Qishloq xo‘jaligi** 0.01 milliard so‘m **o‘ziga**, 0.002 milliard so‘m **xizmatlarga**, va 0.04 milliard so‘m **sanoatga** sarflash kerak.  
+
+---
+
+**📌 Talab Vektori**  
+Davlat har bir tarmoq uchun **yakuniy talab miqdorini** belgilaydi:  
+- **Qishloq xo‘jaligi** → **100 milliard so‘m**  
+- **Xizmatlar** → **200 milliard so‘m**  
+- **Sanoat** → **300 milliard so‘m**  
+
+---
+
+**❓ Savol**  
+Har bir tarmoq uchun **umumiy ishlab chiqarish hajmi** qancha?  
+
+---
+
+**📌 Yechim: Leontief Kirim-Chiqim Modeli**  
+Leontief modeliga ko‘ra, **ishlab chiqarish vektori** ($\mathbf{x}$) quyidagi tenglama orqali aniqlanadi:  
+
+$$
+\mathbf{x} = \mathbf{A} \mathbf{x} + \mathbf{y}
+$$
+
+Bu yerda:  
+✅ **$\mathbf{x}$** – ishlab chiqarish hajmi vektori  
+✅ **$\mathbf{y}$** – yakuniy talab vektori  
+✅ **$\mathbf{A}$** – iste’mol matritsasi  
+
+---
+
+**📌 Qadamlar**  
+1. **Iste'mol matritsa ($\mathbf{A}$) va talab vektori ($\mathbf{y}$) ni yaratish**  
+2. **Ishlab chiqarish hajmini ($\mathbf{x}$) aniqlash**
+3. **Chiziqli tenglamani yechish**
+
+-------
+
+![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)
+
+> ##### Google Colab da vazifani bajarishingiz mumkin!
+>
+> [**Vazifa 3: Chiziqli Transformatsiya**](https://colab.research.google.com/drive/1KnSM0wXSeYPoIljGCulBmtjyRHvXy1Tq?usp=sharing)
+{: .block-warning }
