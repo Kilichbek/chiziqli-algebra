@@ -349,3 +349,135 @@ Bu yerda:
 >
 > [**Vazifa 3: Chiziqli Transformatsiya**](https://colab.research.google.com/drive/1KnSM0wXSeYPoIljGCulBmtjyRHvXy1Tq?usp=sharing)
 {: .block-warning }
+
+-------
+
+Vazifa 4: Vektor Fazolar va Ortogonalizatsiya
+-------------
+
+### Vazifa 4.1.1 Bazis va Subfazolar
+
+1. $$\left \{ \begin{bmatrix} 1 \\ -2 \\ -1 \end{bmatrix}, \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix}, \begin{bmatrix} 5 \\ -8 \\ 1 \end{bmatrix} \right \}$$  vektorlar to'plami $R^3$ fazoga bazis bo'la oladimi?
+2. $V$ subfazo hisoblanadimi?
+- $$V = \left \{ \begin{bmatrix} a \\ b \end{bmatrix} \in \mathbb{R}^2; 2a=3b \right \}$$
+- $$V = \left \{ \begin{bmatrix} a \\ b \end{bmatrix} \in \mathbb{R}^2; ab=0 \right \}$$
+
+
+### Vazifa 4.1.2: Matritsa Rangi
+Ushbu matritsalarni rangini aniqlang:
+
+- $$ \begin{bmatrix} 3 & -1 \\ 1 & 3 \end{bmatrix} $$   
+- $$ \begin{bmatrix} 1 & 2 & 1 \\ -2 & -3 & 1 \\ 3 & 5 & 0 \end{bmatrix}$$
+
+### Vazifa 4.2: Ortogonallik va Proeksiya
+
+
+1. Ushbu vektorlar ortogonalmi?
+  - $$\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$$ va $$\begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}$$
+  - $$\begin{bmatrix} -1 \\ 1\\ 0 \end{bmatrix}$$ va $$\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix}$$
+
+2. $$\mathbf{u}$$ vektorni $$\mathbf{v}$$ vektordagi proeksiyasini toping, agar:
+  - $$\mathbf{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$$ va $$\mathbf{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$$ 
+  - $$\mathbf{u} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$$ va $$\mathbf{v} = \begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix}$$
+
+3. $$\mathbf{v}$$ vektorni $$\{ \mathbf{u}_1, \mathbf{u}_2 \}$$ basiz vektorlardan tashkil topgan subfazoga proyeksiyasini toping, agar:
+  - $$\mathbf{u}_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$$, $$\mathbf{u}_2 = \begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix}$$ va $$\mathbf{v} = \begin{bmatrix} 6 \\ 0 \\ 0 \end{bmatrix}$$
+
+
+
+### 4.3 🏘️ **Mini-Loyiha: Sotuv Miqdorini Modellashtirish (Chiziqli Model)** 📊
+
+🎯 **Maqsad**  
+Toshkent shahridagi kvartira narxlari va ularning maydoni (m²) o‘rtasidagi bog‘liqlikni tahlil qilish, va **chiziqli model** asosida **kelajakdagi uy narxini bashorat qilish**.
+
+---
+
+#### **📖 Voqea Tavsifi**  
+Sizga Toshkentdagi turli hududlarda joylashgan kvartiralarning **maydoni (m²)** va ularning **narxi (ming dollar)** bo‘yicha ma’lumotlar berilgan.  
+Ma’lumotlarni o‘rganish natijasida aniqlanganki, narx odatda **maydon oshishi bilan chiziqli ravishda ortib boradi**.
+
+
+Shunday qilib, quyidagi chiziqli model taklif qilinadi: 
+$$
+y = c_0 + c_1 x
+$$
+
+Bu yerda:  
+- $y$ — kvartiraning narxi (ming dollar)  
+- $x$ — kvartira maydoni (m²)  
+- $c_0$ — boshlang‘ich narx (asosiy xizmatlar, joylashuv, va h.k.)  
+- $c_1$ — har bir kvadrat metr uchun narx (ming dollar/m²)
+
+Sizga bir nechta kuzatish nuqtalari berilgan:  
+
+$$
+(x_0, y_0),\ (x_1, y_1),\ \dots,\ (x_n, y_n)
+$$
+
+
+Modelni quyidagi matritsa ko‘rinishida yozamiz:
+
+$$
+A =
+\begin{bmatrix}
+1 & x_0 \\
+1 & x_1 \\
+\vdots & \vdots \\
+1 & x_n
+\end{bmatrix}
+,\quad
+\mathbf{y} =
+\begin{bmatrix}
+y_0 \\
+y_1 \\
+\vdots \\
+y_n
+\end{bmatrix}
+,\quad
+\mathbf{c} =
+\begin{bmatrix}
+c_0 \\
+c_1
+\end{bmatrix}$$
+
+Model tenglamasi:  
+$$ A \mathbf{c} \approx \mathbf{y} $$
+
+---
+
+#### Eng kichik kvadratlar usuli (Least Squares Method)
+
+Chiziqli model parametrlarini aniqlash uchun **eng kichik kvadratlar usulidan** foydalanamiz:
+
+$$
+\boxed{\mathbf{c} = (A^T A)^{-1} A^T \mathbf{y}}
+$$
+
+
+
+## **📌 Amalga oshirish Qadamlar**
+
+1️⃣ $A$ matritsani yarating (ustunlar: 1 va $x$)  
+2️⃣ Hisoblang:  
+   - $A^T A$  
+   - $A^T \mathbf{y}$  
+   - $(A^T A)^{-1}$  
+
+
+3️⃣ Quyidagi formula orqali $\mathbf{c}$ ni toping:
+$$
+   \mathbf{c} = (A^T A)^{-1} A^T \mathbf{y}
+$$
+
+---
+
+🎯 **Natija**: Siz ma’lumotlardan foydalangan holda **chiziqli regressiya modelini** yaratishni va eng kichik kvadratlar yordamida uning koeffitsiyentlarini aniqlashni o‘rganasiz — bu ma’lumot tahlili va mashinaviy o‘rganishning asosiy vositalaridan biridir. 🚀  
+
+-------
+
+![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)
+
+> ##### Google Colab da vazifani bajarishingiz mumkin!
+>
+> [**Vazifa 4: Chiziqli Transformatsiya**](https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing)
+{: .block-warning }
