@@ -455,7 +455,7 @@ $$
 
 
 
-## **📌 Amalga oshirish Qadamlar**
+### **📌 Amalga oshirish Qadamlar**
 
 1️⃣ $A$ matritsani yarating (ustunlar: 1 va $x$)  
 2️⃣ Hisoblang:  
@@ -479,5 +479,5 @@ $$
 
 > ##### Google Colab da vazifani bajarishingiz mumkin!
 >
-> [**Vazifa 4: Chiziqli Transformatsiya**](https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing)
+> [**Vazifa 4: Vektor Fazolar va Ortogonalizatsiya**](https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing)
 {: .block-warning }
