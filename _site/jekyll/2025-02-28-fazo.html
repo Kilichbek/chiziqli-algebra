@@ -1,0 +1,813 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Modul 4. Vektor Fazolari va Ortogonalizatsiya · Chiziqli Algebra</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Chiziqli Algebra Sun'iy Idrok uchun
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Qilichbek Haydarov"><link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/style.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/rouge/pastie.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/chiziqli-algebra/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/chiziqli-algebra//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" />
+        
+
+        
+            <link rel="next" href="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/chiziqli-algebra/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra">
+            
+                <a href="/chiziqli-algebra/" onclick="pageScrollToTop(this)">
+                    Chiziqli Algebra
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" onclick="pageScrollToTop(this)">
+                                    Modul 1. Vektorlar va vektor algebra
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 2. Matritsa Asoslari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 3. Transformatsiya va Chiziqli Tenglamalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/chiziqli-algebra/jekyll/2025-02-28-fazo.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" onclick="pageScrollToTop(this)">
+                                    Modul 4. Vektor Fazolari va Ortogonalizatsiya
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#41-vektor-fazolari-subfazolar-va-chiziqli-qobiqlar" onclick="mobilePageScrollToAnchor(this)" >4.1 Vektor fazolari, subfazolar va chiziqli qobiqlar</a><ul><li><a href="#411-vektor-fazo-va-subfazolar" onclick="mobilePageScrollToAnchor(this)" >4.1.1 Vektor fazo va subfazolar</a></li><li><a href="#412-chiziqli-qobiq" onclick="mobilePageScrollToAnchor(this)" >4.1.2 Chiziqli qobiq</a></li><li><a href="#413-bazis-basis" onclick="mobilePageScrollToAnchor(this)" >4.1.3 Bazis (Basis)</a></li><li><a href="#414-matritsa-rangi-rank-of-matrix" onclick="mobilePageScrollToAnchor(this)" >4.1.4 Matritsa rangi (Rank of Matrix)</a></li><li><a href="#415-ustun-fazo-va-nol-fazo-column-space-and-null-space" onclick="mobilePageScrollToAnchor(this)" >4.1.5 Ustun fazo va Nol fazo (Column space and Null Space)</a></li></ul></li><li><a href="#42-ortogonalizatsiya-va-proeksiya-orthogonalization-and-projection" onclick="mobilePageScrollToAnchor(this)" >4.2 Ortogonalizatsiya va Proeksiya (Orthogonalization and Projection)</a><ul><li><a href="#421-ortogonallik" onclick="mobilePageScrollToAnchor(this)" >4.2.1 Ortogonallik</a></li><li><a href="#422-proeksiya" onclick="mobilePageScrollToAnchor(this)" >4.2.2 Proeksiya</a></li></ul></li><li><a href="#43-ortonormal-bazis-va-gram-shmit-jarayoni" onclick="mobilePageScrollToAnchor(this)" >4.3 Ortonormal bazis va Gram-Shmit jarayoni</a><ul><li><a href="#431-ortonormal-bazis-orthonormal-basis" onclick="mobilePageScrollToAnchor(this)" >4.3.1 Ortonormal bazis (Orthonormal basis)</a></li><li><a href="#432-ortogonal-bazisga-proeksiya-projection-onto-orthogonal-basis" onclick="mobilePageScrollToAnchor(this)" >4.3.2 Ortogonal bazisga proeksiya (Projection onto orthogonal basis)</a></li><li><a href="#433-gram-shmit-jarayoni-gram-schmidt-process" onclick="mobilePageScrollToAnchor(this)" >4.3.3 Gram-Shmit jarayoni (Gram-Schmidt process)</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" onclick="pageScrollToTop(this)">
+                                    Modul 5. Il&#39;gor matritsa tushunchalari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" onclick="pageScrollToTop(this)">
+                                    Vazifalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Modul 4. Vektor Fazolari va Ortogonalizatsiya</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/fazo">Modul 4. Vektor Fazolari va Ortogonalizatsiya</h1>
+                    
+
+                    <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZHZuSDF5fg?si=SaaW79TwQwzMW5Gp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<p><img src="../assets/rockets.jpg" /></p>
+
+<h2 id="41-vektor-fazolari-subfazolar-va-chiziqli-qobiqlar">4.1 Vektor fazolari, subfazolar va chiziqli qobiqlar</h2>
+<h3 id="411-vektor-fazo-va-subfazolar">4.1.1 Vektor fazo va subfazolar</h3>
+
+<p>Tasavvur qiling, butun koinot sizning o’yin maydoningiz va vektorlar kosmik raketalarga o’xshaydi. Vektor fazosi barcha raketalar (vektorlar) amal qilishi kerak bo’lgan maxsus qoidalarga ega galaktikaga deb tasavvur qilsak bo’ladi.</p>
+
+<p>Har bir raketa o’zining:</p>
+<ul>
+  <li><strong>yo’nalishi</strong> (masalan, qaysi tomonga uchayotgani)</li>
+  <li><strong>tezligi</strong> (uning dvigatellari qanchalik kuchli ekanligi)</li>
+</ul>
+
+<p>ega bo’ladi.</p>
+
+<p>Vektor fazo esa raketalar o’zaro qanday munosabatda bo’lishi va bir-biriga qanday ta’sir qilishini belgilovchi qoidalardan iborat:</p>
+<ol>
+  <li><strong>Vektorlar qo’shilishi</strong>: Agar siz ikkita raketani bir-biriga bog’lasangiz, ularning tezligi va yo’nalishlari qanday o’zgaradi?</li>
+  <li><strong>Vektorlarni skalar songa ko’paytirish</strong>: Agar siz raketani kuchli dvigatel bilan jihozlasangiz, u qanday tezlikka ega bo’ladi?</li>
+  <li>…</li>
+</ol>
+
+<blockquote class="block-tip">
+  <h5 id="vektor-fazo">Vektor fazo</h5>
+
+  <p>bo’sh bo’lmagan vektor to’plami $V$ bo’lib, u quyidagi shartlarni qanoatlantirsa, $V$ vektor fazosi deyiladi:</p>
+  <ul>
+    <li>$V$ to’plamida <strong>nol</strong> vektori mavjud.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u}, \mathbf{v} \in V$ vektorlar uchun $\mathbf{u} + \mathbf{v} \in V$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori va har qanday $c \in \mathbb{R}$ skalar uchun $c\mathbf{u} \in V$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u}, \mathbf{v} \in V$ vektorlar uchun $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ vektorlar uchun $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori uchun $\mathbf{u} + (-\mathbf{u}) = \mathbf{0}$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori va har qanday $c, d \in \mathbb{R}$ skalarlar uchun $c(d\mathbf{u}) = (cd)\mathbf{u}$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori va har qanday $c, d \in \mathbb{R}$ skalarlar uchun $(c + d)\mathbf{u} = c\mathbf{u} + d\mathbf{u}$.</li>
+  </ul>
+</blockquote>
+
+<p>Misollar:</p>
+<ul>
+  <li>$\mathbb{R}^2$ - ikki o’lchovli fazo</li>
+  <li>$\mathbb{R}^3$ - uch o’lchovli fazo</li>
+  <li>$\mathbb{R}^n$ - $n$ o’lchovli fazo</li>
+</ul>
+
+<blockquote class="block-tip">
+  <h5 id="vektor-subfazosi">Vektor subfazosi</h5>
+  <p>$\mathbf{V}$ fazosining kichik to’plami $\mathbf{U}$ - vektor subfazo deb hisoblanadi, agar ushbu qoidalar qanoatlantirilsa:</p>
+  <ol>
+    <li>$\mathbf{0} \in \mathbf{U}$</li>
+    <li>$\mathbf{u} + \mathbf{v} \in \mathbf{U}$</li>
+    <li>$\alpha \mathbf{u} \in \mathbf{U}$</li>
+  </ol>
+</blockquote>
+
+<p>Misol:</p>
+<ul>
+  <li>$\mathbb{R}^2$ fazosining subfazosi - $x$ o’qidagi barcha vektorlar to’plami.</li>
+  <li>$\mathbb{R}^3$ fazosining subfazosi - $x$ va $y$ o’qlaridagi barcha vektorlar to’plami.</li>
+</ul>
+
+<h3 id="412-chiziqli-qobiq">4.1.2 Chiziqli qobiq</h3>
+
+<p><img src="../assets/fleet.webp" /></p>
+
+<p>Tasavvur qiling, endi siz raketalar flotiga (vektorlar) qo’mondonlik qilayotgan kosmik admiralsiz. Sizning flotingiz masofasi - bu ularning kuchlarini birlashtirib (ularni masshtablash va qo’shish) erishishingiz mumkin bo’lgan barcha joylar.</p>
+
+<blockquote class="block-tip">
+  <h5 id="chiziqli-qobiq-linear-span">Chiziqli qobiq (Linear Span)</h5>
+
+  <p>Agar $\mathbf{v_1}, \mathbf{v_2}, \ldots, \mathbf{v_n}$ vektorlar to’plami berilgan bo’lsa, ularning chiziqli qobi $L(\mathbf{v_1}, \mathbf{v_2}, \ldots, \mathbf{v_n})$ deb ataladi va quyidagi ko’rinishda ifodalanadi:
+\(\boxed{\text{span}(\mathbf{v}_1, \mathbf{v}_2, ..., \mathbf{v}_n) = \{ \alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + ... + \alpha_n \mathbf{v}_n | \alpha_i \in \mathbb{R} \}}\)</p>
+</blockquote>
+
+<p>Misollar:</p>
+<ul>
+  <li>
+    <p>$\text{span}(\begin{bmatrix} 1 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \end{bmatrix})$ - $\mathbb{R}^2$ vektor fazosini tashkil etadi</p>
+  </li>
+  <li>
+    <p>$\text{span}(\begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 2 \end{bmatrix}, \begin{bmatrix} -1\ 1/2 \ 3 \end{bmatrix}, \begin{bmatrix} 1 \ 1 \ 1 \end{bmatrix})$ - $\mathbb{R}^3$ vektor fazosini tashkil etadi</p>
+  </li>
+</ul>
+
+<h3 id="413-bazis-basis">4.1.3 Bazis (Basis)</h3>
+
+<p>Tasavvur qiling, siz galaktika tadqiqotchisisiz va kosmik kemangizning navigatsiya tizimi raketa vektorlarida ishlaydi. <strong>Bazis</strong> bu sizning koinotning istalgan nuqtasiga (vektor fazosi) <em>ortiqcha raketalarsiz</em> yetib olishingiz uchun kerak bo’lgan <strong>eng kichik raketalar to’plamidir</strong>.</p>
+
+<blockquote class="block-tip">
+  <h5 id="bazis-basis">Bazis (Basis)</h5>
+
+  <p>bu vektorlar to’plami $\mathbf{v_1}, \mathbf{v_2}, …, \mathbf{v_n}$, va $\mathbf{V}$ vektor fazosini tashkil etadi, agar:</p>
+  <ul>
+    <li>$\text{span}(\mathbf{v}_1, \mathbf{v}_2, …, \mathbf{v}_n) = \mathbf{V}$</li>
+    <li>$\mathbf{v}_1, \mathbf{v}_2, …, \mathbf{v}_n$ o’zaro bog’liq emas</li>
+  </ul>
+</blockquote>
+
+<p>Misollar:</p>
+<ul>
+  <li>$\text{span}(\begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 2 \end{bmatrix}, \begin{bmatrix} -1\ 1/2 \ 3 \end{bmatrix}, \begin{bmatrix} 1 \ 1 \ 1 \end{bmatrix})$ - $\mathbb{R}^3$ vektor fazosini tashkil etadi lekin bu bazis emas, chunki ular o’zaro bog’liq</li>
+  <li>$\text{span}(\begin{bmatrix} 1 \ 0 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix})$ - $\mathbb{R}^3$ vektor fazosini tashkil etadi va bu bazis</li>
+</ul>
+
+<h3 id="414-matritsa-rangi-rank-of-matrix">4.1.4 Matritsa rangi (Rank of Matrix)</h3>
+
+<p>Tasavvur qiling, siz raketalar flotiga (vektorlarga) ega bo’lgan galaktika qo’mondonisiz, lekin ba’zilari ortiqcha - ular sizning arsenalingizga yangi yo’nalishlarni qo’shmaydi. Matritsaning rangi sizning flotingizda qancha noyob raketa borligini ko’rsatadi.</p>
+
+<blockquote class="block-tip">
+  <h5 id="matritsa-rangi-rank-of-matrix">Matritsa rangi (Rank of Matrix)</h5>
+
+  <p>bu ustunlaridan hosil bo’lgan vektor fazosining o’lchami. Ya’ni, <em>chiziqli bog’liq bo’lmagan</em> barcha matritsaning ustunlar soni. 
+\(\boxed{\text{rank}(\mathbf{A}) = \text{dim}(\text{span}(\mathbf{A}))}\)</p>
+</blockquote>
+
+<p>Qanday aniqlaymiz?</p>
+
+\[{\displaystyle {\begin{aligned}{\begin{bmatrix}1&amp;2&amp;1\\-2&amp;-3&amp;1\\3&amp;5&amp;0\end{bmatrix}}&amp;\xrightarrow {2R_{1}+R_{2}\to R_{2}} {\begin{bmatrix}1&amp;2&amp;1\\0&amp;1&amp;3\\3&amp;5&amp;0\end{bmatrix}}\xrightarrow {-3R_{1}+R_{3}\to R_{3}} {\begin{bmatrix}1&amp;2&amp;1\\0&amp;1&amp;3\\0&amp;-1&amp;-3\end{bmatrix}}\\&amp;\xrightarrow {R_{2}+R_{3}\to R_{3}} \,\,{\begin{bmatrix}1&amp;2&amp;1\\0&amp;1&amp;3\\0&amp;0&amp;0\end{bmatrix}}\xrightarrow {-2R_{2}+R_{1}\to R_{1}} {\begin{bmatrix}1&amp;0&amp;-5\\0&amp;1&amp;3\\0&amp;0&amp;0\end{bmatrix}}~.\end{aligned}}}\]
+
+<p>Natijada, \(\text{rank}(\textbf{A}) = 2\).</p>
+
+<h3 id="415-ustun-fazo-va-nol-fazo-column-space-and-null-space">4.1.5 Ustun fazo va Nol fazo (Column space and Null Space)</h3>
+
+<ol>
+  <li>Ustun fazo: $\text{Col}(\textbf{A}) = \text{span}(\textbf{a}_1, \textbf{a}_2, …, \textbf{a}_n)$
+    <ul>
+      <li>$\textbf{A}$ matritsaning ustunlar qobig’i.</li>
+      <li>Ustun fazo $\textbf{Ax}$ ko’paytirish orqali erishish mumkin bo’lgan barcha vektorlarni ifodalaydi</li>
+    </ul>
+  </li>
+  <li>Nol fazo: $\text{Null}(\textbf{A}) = { \mathbf{x} \in \mathbb{R}^n | \textbf{A} \mathbf{x} = \mathbf{0} }$
+    <ul>
+      <li>Nol fazo $\textbf{A}$ matritsaga ko’paytirilganda $\mathbf{0}$ ga aylanadigan barcha vektorlarni ifodalaydi</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="42-ortogonalizatsiya-va-proeksiya-orthogonalization-and-projection">4.2 Ortogonalizatsiya va Proeksiya (Orthogonalization and Projection)</h2>
+
+<h3 id="421-ortogonallik">4.2.1 Ortogonallik</h3>
+
+<blockquote class="block-tip">
+  <h5 id="ortogonallik">Ortogonallik</h5>
+  <p>Agar $\mathbf{u}$ va $\mathbf{v}$ vektorlarining skalar ko’paytmasi $0$ ga teng bo’lsa, u holda $\mathbf{u}$ va $\mathbf{v}$ vektorlar ortogonal (perpendikulyar) deb ataladi.
+\(\mathbf{u} \cdot \mathbf{v} = 0\)</p>
+</blockquote>
+
+<p>Misol:</p>
+
+<ul>
+  <li>$\mathbf{u} = \begin{bmatrix} 1 \ 2 \end{bmatrix}$ va $\mathbf{v} = \begin{bmatrix} -2 \ 1 \end{bmatrix}$ ortogonal vektorlar</li>
+</ul>
+
+\[\mathbf{u} \cdot \mathbf{v} = 1 \times -2 + 2 \times 1 = 0\]
+
+<h3 id="422-proeksiya">4.2.2 Proeksiya</h3>
+
+<blockquote class="block-tip">
+  <h5 id="proeksiya">Proeksiya</h5>
+
+  <p>bu vektor fazo $\mathbf{V}$ dan o’ziga bo’lgan chiziqli transformatsiya $\mathbf{P}$ hisoblanadi, ya’ni:
+$\mathbf{P}: \mathbb{V} \to \mathbb{V}$, va $\mathbf{P}^2 = \mathbf{P}$.</p>
+</blockquote>
+
+<h4 id="4221-vektorning-oqdagi-proeksiyasi-projection-onto-line">4.2.2.1 Vektorning o’qdagi Proeksiyasi (Projection onto line)</h4>
+
+<p><img src="http://habrastorage.org/files/2fa/2d0/3be/2fa2d03be62e43f3a14f0e4c7bb1398c.png" alt="" /></p>
+
+<p>Proeksiya $\mathbf{b}$ vektorining $\mathbf{a}$ vektordagi “soyasini” ko’rsatadi .</p>
+<ul>
+  <li>$\mathbf{p}$ - $\mathbf{b}$ vektorining $\mathbf{a}$ vektorga proeksiyasi</li>
+  <li>$\mathbf{e}$ - proeksiya xatosi (xato minimum bo’lishi uchun $\mathbf{e} \perp \mathbf{a}$)</li>
+  <li>$\mathbf{e} = \mathbf{b} - \mathbf{p} = \mathbf{b} - \beta ~ \mathbf{a}$</li>
+  <li>Maqsad: $\beta$ ni topish</li>
+</ul>
+
+<ol>
+  <li>$\mathbf{e} \perp \mathbf{a}$, shunda $\mathbf{a} \cdot \mathbf{e} = 0 \Rightarrow  \mathbf{a}^T (\mathbf{b} - \beta ~ \mathbf{a}) = 0$
+\(\boxed{\beta = \frac{\mathbf{a}^T \mathbf{b}}{\mathbf{a}^T \mathbf{a}}}\)</li>
+  <li>Lekin, $\beta = \frac{| \mathbf{p} |}{| \mathbf{a} |} = \frac{\mathbf{a} \cdot \mathbf{b}}{| \mathbf{a} |^2}$ uzunlik</li>
+  <li>Biz $\mathbf{p}$ vektorni topishimiz kerak</li>
+</ol>
+
+<p>Shunchaki $\beta$ ni $\mathbf{a}$ vektorga ko’paytirish kerak:
+\({\displaystyle \operatorname {proj} _{\mathbf {a} }\mathbf {b} = \beta~ \mathbf{a} = {\frac {\mathbf {a} \cdot \mathbf {b} }{\left\|\mathbf {a} \right\|^{2}}}{\mathbf {a} }={\frac {\mathbf {a} ^T \mathbf {b} }{\mathbf {a} ^T \mathbf {a} }}{\mathbf {a} }~.}\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mf">1.</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">],</span> <span class="p">[</span><span class="mf">6.</span><span class="p">]])</span>
+<span class="n">proj_v</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span> <span class="o">*</span> <span class="n">b</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">proj_v</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="4222-proeksiya-matritsasi-projection-matrix">4.2.2.2 Proeksiya matritsasi (Projection Matrix)</h4>
+<p>Berilgan $\displaystyle \operatorname {proj} _{\mathbf {b} }\mathbf {a}={\frac {\mathbf {a} ^T \mathbf {b} }{\mathbf {b} ^T \mathbf {b} }}~{\mathbf {b} } = {\mathbf {b} }~ {\frac {\mathbf {b} ^T \mathbf {a} }{\mathbf {b} ^T \mathbf {b} }}$. Lekin biz buni matritsa yordamida ifodalamoqchimiz: \(\boxed{\textbf{p}=\textbf{Pb}}\)</p>
+
+<p>\({\displaystyle \operatorname {proj} _{\mathbf {b} }\mathbf {a}= \mathbf {b} {\frac {\mathbf {b} ^T \mathbf {a} }{\mathbf {b} ^T \mathbf {b} }}} = {\frac {\mathbf {b} \mathbf {b}^T  }{\mathbf {b} ^T \mathbf {b} }}~{\mathbf {a} }\)
+Biz proeksiya matritsasini olamiz:
+\(\textbf{P} = \frac {\mathbf {b} \mathbf {b}^T  }{\mathbf {b} ^T \mathbf {b} }\)</p>
+
+<p>Xossalari:</p>
+
+<ul>
+  <li>$ \textbf{P}^T = \textbf{P}$</li>
+  <li>$\textbf{P}^2 = \textbf{P}$</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">]])</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">P</span> <span class="o">@</span> <span class="n">P</span><span class="p">)</span>
+
+<span class="n">proj_v</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">proj_v</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="4223-vektorning-subfazoga-proeksiyasi-projection-onto-subspace">4.2.2.3 Vektorning subfazoga proeksiyasi (Projection onto subspace)</h4>
+
+<p>Faraz qilaylik, $\mathbf{A}\mathbf{x} = \mathbf{b}$ yechimi yo’q.</p>
+<ul>
+  <li>$\mathbf{b} \notin \text{Col}(\mathbf{A})$ - $\mathbf{b}$ vektori $\mathbf{A}$ ustunlar qobig’ida emas</li>
+  <li>lekin, $\mathbf{b}$ vektorini proeksiya orqali ustun fazosiga $\text{Col}(\mathbf{A})$ o’tkazish mumkin</li>
+  <li>$\text{Col}(\mathbf{A})$ ustun fazosi giper-tekislikni (hyperplane) hosil qiladi.</li>
+  <li>$\mathbf{b}$ vektorini giper-tekislikga proeksiya qilish kerak</li>
+</ul>
+
+<p>Misol: Tekislikka proeksiya $\mathbb{R}^3 \rightarrow \mathbb{R}^2$</p>
+
+<p>Faraz qilamiz, $\text{dim}(\text{Col}(\mathbf{A})) = 2$, ya’ni bazis $\mathbf{a_1}, \mathbf{a_2}$ vektorlar to’plami: $\textbf{A} = \Bigg[ \ \mathop{\mathbf a_1}\limits_|^| \ \mathop{\mathbf a_2}\limits_|^| \ \Bigg]$</p>
+
+<center><img src="http://habrastorage.org/files/245/834/296/245834296b494b6a8f42522ff1feb119.png" width="400" /></center>
+
+<ul>
+  <li>$\mathbf{p} = \hat x_1 ~ \mathbf{a}_1 +  \hat x_2 ~ \mathbf{a}_2 \Rightarrow  \mathbf{p} = \textbf{A}  \mathbf{\hat x}$</li>
+  <li>
+    <p>Maqsad: $\mathbf{\hat x}$ ni topish</p>
+  </li>
+  <li>$\mathbf{p} = \textbf{A}  \mathbf{\hat x}$</li>
+  <li>$\mathbf{e} = \mathbf{b} - \mathbf{p} = \mathbf{b} - \textbf{A}  \mathbf{\hat x}$</li>
+  <li>$\mathbf{e} \perp \text{Col}(\mathbf{A})$ - $\mathbf{e} \perp \mathbf{a}_1$ va $\mathbf{e} \perp \mathbf{a}_2$
+    <ul>
+      <li>
+        <p>$\mathbf{a}_1^T \mathbf{e} = \mathbf{a}_1^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0$</p>
+      </li>
+      <li>
+        <p>$\mathbf{a}_2^T \mathbf{e} = \mathbf{a}_2^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0$</p>
+      </li>
+    </ul>
+  </li>
+  <li>Matritsa ko’rinishida:
+\(\textbf{A}^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0\)</li>
+</ul>
+
+<p>$ \mathbf{\hat x} $ topish kerak:
+\(\textbf{A}^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0\)
+\(\textbf{A}^T \textbf{b} - \textbf{A}^T \textbf{A}  \mathbf{\hat x} = 0\)
+\(\textbf{A}^T \textbf{A}  \mathbf{\hat x} = \textbf{A}^T \textbf{b}\)
+\(\boxed{\mathbf{\hat x} = (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T \textbf{b}}\)</p>
+
+<p>Lekin, $\mathbf{\hat x}$ bu koeffitsientlar to’plami, proeksiya esa: 
+\(\mathbf{p} = \textbf{A}  \mathbf{\hat x} = \textbf{A} (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T \textbf{b}\)</p>
+
+<ul>
+  <li>$\textbf{P} = \textbf{A} (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T$ - proeksiya matritsasi</li>
+</ul>
+
+<h2 id="43-ortonormal-bazis-va-gram-shmit-jarayoni">4.3 Ortonormal bazis va Gram-Shmit jarayoni</h2>
+
+<h3 id="431-ortonormal-bazis-orthonormal-basis">4.3.1 Ortonormal bazis (Orthonormal basis)</h3>
+
+<p>${\textbf{q}_1, \textbf{q}_2, … \textbf{q}_n }$ vektorlar to’plami <strong>ortonormal</strong> hisoblanadi, agar:</p>
+
+\[\textbf{q}_i^T \textbf{q}_j=
+\begin{cases}
+    0, &amp; \text{qachonki} &amp; i\ne j &amp; \text{ortogonal vektor}\\
+    1, &amp; \text{when} &amp; i = j &amp; \text{birlik vektor}
+\end{cases}\]
+
+<table>
+  <tbody>
+    <tr>
+      <td>Matritsa ko’rinishida:   $Q = \Bigg[ \mathop{\mathbf q_1}\limits_</td>
+      <td>^</td>
+      <td>\ \mathop{\mathbf q_2}\limits_</td>
+      <td>^</td>
+      <td>\ \cdots \  \mathop{\mathbf q_n}\limits_</td>
+      <td>^</td>
+      <td>\Bigg]$</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p>$Q$ - <strong>ortonormal</strong> matritsa deb ataladi</p>
+
+    <ul>
+      <li>$\textit{Q}^T \textit{Q}= \textit{I}$</li>
+      <li>$\textit{Q}^T = \textit{Q}^{-1}$</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="432-ortogonal-bazisga-proeksiya-projection-onto-orthogonal-basis">4.3.2 Ortogonal bazisga proeksiya (Projection onto orthogonal basis)</h3>
+
+<p>Faraz qilaylik, $Q = \Bigg[ \mathop{\mathbf q_1}\limits_|^| \ \mathop{\mathbf q_2}\limits_|^| \ \cdots \  \mathop{\mathbf q_n}\limits_|^| \Bigg]$ ortonormal bazis bo’lsin. Biz $\mathbf{b}$ vektorini bu bazisga proeksiya qilishimiz kerak.</p>
+<ul>
+  <li>$\text{Col}(Q)$ - $\mathbf{b}$ vektorini proeksiya qilish uchun kerak bo’lgan fazo</li>
+  <li>odatda, proeksiya matritsasi $\textbf{P} = \textbf{A} (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T$ ko’rinishida topiladi</li>
+  <li>ortogonal bazis uchun proeksiya matritsasi $\textbf{P} = \textbf{Q} (\textbf{Q}^T \textbf{Q})^{-1} \textbf{Q}^T = \textbf{Q} \textbf{Q}^T$</li>
+</ul>
+
+\[\boxed{\textbf{P} = \textbf{Q} \textbf{Q}^T}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">]]),</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">]])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span><span class="p">)</span>
+<span class="c1"># euclidean norm of x and y
+</span><span class="n">x_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">y_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># normalized x or unit vector
+</span><span class="n">x_unit</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x_norm</span><span class="p">)</span>  
+<span class="n">y_unit</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">y_norm</span><span class="p">)</span> 
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Euclidean norm of x:</span><span class="se">\n</span><span class="si">{</span><span class="n">x_norm</span><span class="si">}</span><span class="se">\n</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Euclidean norm of y:</span><span class="se">\n</span><span class="si">{</span><span class="n">y_norm</span><span class="si">}</span><span class="se">\n</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Normalized x:</span><span class="se">\n</span><span class="si">{</span><span class="n">x_unit</span><span class="si">}</span><span class="se">\n</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Normalized y:</span><span class="se">\n</span><span class="si">{</span><span class="n">y_unit</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">x_unit</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span><span class="mi">1</span><span class="p">),</span>
+      <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">y_unit</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">x_unit</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y_unit</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> 
+      <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">x_unit</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">x_unit</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> 
+      <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">y_unit</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y_unit</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">column_stack</span><span class="p">((</span><span class="n">x_unit</span><span class="p">,</span> <span class="n">y_unit</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">Q</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">Q</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+</code></pre></div></div>
+
+<h3 id="433-gram-shmit-jarayoni-gram-schmidt-process">4.3.3 Gram-Shmit jarayoni (Gram-Schmidt process)</h3>
+
+<p>Gram-Shmidt jarayoni - bu vektorlar to’plamini ortonormal bazisga aylantirish usuli.</p>
+<ul>
+  <li>chiziqli bog’liq bo’lmagan vektorlar to’plamini qabul qiladi: ${\displaystyle S={\mathbf {v} _{1},\ldots ,\mathbf {v} _{k}}}$, $k ≤ n$</li>
+  <li>ortonormal bazis ${\displaystyle S’={\mathbf {u} _{1},\ldots ,\mathbf {u} _{k}}}$ hosil qiladi</li>
+</ul>
+
+<p><img src="https://gregorygundersen.com/image/gramschmidt/gram-schmidt.png" width="1000" /></p>
+
+\[{\displaystyle {\begin{aligned}\mathbf {u} _{1}&amp;=\mathbf {v} _{1},&amp;\!\mathbf {e} _{1}&amp;={\frac {\mathbf {u} _{1}}{\|\mathbf {u} _{1}\|}}\\\mathbf {u} _{2}&amp;=\mathbf {v} _{2}-\operatorname {proj} _{\mathbf {u} _{1}}(\mathbf {v} _{2}),&amp;\!\mathbf {e} _{2}&amp;={\frac {\mathbf {u} _{2}}{\|\mathbf {u} _{2}\|}}\\\mathbf {u} _{3}&amp;=\mathbf {v} _{3}-\operatorname {proj} _{\mathbf {u} _{1}}(\mathbf {v} _{3})-\operatorname {proj} _{\mathbf {u} _{2}}(\mathbf {v} _{3}),&amp;\!\mathbf {e} _{3}&amp;={\frac {\mathbf {u} _{3}}{\|\mathbf {u} _{3}\|}}\\\mathbf  \ \vdots &amp;&amp;{}\ \ \vdots \\\mathbf {u} _{k}&amp;=\mathbf {v} _{k}-\sum _{j=1}^{k-1}\operatorname {proj} _{\mathbf {u} _{j}}(\mathbf {v} _{k}),&amp;\!\mathbf {e} _{k}&amp;={\frac {\mathbf {u} _{k}}{\|\mathbf {u} _{k}\|}}.\end{aligned}}}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">A</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">A</span><span class="p">)</span> 
+
+<span class="c1"># Gram-Schmidt jarayoni
+</span><span class="n">u1</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">e1</span> <span class="o">=</span> <span class="n">u1</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
+
+<span class="n">v2</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">u2</span> <span class="o">=</span> <span class="n">v2</span> <span class="o">-</span> <span class="p">((</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">u1</span><span class="p">))</span> <span class="o">*</span> <span class="n">u1</span>
+<span class="n">e2</span> <span class="o">=</span> <span class="n">u2</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">u2</span><span class="p">)</span>
+
+<span class="n">v3</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">u3</span> <span class="o">=</span> <span class="n">v3</span> <span class="o">-</span> <span class="p">(((</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">u1</span><span class="p">))</span> <span class="o">*</span> <span class="n">u1</span><span class="p">)</span> <span class="o">-</span> <span class="p">(((</span><span class="n">u2</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">u2</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">u2</span><span class="p">))</span> <span class="o">*</span> <span class="n">u2</span><span class="p">)</span> 
+<span class="n">e3</span> <span class="o">=</span> <span class="n">u3</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">u3</span><span class="p">)</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">column_stack</span><span class="p">((</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">Q</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">Q</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Modul 3. Transformatsiya va Chiziqli Tenglamalar">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Modul 5. Il'gor matritsa tushunchalari">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Modul 5. Il'gor matritsa tushunchalari",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2025-05-01-ilgor_matritsa.md",
+            "ref": "_posts/2025-05-01-ilgor_matritsa.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Chiziqli Algebra",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-04-28-fazo.md",
+        "mtime": "2025-02-28 00:00:00 +0300",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-05-18 00:02:00 +0300"
+    },
+    "basePath": "/chiziqli-algebra",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/chiziqli-algebra/assets/gitbook/gitbook.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/theme.js"></script>
+
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/chiziqli-algebra/assets/gitbook/custom.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Modul 3. Transformatsiya va Chiziqli Tenglamalar · Chiziqli Algebra</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Chiziqli Algebra Sun'iy Idrok uchun
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Qilichbek Haydarov"><link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/style.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/rouge/pastie.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/chiziqli-algebra/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/chiziqli-algebra//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/chiziqli-algebra/jekyll/2025-01-13-vazifalar.html" />
+        
+
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/chiziqli-algebra/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra">
+            
+                <a href="/chiziqli-algebra/" onclick="pageScrollToTop(this)">
+                    Chiziqli Algebra
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" onclick="pageScrollToTop(this)">
+                                    Modul 1. Vektorlar va vektor algebra
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 2. Matritsa Asoslari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-vazifalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vazifalar.html" onclick="pageScrollToTop(this)">
+                                    Vazifalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 3. Transformatsiya va Chiziqli Tenglamalar
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#21-matritsa-turlari" onclick="mobilePageScrollToAnchor(this)" >2.1 Matritsa turlari</a><ul><li><a href="#211-kvadrat-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.1 Kvadrat matritsa</a></li><li><a href="#212-togri-tortburchak-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.2 To’g’ri to’rtburchak matritsa</a></li><li><a href="#213-nol-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.3 Nol matritsa</a></li><li><a href="#214-diagonal-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.4 Diagonal matritsa</a></li><li><a href="#215-birlik-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.5 Birlik matritsa</a></li><li><a href="#216-simmetrik-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.6 Simmetrik matritsa</a></li><li><a href="#217-uchburchak-matritsa" onclick="mobilePageScrollToAnchor(this)" >2.1.7 Uchburchak matritsa</a></li></ul></li><li><a href="#22-matritsa-ustida-amallar" onclick="mobilePageScrollToAnchor(this)" >2.2 Matritsa ustida amallar</a><ul><li><a href="#221-matritsalarni-qoshish" onclick="mobilePageScrollToAnchor(this)" >2.2.1 Matritsalarni Qo’shish</a></li><li><a href="#222-matritsani-songa-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >2.2.2 Matritsani songa ko’paytirish</a></li><li><a href="#223-matritsani-vektorga-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >2.2.3 Matritsani vektorga ko’paytirish</a></li><li><a href="#224-matritsani-matritsaga-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >2.2.4 Matritsani matritsaga ko’paytirish</a></li><li><a href="#225-hadamard-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >2.2.5 Hadamard ko’paytirish</a></li></ul></li><li><a href="#23-matritsa-ustida-boshqa-amallar" onclick="mobilePageScrollToAnchor(this)" >2.3 Matritsa ustida boshqa amallar</a><ul><li><a href="#231-matritsa-transponatsiyasi" onclick="mobilePageScrollToAnchor(this)" >2.3.1 Matritsa transponatsiyasi</a></li><li><a href="#232-matritsa-izi-trace" onclick="mobilePageScrollToAnchor(this)" >2.3.2 Matritsa izi (trace)</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Modul 3. Transformatsiya va Chiziqli Tenglamalar</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/chiziqli-tenglamalar">Modul 3. Transformatsiya va Chiziqli Tenglamalar</h1>
+                    
+
+                    <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z2sn40AtLCE?si=1Mv43lAjin3cNAfn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<blockquote class="block-tip">
+  <h5 id="birlik-matritsa">Birlik matritsa</h5>
+
+  <p>Diagonal elementlari birga teng bo’lgan (boshqa elementlari nol) kvadrat matritsa.
+\(\textit{I}_n := \begin{bmatrix} 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \ddots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \end{bmatrix} \in \mathbb{R}^{n \times n}\)</p>
+</blockquote>
+<p>Birlik matritsaga misollar:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Matritsa yaratish
+</span><span class="n">matritsa</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">[</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">]</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsa: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsa o</span><span class="sh">'</span><span class="s">lchami: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">1-qator, 3-chi ustunda joylashgan element: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matrits</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsaning 2-qatori: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsaning 2-ustuni: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="21-matritsa-turlari">2.1 Matritsa turlari</h2>
+<p>Matritsalar ko’p turli bo’lishi mumkin. Ammo, ularning asosiy turlari quyidagilardir:</p>
+
+<h3 id="211-kvadrat-matritsa">2.1.1 Kvadrat matritsa</h3>
+<p>$ n \times n $ o’lchamli matritsa. Bu matritsa qator va ustunlar soni bir xil bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \end{bmatrix}\]
+
+<h3 id="212-togri-tortburchak-matritsa">2.1.2 To’g’ri to’rtburchak matritsa</h3>
+<p>$ m \times n $ o’lchamli matritsa. Bu matritsa qator va ustunlar soni bir xil bo’lmagan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \end{bmatrix}\]
+
+<h3 id="213-nol-matritsa">2.1.3 Nol matritsa</h3>
+<p>Barcha elementlari nol bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix}\]
+
+<h3 id="214-diagonal-matritsa">2.1.4 Diagonal matritsa</h3>
+<p>Kvadrat matritsa bo’lib, diagonal elementlari nol bo’lmagan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{bmatrix}\]
+
+<h3 id="215-birlik-matritsa">2.1.5 Birlik matritsa</h3>
+
+<p>Diagonal elementlari bir bo’lgan diagonal matritsa. Misol uchun,</p>
+
+\[\mathbf{I} = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\]
+
+<h3 id="216-simmetrik-matritsa">2.1.6 Simmetrik matritsa</h3>
+<p>Diagonal bo’yicha bu matritsaning elementlari simmetrik bo’lgan matritsa. Ya’ni, $a_{ij} = a_{ji}$ shartni qanoatlantiradigan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 4 &amp; 5 \\ 3 &amp; 5 &amp; 6 \end{bmatrix}\]
+
+<h3 id="217-uchburchak-matritsa">2.1.7 Uchburchak matritsa</h3>
+<p>Uchburchak matritsalar ikki turdagi bo’lishi mumkin:</p>
+<ul>
+  <li>Yuqoridan uchburchak matritsa</li>
+  <li>Quyidan uchburchak matritsa</li>
+</ul>
+
+<p>Yuqoridan uchburchak matritsa bu diagonal elentlaridan pastki elementlari nol bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{U} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 0 &amp; 4 &amp; 5 \\ 0 &amp; 0 &amp; 6 \end{bmatrix}\]
+
+<p>Quyidan uchburchak matritsa bu diagonal elentlaridan yuqori elementlari nol bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{L} = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 0 \\ 3 &amp; 5 &amp; 6 \end{bmatrix}\]
+
+<h2 id="22-matritsa-ustida-amallar">2.2 Matritsa ustida amallar</h2>
+
+<p>Chiziqli algebrada matritsalarnig ustida:</p>
+<ul>
+  <li>qo’shish</li>
+  <li>matritsani songa ko’paytirish</li>
+  <li>matritsani vektorga ko’paytirish</li>
+  <li>matritsani matritsaga ko’paytirish</li>
+</ul>
+
+<p>kabi amallar bajariladi.</p>
+
+<h3 id="221-matritsalarni-qoshish">2.2.1 Matritsalarni Qo’shish</h3>
+
+<p>Ikkita $m \times n$ o’lchamli matritsani (masalan, $\mathbf{A}$ va $\mathbf{B}$ ) bir biriga qo’shish uchun ularning mos elementlarini qo’shish kerak.</p>
+
+\[\mathbf{A} + \mathbf{B} = \begin{bmatrix} a_{11} + b_{11} &amp; a_{12} + b_{12} &amp; \ldots &amp; a_{1n} + b_{1n} \\ a_{21} + b_{21} &amp; a_{22} + b_{22} &amp; \ldots &amp; a_{2n} + b_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} + b_{m1} &amp; a_{m2} + b_{m2} &amp; \ldots &amp; a_{mn} + b_{mn} \end{bmatrix}\]
+
+<p>Misol uchun, ikkita matritsaning qo’shish amali quyidagicha: agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\)</p>
+
+\[\mathbf{A} + \mathbf{B} = \begin{bmatrix} 1+5 &amp; 2+6 \\ 3+7 &amp; 4+8 \end{bmatrix} = \begin{bmatrix} 6 &amp; 8 \\ 10 &amp; 12 \end{bmatrix}\]
+
+<blockquote class="block-warning">
+  <h5 id="diqqat">Diqqat!</h5>
+
+  <p>Faqat bir hil o’lchamli matritsalarni qo’shish mumkin</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Matritsa yaratish
+</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+<span class="c1"># Matritsalarni qo'shish
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="c1"># yoki
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="222-matritsani-songa-kopaytirish">2.2.2 Matritsani songa ko’paytirish</h3>
+
+<p>Matritsani ma’lum bir songa ($\lambda \in \mathbb{R}$) ko’paytirish uchun, matritsani har bir elementini ushbu songa ko’paytiramiz.</p>
+
+\[\lambda \mathbf{A} = \begin{bmatrix} \lambda a_{11} &amp; \lambda a_{12} &amp; \ldots &amp; \lambda a_{1n} \\ \lambda a_{21} &amp; \lambda a_{22} &amp; \ldots &amp; \lambda a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \lambda a_{m1} &amp; \lambda a_{m2} &amp; \ldots &amp; \lambda a_{mn} \end{bmatrix}\]
+
+<p>Misol uchun, agar $\lambda = 3$ bo’lsa va \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) bo’lsa,</p>
+
+\[\lambda \mathbf{A} = 3 \cdot \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} = \begin{bmatrix} 3 &amp; 6 \\ 9 &amp; 12 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="c1"># Matritsani songa ko'paytirish
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">l</span> <span class="o">*</span> <span class="n">A</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="223-matritsani-vektorga-kopaytirish">2.2.3 Matritsani vektorga ko’paytirish</h3>
+<p>Matritsani vektorga ko’paytirish uchun, matritsaning har bir qatorini vektorga skalyar ko’paytiramiz, va natijada yangi vektor hosil qilamiz.</p>
+
+\[\mathbf{A} = \begin{bmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} &amp; a_{m2} &amp; \ldots &amp; a_{mn} \end{bmatrix} \quad \text{va} \quad \mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\]
+
+\[\mathbf{A} \mathbf{v} = \begin{bmatrix} a_{11} v_1 + a_{12} v_2 + \ldots + a_{1n} v_n \\ a_{21} v_1 + a_{22} v_2 + \ldots + a_{2n} v_n \\ \vdots \\ a_{m1} v_1 + a_{m2} v_2 + \ldots + a_{mn} v_n \end{bmatrix} = \begin{bmatrix} \sum_{j=1}^{n} a_{1j} v_j \\ \sum_{j=1}^{n} a_{2j} v_j \\ \vdots \\ \sum_{j=1}^{n} a_{mj} v_j \end{bmatrix}\]
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{v} = \begin{bmatrix} 5 \\ 6 \end{bmatrix}\) bo’lsa,</p>
+
+\[\mathbf{A} \mathbf{v} = \begin{bmatrix} 1 \cdot 5 + 2 \cdot 6 \\ 3 \cdot 5 + 4 \cdot 6 \end{bmatrix} = \begin{bmatrix} 17 \\ 39 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]])</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">B</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">v</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="224-matritsani-matritsaga-kopaytirish">2.2.4 Matritsani matritsaga ko’paytirish</h3>
+
+<p>Matritsani matritsaga ko’paytirish uchun, matritsaning har bir qatorini ikkinchi matritsaning ustuniga ko’paytiramiz, va natijada yangi matritsa hosil qilamiz.</p>
+
+\[\mathbf{A} = \begin{bmatrix} a_{11} &amp; \ldots &amp; a_{1n} \\ \vdots &amp; \ddots &amp; \vdots \\ a_{m1} &amp; \ldots &amp; a_{mn} \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} b_{11} &amp; \ldots &amp; b_{1p} \\ \vdots &amp; \ddots &amp; \vdots \\ b_{n1} &amp; \ldots &amp; b_{np} \end{bmatrix}\]
+
+\[\mathbf{A} \mathbf{B} = \begin{bmatrix} a_{11} b_{11} + \ldots + a_{1n} b_{n1} &amp; \ldots &amp; a_{11} b_{1p} + \ldots + a_{1n} b_{np} \\ \vdots &amp; \ddots &amp; \vdots \\ a_{m1} b_{11} + \ldots + a_{mn} b_{n1} &amp; \ldots &amp; a_{m1} b_{1p} + \ldots + a_{mn} b_{np} \end{bmatrix}\]
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\) bo’lsa,</p>
+
+\[\mathbf{A} \mathbf{B} = \begin{bmatrix} 1 \cdot 5 + 2 \cdot 7 &amp; 1 \cdot 6 + 2 \cdot 8 \\ 3 \cdot 5 + 4 \cdot 7 &amp; 3 \cdot 6 + 4 \cdot 8 \end{bmatrix} = \begin{bmatrix} 19 &amp; 22 \\ 43 &amp; 50 \end{bmatrix}\]
+
+<blockquote class="block-warning">
+  <h5 id="diqqat-1">Diqqat!</h5>
+
+  <p>Matritsalar ko’paytirish amaliyotlari uchun matritsalar o’lchamlari mos kelishi kerak. Agar $\mathbf{A}$ matritsasi $m \times n$ o’lchamli bo’lsa, $\mathbf{B}$ matritsasi $n \times p$ o’lchamli bo’lishi kerak. Ya’ni, $\mathbf{A}$ matritsasining ustunlar soni $\mathbf{B}$ matritsasining qatorlar soniga teng bo’lishi kerak.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]])</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">B</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="225-hadamard-kopaytirish">2.2.5 Hadamard ko’paytirish</h3>
+
+<p>Matritsalarni Hadamard ko’paytirish uchun, ularning shunchaki mos elementlarini ko’paytiramiz.</p>
+
+\[\mathbf{A} \odot \mathbf{B} = \begin{bmatrix} a_{11} \cdot b_{11} &amp; a_{12} \cdot b_{12} &amp; \ldots &amp; a_{1n} \cdot b_{1n} \\ a_{21} \cdot b_{21} &amp; a_{22} \cdot b_{22} &amp; \ldots &amp; a_{2n} \cdot b_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} \cdot b_{m1} &amp; a_{m2} \cdot b_{m2} &amp; \ldots &amp; a_{mn} \cdot b_{mn} \end{bmatrix}\]
+
+<p>Misol uchun, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\) bo’lsa,</p>
+
+\[\mathbf{A} \odot \mathbf{B} = \begin{bmatrix} 1 \cdot 5 &amp; 2 \cdot 6 \\ 3 \cdot 7 &amp; 4 \cdot 8 \end{bmatrix} = \begin{bmatrix} 5 &amp; 12 \\ 21 &amp; 32 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">multiply</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">*</span> <span class="n">B</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="23-matritsa-ustida-boshqa-amallar">2.3 Matritsa ustida boshqa amallar</h2>
+
+<p>Matritsalarni ustida boshqa amallar ham bajarish mumkin. Ularning ba’zilari quyidagilardir:</p>
+<ul>
+  <li>matritsa transponatsiyasi</li>
+  <li>matritsa izi (trace)</li>
+</ul>
+
+<h3 id="231-matritsa-transponatsiyasi">2.3.1 Matritsa transponatsiyasi</h3>
+<p>Matritsa transponatsiyasi - bu matritsaning ustunlarini qatorlariga, qatorlarini esa ustunlariga almashtirish amaliyotidir.</p>
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) bo’lsa, uning transponatasi quyidagicha bo’ladi:</p>
+
+\[\mathbf{A}^T = \begin{bmatrix} 1 &amp; 3 \\ 2 &amp; 4 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="n">T</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">transpose</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="nf">transpose</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="232-matritsa-izi-trace">2.3.2 Matritsa izi (trace)</h3>
+
+<p>Matritsa izi - bu matritsaning diagonal elementlarini qo’shish amaliyotidir.</p>
+
+\[\text{trace}(\mathbf{A}) = \sum_{i=1}^{n} a_{ii} = a_{11} + a_{22} + \ldots + a_{nn}\]
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) bo’lsa, uning izi quyidagicha bo’ladi:</p>
+
+\[\text{trace}(\mathbf{A}) = 1 + 4 = 5\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">trace</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">t</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="nf">trace</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/chiziqli-algebra/jekyll/2025-01-13-vazifalar.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Vazifalar">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Chiziqli Algebra",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-02-28-chiziqli-tenglamalar.md",
+        "mtime": "2025-02-28 00:00:00 +0300",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-03-02 17:12:42 +0300"
+    },
+    "basePath": "/chiziqli-algebra",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/chiziqli-algebra/assets/gitbook/gitbook.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/theme.js"></script>
+
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/chiziqli-algebra/assets/gitbook/custom.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

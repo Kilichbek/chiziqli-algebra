@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Modul 3. Transformatsiya va Chiziqli Tenglamalar · Chiziqli Algebra</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Chiziqli Algebra Sun'iy Idrok uchun
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Qilichbek Haydarov"><link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/style.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/rouge/pastie.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/chiziqli-algebra/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/chiziqli-algebra//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" />
+        
+
+        
+            <link rel="next" href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/chiziqli-algebra/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra">
+            
+                <a href="/chiziqli-algebra/" onclick="pageScrollToTop(this)">
+                    Chiziqli Algebra
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" onclick="pageScrollToTop(this)">
+                                    Modul 1. Vektorlar va vektor algebra
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 2. Matritsa Asoslari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 3. Transformatsiya va Chiziqli Tenglamalar
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#31-chiziqli-transformatsiya" onclick="mobilePageScrollToAnchor(this)" >3.1 Chiziqli Transformatsiya</a><ul><li><a href="#311-chiziqli-transformatsiyaga-misollar" onclick="mobilePageScrollToAnchor(this)" >3.1.1 Chiziqli Transformatsiyaga Misollar</a></li><li><a href="#312-affin-transformatsiya-affine-mapping" onclick="mobilePageScrollToAnchor(this)" >3.1.2 Affin Transformatsiya (Affine Mapping)</a></li></ul></li><li><a href="#32-chiziqli-tenglamalardan-iborat-tizim" onclick="mobilePageScrollToAnchor(this)" >3.2 Chiziqli tenglamalardan iborat tizim</a><ul><li><a href="#321-yechish-1-ozgaruvchilarni-yoq-qilish" onclick="mobilePageScrollToAnchor(this)" >3.2.1 Yechish 1: O’zgaruvchilarni yo’q qilish</a></li><li><a href="#322-yechish-2-gauss-usuli" onclick="mobilePageScrollToAnchor(this)" >3.2.2 Yechish 2: Gauss usuli</a></li><li><a href="#323-yechish-3-teskari-matritsa-yordamida" onclick="mobilePageScrollToAnchor(this)" >3.2.3 Yechish 3: Teskari matritsa yordamida</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-fazo.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" onclick="pageScrollToTop(this)">
+                                    Modul 4. Vektor Fazolari va Ortogonalizatsiya
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" onclick="pageScrollToTop(this)">
+                                    Modul 5. Il&#39;gor matritsa tushunchalari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" onclick="pageScrollToTop(this)">
+                                    Vazifalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Modul 3. Transformatsiya va Chiziqli Tenglamalar</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/chiziqli-tenglamalar">Modul 3. Transformatsiya va Chiziqli Tenglamalar</h1>
+                    
+
+                    <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_LsHZ--gX-U?si=rzupMLz-uhDqDuw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<blockquote class="block-tip">
+  <h5 id="birlik-matritsa">Birlik matritsa</h5>
+
+  <p>Diagonal elementlari birga teng bo’lgan (boshqa elementlari nol) kvadrat matritsa.
+\(\textit{I}_n := \begin{bmatrix} 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \ddots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \end{bmatrix} \in \mathbb{R}^{n \times n}\)</p>
+</blockquote>
+<p>Birlik matritsaga misollar:
+\(\ I_{2}={\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix}},\ I_{3}={\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{bmatrix}},\ \dots\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Birlik Matritsa yaratish
+</span><span class="n">np</span><span class="p">.</span><span class="nf">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote class="block-tip">
+  <h5 id="teskari-matritsa">Teskari matritsa</h5>
+
+  <p>Bizda $\mathbf{A} \in \mathbb{R}^{n \times n}$ matritsa bor. Unga teskari matritsa $\mathbf{A}^{-1}$ hisoblanadi, agar unda ushbu hususiyat bo’lsa:</p>
+
+\[\boxed {\mathbf{A} \mathbf{A}^{-1} = \mathbf{A}^{-1} \mathbf{A} = \mathbf{I}}\]
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Teskari Matritsani hisoblash
+</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.5</span> <span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">A_inv</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">A_inv</span>
+</code></pre></div></div>
+
+<h2 id="31-chiziqli-transformatsiya">3.1 Chiziqli Transformatsiya</h2>
+
+<p><em>Transformatsiya</em> - bu funksiya, biror vektorni oladi va boshqa vektor qaytaradi:</p>
+
+\[T(\mathbf{v}) = A\mathbf{v}\]
+
+<p>Transformatsiya <strong>chiziqli</strong> hisoblanadi agar, ushbu shartlar bajarilsa:</p>
+
+<ul>
+  <li>$T(\textbf{v} + \textbf{w}) = T(\textbf{v}) + T(\textbf{w})$</li>
+  <li>$T(c\textbf{v}) = cT(\textbf{v})$</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>$f(x,y)=(2x,y)$</th>
+      <th>${\textstyle f(\mathbf {a} +\mathbf {b} )=f(\mathbf {a} )+f(\mathbf {b} )}$</th>
+      <th>${\textstyle f(\lambda \mathbf {a} )=\lambda f(\mathbf {a} )}$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Streckung_eines_Vektors.gif/311px-Streckung_eines_Vektors.gif" alt="alt" /></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Streckung_der_Summe_zweier_Vektoren.gif" alt="alt" /></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Streckung_homogenitaet_Version_3.gif" alt="alt" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="311-chiziqli-transformatsiyaga-misollar">3.1.1 Chiziqli Transformatsiyaga Misollar</h3>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Siljish (Shear)</td>
+          <td>Aks (Reflection)</td>
+          <td>Siqish (Squeeze)</td>
+          <td>Masshtablash (Scaling)</td>
+          <td>Aylanish (Rotation)</td>
+        </tr>
+        <tr>
+          <td>\({\displaystyle {\begin{bmatrix}1&amp; m\\0&amp;1\end{bmatrix}}}\)</td>
+          <td>\({\displaystyle {\begin{bmatrix}-1&amp;0\\0&amp;1\end{bmatrix}}}\)</td>
+          <td>\({\displaystyle {\begin{bmatrix}{k}&amp;0\\0&amp;{\frac {1}{k}}\end{bmatrix}}}\)</td>
+          <td>\({\displaystyle {\begin{bmatrix}{m}&amp;0\\0&amp;{m}\end{bmatrix}}}\)</td>
+          <td>${\displaystyle {\begin{bmatrix}\cos (\theta)&amp;-\sin (\theta)\\sin (\theta)&amp;\cos (\theta)\end{bmatrix}}}$</td>
+        </tr>
+        <tr>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/VerticalShear_m%3D1.25.svg/350px-VerticalShear_m%3D1.25.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Flip_map.svg/300px-Flip_map.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Squeeze_r%3D1.5.svg/300px-Squeeze_r%3D1.5.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Scaling_by_1.5.svg/250px-Scaling_by_1.5.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rotation_by_pi_over_6.svg/250px-Rotation_by_pi_over_6.svg.png" alt="" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="312-affin-transformatsiya-affine-mapping">3.1.2 Affin Transformatsiya (Affine Mapping)</h3>
+<p>Affin transformatsiya 2 ta funksiyadan iborat: chiziqli transformatsiya + surish</p>
+
+\[\boxed{\displaystyle \mathbf {y} =f(\mathbf {x} )=\mathbf {A}\mathbf {x} +\mathbf {b}}\]
+
+<ul>
+  <li>$\mathbf {A}$ - chiziqli transformatsiya matritsasi</li>
+  <li>$\mathbf{b}$ - surish vektori</li>
+</ul>
+
+<p>Matritsa shaklida yozmoqchi bo’lsak, ushbu ko’rinishda yozishimiz mumkin:</p>
+
+\[{\displaystyle {\begin{bmatrix}\mathbf {y} \\1\end{bmatrix}}=\left[{\begin{array}{ccc|c}&amp;\mathbf {A}&amp;&amp;\mathbf {b} \\0&amp;\cdots &amp;0&amp;1\end{array}}\right]{\begin{bmatrix}\mathbf {x} \\1\end{bmatrix}}}\]
+
+<h2 id="32-chiziqli-tenglamalardan-iborat-tizim">3.2 Chiziqli tenglamalardan iborat tizim</h2>
+<p>Chiziqli tenglamalar tizimi quyidagi ko’rinishda ifodalanadi:</p>
+
+\[{\displaystyle {\begin{cases}a_{11}x_{1}+a_{12}x_{2}+\dots +a_{1n}x_{n}=b_{1}\\a_{21}x_{1}+a_{22}x_{2}+\dots +a_{2n}x_{n}=b_{2}\\\vdots \\a_{m1}x_{1}+a_{m2}x_{2}+\dots +a_{mn}x_{n}=b_{m},\end{cases}}}\]
+
+<ul>
+  <li>${\displaystyle x_{1},x_{2},\dots ,x_{n}}$ noma’lumlar</li>
+  <li>${\displaystyle a_{11},a_{12},\dots ,a_{mn}}$ koeffitsientlar</li>
+  <li>${\displaystyle b_{1},b_{2},\dots ,b_{m}}$ konstant sonlar</li>
+</ul>
+
+<p>Matritsa ko’rinishida biz ularni quyidagicha yozsak bo’ladi:</p>
+
+\[\boxed{\mathbf {A}\mathbf{x} = \mathbf{b}}\]
+
+<p>bu yerda $\mathbf{A}$ - matritsa, $\mathbf{x}$ - noma’lum vektor, $\mathbf{b}$ - javob vektori:</p>
+
+\[{\displaystyle \mathbf {A}={\begin{bmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\\a_{21}&amp;a_{22}&amp;\cdots &amp;a_{2n}\\\vdots &amp;\vdots &amp;\ddots &amp;\vdots \\a_{m1}&amp;a_{m2}&amp;\cdots &amp;a_{mn}\end{bmatrix}},\quad \mathbf {x} ={\begin{bmatrix}x_{1}\\x_{2}\\\vdots \\x_{n}\end{bmatrix}},\quad \mathbf {b} ={\begin{bmatrix}b_{1}\\b_{2}\\\vdots \\b_{m}\end{bmatrix}}.}\]
+
+<h3 id="321-yechish-1-ozgaruvchilarni-yoq-qilish">3.2.1 Yechish 1: O’zgaruvchilarni yo’q qilish</h3>
+
+<p>Chiziqli tenglamalar tizimini yechishning eng oddiy usuli <em>o’zgaruvchilarni qayta-qayta yo’q qilish</em>dir. Ushbu usulni quyidagicha ta’riflash mumkin:</p>
+
+<ol>
+  <li>Birinchi tenglamada o’zgaruvchilardan birini boshqalari bilan ifodalanadi.</li>
+  <li>Ushbu ifodani qolgan tenglamalarga qo’yiladi. Bu bitta kamroq tenglamali va noma’lum tenglamalar tizimini beradi.</li>
+  <li>Tizim bitta chiziqli tenglamaga keltirilguncha 1 va 2-bosqichlar takrorlanadi.</li>
+  <li>Oxiri hosil bo’lgan tenglama yechiladi, so’ngra butun yechim topilguncha chiqqan natijalar noma’lumlar o’rniga qo’yib boriladi.</li>
+</ol>
+
+<p>Masalan, quyidagi chiziqli tenglamalar tizimini yechamiz:</p>
+
+\[{\displaystyle {\begin{cases}x+3y-2z=5\\3x+5y+6z=7\\2x+4y+3z=8\end{cases}}}\]
+
+<p>Bu yerda, biz $x$ noma’lumini boshqa noma’lumlar bilan ifodalaymiz. Misol uchun, birinchi tenglamadan $x$ ni ajratib olishimiz mumkin:
+\({\displaystyle x=5+2z-3y}\)
+va ikkinchi va uchinchi tenglamalarga $x$ o’rniga olgan ifodani kiritamiz:</p>
+
+\[{\displaystyle {\begin{cases}y=3z+2\\y={\tfrac {7}{2}}z+1\end{cases}}}\]
+
+<p>Shunda bizda:</p>
+
+\[{\displaystyle {\begin{aligned}3z+2={\tfrac {7}{2}}z+1\\\Rightarrow z=2\end{aligned}}}\]
+
+<p>va javob \({\displaystyle (x,y,z)=(-15,8,2)}\) bo’ladi.</p>
+
+<h3 id="322-yechish-2-gauss-usuli">3.2.2 Yechish 2: Gauss usuli</h3>
+
+<p><strong>Gauss usuli</strong> - chiziqli tenglamalar tizimini yechishning klassik usuli hisoblanadi. Nemis matematigi Karl Fridrix Gauss sharafiga nomlangan. Bu o’zgaruvchilarni ketma-ket yo’q qilish usuli bo’lib, elementar transformatsiyalar yordamida tenglamalar tizimi ekvivalent uchburchak tizimga tushiriladi. So’ngra, tizimning barcha o’zgaruvchilari oxiridan boshlab ketma-ket topiladi.</p>
+
+<p>Misol, bizga ushbu chiziqli tenglamalar tizimi berilgan:</p>
+
+\[{\displaystyle {\begin{cases}2x+y-z=8\\-3x-y+2z=-11\\-2x+y+2z=-3\end{cases}}}\]
+
+<p>Bu sistemadan koeffitsient matritsa $\mathbf{A}$, noma’lumlar vektori $\mathbf{x}$ va javob vektori $\mathbf{b}$ ni ajratib olamiz:</p>
+
+<p>\(\mathbf{A} =
+\begin{bmatrix}
+2 &amp; 1 &amp; -1\\
+-3 &amp; -1 &amp; 2\\
+-2 &amp; 1  &amp; 2
+\end{bmatrix}\), \(\mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}\), \(\mathbf{b} = \begin{bmatrix} 8 \\ -11 \\ -3 \end{bmatrix}\).</p>
+
+<p>Shunda, chiziqli tenglamalar tizimi quyidagi ko’rinishga keltiriladi:</p>
+
+\[\boxed{\mathbf{A}\mathbf{x} = \mathbf{b}}\]
+
+<p>Endi, Gauss usuli bo’yicha biz birinchi $\mathbf{A}$ matritsani $\mathbf{b}$ vektori bilan kengaytirib olamiz:</p>
+
+\[\begin{bmatrix} \mathbf{A} &amp; | &amp; \mathbf{b}  \end{bmatrix}\]
+
+<p>Ya’ni, quyidagi ko’rinishda:
+\({\displaystyle \left[{\begin{array}{rrr|r}2&amp;1&amp;-1&amp;8\\-3&amp;-1&amp;2&amp;-11\\-2&amp;1&amp;2&amp;-3\end{array}}\right]}\)</p>
+
+<p>Shu yerda biz qator ustida amallardan foydalanib kengaytirilgan $\mathbf{A}$ matritsani yuqoridan uchburchak matritsaga o’tkazamiz. Amallar quyidagicha:</p>
+
+<ol>
+  <li>Ikki qatorning o’rnini almashtirish.</li>
+  <li>Qatorni nolga teng bo’lmagan songa ko’paytirish.</li>
+  <li>Bitta qatorga boshqa qatorning skalyar ko’paytmasini qo’shish.</li>
+</ol>
+
+<p>Tepadagi misolni yechsak:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tenglamalar</th>
+      <th>Qator ustida amallar</th>
+      <th>Kengaytirilgan Matritsa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;{}-{}&amp;z&amp;{}={}&amp;8&amp;\\-3x&amp;{}-{}&amp;y&amp;{}+{}&amp;2z&amp;{}={}&amp;-11&amp;\\-2x&amp;{}+{}&amp;y&amp;{}+{}&amp;2z&amp;{}={}&amp;-3&amp;\end{alignedat}\)</td>
+      <td> </td>
+      <td>\(\left[{\begin{array}{rrrr}2&amp;1&amp;-1&amp;8\\-3&amp;-1&amp;2&amp;-11\\-2&amp;1&amp;2&amp;-3\end{array}}\right]\)</td>
+    </tr>
+    <tr>
+      <td>\(\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;{}-{}&amp;z&amp;{}={}&amp;8&amp;\\&amp;&amp;{\tfrac {1}{2}}y&amp;{}+{}&amp;{\tfrac {1}{2}}z&amp;{}={}&amp;1&amp;\\&amp;&amp;2y&amp;{}+{}&amp;z&amp;{}={}&amp;5&amp;\end{alignedat}\)</td>
+      <td>\({\displaystyle {\begin{aligned}Q_{2}+{\tfrac {3}{2}}Q_{1}&amp;\to Q_{2}\\Q_{3}+Q_{1}&amp;\to Q_{3}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;-1&amp;8\\0&amp;{\frac {1}{2}}&amp;{\frac {1}{2}}&amp;1\\0&amp;2&amp;1&amp;5\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;{}-{}&amp;z&amp;{}={}&amp;8&amp;\\&amp;&amp;{\tfrac {1}{2}}y&amp;{}+{}&amp;{\tfrac {1}{2}}z&amp;{}={}&amp;1&amp;\\&amp;&amp;&amp;&amp;-z&amp;{}={}&amp;1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle Q_{3}+-4Q_{2}\to Q_{3}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;-1&amp;8\\0&amp;{\frac {1}{2}}&amp;{\frac {1}{2}}&amp;1\\0&amp;0&amp;-1&amp;1\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;&amp;&amp;{}={}7&amp;\\&amp;&amp;{\tfrac {1}{2}}y&amp;&amp;&amp;{}={}{\tfrac {3}{2}}&amp;\\&amp;&amp;&amp;{}-{}&amp;z&amp;{}={}1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle {\begin{aligned}Q_{1}-Q_{3}&amp;\to Q_{1}\\Q_{2}+{\tfrac {1}{2}}Q_{3}&amp;\to Q_{2}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;0&amp;7\\0&amp;{\frac {1}{2}}&amp;0&amp;{\frac {3}{2}}\\0&amp;0&amp;-1&amp;1\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;\quad &amp;&amp;{}={}&amp;7&amp;\\&amp;&amp;y&amp;\quad &amp;&amp;{}={}&amp;3&amp;\\&amp;&amp;&amp;\quad &amp;z&amp;{}={}&amp;-1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle {\begin{aligned}2Q_{2}&amp;\to Q_{2}\\-Q_{3}&amp;\to Q_{3}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;0&amp;7\\0&amp;1&amp;0&amp;3\\0&amp;0&amp;1&amp;-1\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}x&amp;\quad &amp;&amp;\quad &amp;&amp;{}={}&amp;2&amp;\\&amp;\quad &amp;y&amp;\quad &amp;&amp;{}={}&amp;3&amp;\\&amp;\quad &amp;&amp;\quad &amp;z&amp;{}={}&amp;-1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle {\begin{aligned}Q_{1}-Q_{2}&amp;\to Q_{1}\\ {\tfrac {1}{2}}Q_{1}&amp;\to Q_{1}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}1&amp;0&amp;0&amp;2\\0&amp;1&amp;0&amp;3\\0&amp;0&amp;1&amp;-1\end{array}}\right]}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>va javob \({\displaystyle (x,y,z)=(2,3,-1)}\) bo’ladi.</p>
+
+<h3 id="323-yechish-3-teskari-matritsa-yordamida">3.2.3 Yechish 3: Teskari matritsa yordamida</h3>
+
+<p>Agar biz $\mathbf{A}$ kvadrat matritsaga teskari matritsa $\mathbf{A}^{-1}$ ni topa olsak, chiziqli tenglamalar tizimini quyidagi ko’rinishda yechishimiz mumkin:</p>
+
+\[\mathbf{A}\mathbf{x} =\mathbf{b},\]
+
+\[\mathbf{A}^{-1}\mathbf{A}\bf{x} = \mathbf{A}^{-1}\bf{b},\]
+
+\[\mathbf{I}\bf{x} = \mathbf{A}^{-1}\bf{b},\]
+
+\[\boxed{\bf{x} = \mathbf{A}^{-1}\bf{b}}\]
+
+<p>Ya’ni, shunchaki $\mathbf{A}^{-1}$ matritsasini topib, $\mathbf{b}$ vektoriga ko’paytirib yechishimiz mumkin.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Chiziqli tenglamalar tizimini yechish
+</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> 
+    <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> 
+    <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="p">])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Teskari matritsa yordamida yechish
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">inv</span><span class="p">(</span><span class="n">A</span><span class="p">).</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">x</span>
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Modul 2. Matritsa Asoslari">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Modul 4. Vektor Fazolari va Ortogonalizatsiya">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Modul 4. Vektor Fazolari va Ortogonalizatsiya",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2025-04-28-fazo.md",
+            "ref": "_posts/2025-04-28-fazo.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Chiziqli Algebra",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-02-28-chiziqli-tenglamalar.md",
+        "mtime": "2025-02-28 00:00:00 +0300",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-05-18 00:02:00 +0300"
+    },
+    "basePath": "/chiziqli-algebra",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/chiziqli-algebra/assets/gitbook/gitbook.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/theme.js"></script>
+
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/chiziqli-algebra/assets/gitbook/custom.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

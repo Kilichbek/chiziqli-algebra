@@ -1,0 +1,2220 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/chiziqli-algebra/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/chiziqli-algebra/" rel="alternate" type="text/html" /><updated>2025-05-18T00:02:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/feed.xml</id><title type="html">Chiziqli Algebra</title><subtitle>Chiziqli Algebra Sun&apos;iy Idrok uchun
+</subtitle><author><name>Qilichbek Haydarov</name></author><entry><title type="html">Vazifalar</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" rel="alternate" type="text/html" title="Vazifalar" /><published>2025-03-02T00:00:00+03:00</published><updated>2025-03-02T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/vazifalar</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html"><![CDATA[<h2 id="vazifa-1-vektorlar-va-vektor-algebra">Vazifa 1: Vektorlar va Vektor Algebra</h2>
+
+<h3 id="11-vektor-ustida-amallar">1.1 Vektor ustida amallar</h3>
+
+<p>Agar \(\textbf{u}= \begin{bmatrix} 5 \\ 2 \\ 9 \end{bmatrix}\) va \(\textbf{v}= \begin{bmatrix} 1 \\ -8 \\ 6 \end{bmatrix}\), $c=0.5$ bo’lsa, quyidagilarni bajaring:</p>
+
+<ol>
+  <li>$\textbf{u} + \textbf{v}$</li>
+  <li>$\textbf{u} - \textbf{v}$</li>
+  <li>$c\textbf{u}$</li>
+  <li>$\textbf{v}$ uzunligi</li>
+  <li>$\textbf{u}$ larining birlik vektori ko’rinishi</li>
+</ol>
+
+<h3 id="12-vektor-normasi-va-skalyar-kopaytma">1.2 Vektor normasi va skalyar ko’paytma</h3>
+
+<p>Agar \(\textbf{u}= \begin{bmatrix} 1 \\ -1 \\ 2 \end{bmatrix}\) va \(\textbf{v}= \begin{bmatrix} 3 \\ -1 \\ 4 \end{bmatrix}\), quyidagilarni toping:</p>
+
+<ol>
+  <li>$\textbf{u}$ vektorining $L_1$ normasi</li>
+  <li>$\textbf{v}$ vektorining $L_2$ normasi</li>
+  <li>$\textbf{u} \cdot \textbf{v}$</li>
+  <li>$d(\textbf{u}, \textbf{v})$ (Evklid masofa)</li>
+  <li>$\textbf{u}$ va $\textbf{v}$ orasidagi burchak</li>
+</ol>
+
+<h3 id="13-chiziqli-kombinatsiya-va-bogliqlik">1.3 Chiziqli kombinatsiya va bog’liqlik</h3>
+
+<p>Quyidagilarni aniqlang:</p>
+
+<ol>
+  <li>
+    <p>\(\textbf{u}= \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \textbf{v}= \begin{bmatrix} 3 \\ 4 \end{bmatrix}, \textbf{w}= \begin{bmatrix} 5 \\ 6 \end{bmatrix}\) chiziqli bog’liqmi?</p>
+  </li>
+  <li>
+    <p>\(\textbf{u}= \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \textbf{v}= \begin{bmatrix} 3 \\ 4 \end{bmatrix}, \textbf{w}= \begin{bmatrix} 8 \\ 14 \end{bmatrix}\) chiziqli bog’liqmi?</p>
+  </li>
+</ol>
+
+<h3 id="14--mini-loyiha-oddiy-film-tavsiya-qiluvchi-tizim">1.4 📌 Mini-Loyiha: Oddiy Film Tavsiya Qiluvchi Tizim</h3>
+
+<p><img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&amp;logo=netflix&amp;logoColor=white" alt="Netflix" />
+Tasavvur qiling siz Netflix  companiyasida ishlayapsiz. Ma’lumotlar bazasi:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Film nomi</th>
+      <th>Jangari ⚔️</th>
+      <th>Romantik 💕</th>
+      <th>Fantastika 🚀</th>
+      <th>Drama 🎭</th>
+      <th>Komediya 😂</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sheryurak</strong></td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Titanik</strong></td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Avatar</strong></td>
+      <td>3</td>
+      <td>2</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Buyuk Getsbi</strong></td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Pushti Pantera</strong></td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Foydalanuvchi qiziqishlari</strong>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">Jangari</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Romantik</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Fantastika</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Drama</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Komediya</span> <span class="o">=</span> <span class="mi">2</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>🎯 <strong>Maqsad</strong>: Foydalanuvchining yoqtirgan kino janrlariga asoslanib, unga mos filmlarni tavsiya qilish.</p>
+
+<hr />
+
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1GTfQglVxzgAF2h5aPRuy_DD7g8YKZt_a?usp=sharing"><strong>Vazifa 1: Vektorlar va Vektor ustida amallar</strong></a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="vazifa-2-matritsa-asoslari">Vazifa 2: Matritsa Asoslari</h2>
+
+<h3 id="211--matritsani-elementlarini-ozgartirish">2.1.1  Matritsani elementlarini o’zgartirish</h3>
+<p>Quyidagi berilgan matritsa elementlarini shunda o’zgartiringki, natijada berilgan kulgan smaylik rasmi chiqsin.
+Izoh: siz pikselni o’zgartirishda, matritsa elementlarini o’zgartirish orqali rasmda o’zgarishni ko’rsatishingiz mumkin.
+Buning uchun 0 va 1 sonlaridan foydalanishingiz mumkin. 0 - oq rang, 1 - qora rang.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1"># &lt; sizning kodlaringiz bu yerda yozing&gt;
+</span><span class="n">smile</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># &lt;pastdagi matritsa elementlarini o'zgartirng&gt;
+</span><span class="n">smile</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+
+<span class="c1"># Yaratilgan matritsa shunday ko'rinishda bo'lish kerak
+</span><span class="n">plt</span><span class="p">.</span><span class="nf">imshow</span><span class="p">(</span><span class="n">smile</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="sh">'</span><span class="s">gray</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="212-matritsa-yaratish">2.1.2 Matritsa Yaratish</h3>
+
+<p>Quyidagi funksiyalardan foydalanib turli xil matritsalarni yarating:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># a va b orasidagi tasodifiy sonlar bilan to'ldirilgan m x n matritsa
+</span><span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># nol elementlar bilan to'ldirilgan m x n matritsa
+</span><span class="n">np</span><span class="p">.</span><span class="nf">ones</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># bir elementlar bilan to'ldirilgan m x n matritsa
+</span></code></pre></div></div>
+
+<ol>
+  <li>5 x 100 elementlarini 0 va 50 orasidagi tasodifiy sonlar bilan to’ldirilgan matritsa</li>
+  <li>100 x 5 nol elementlar bilan to’ldirilgan matritsa</li>
+  <li>5 x 5 bir elementlar bilan to’ldirilgan matritsa</li>
+</ol>
+
+<h3 id="22-matritsa-ustida-amallar">2.2 Matritsa Ustida Amallar</h3>
+
+<p>Quyidagi matritsalarni yaratib, ular ustida amallar bajarib ko’ring:</p>
+
+<ol>
+  <li>\(A = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\), \(B = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\) matritsalarni yarating.</li>
+  <li>$A + B$ va $A - B$ amallarini toping</li>
+  <li>$A B$ amalini toping</li>
+  <li>$A \textbf{v}$ amalini toping, \(\textbf{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\)</li>
+  <li>$A B \textbf{v}$ amalini toping</li>
+  <li>$A \odot B $ amalini toping</li>
+  <li>$A^T$ va $B^T$ amallarini toping</li>
+  <li>$A \odot B^T$ amalini toping</li>
+  <li>$A^T B$ amalini toping</li>
+  <li>$A^T B^T$ amalini toping</li>
+  <li>$\text{tr}(A)$ va $\text{tr}(B)$ amallarini toping</li>
+  <li>$\text{tr}(A B)$ va $\text{tr}(B A)$ amallarini toping</li>
+  <li>$\text{tr}(A B^T)$ va $\text{tr}(B^T A)$ amallarini toping</li>
+  <li>$\text{tr(A - B)}$ va $\text{tr(A) - tr(B)}$ tengliklarini tekshiring</li>
+</ol>
+
+<h3 id="23--mini-loyiha-tasvirni-manipulyatsiya-qilish-️">2.3 🎨 <strong>Mini-Loyiha: Tasvirni Manipulyatsiya Qilish</strong> 🖼️</h3>
+
+<p><strong>🎯 Maqsad</strong><br />
+Berilgan tasvir ustida <strong>matritsa amallari</strong> yordamida ishlov berish va uni <strong>kulrang tasvirga (grayscale)</strong> aylantirish.</p>
+
+<hr />
+
+<p><strong>📌 Tasvir va Matritsa Tushunchasi</strong><br />
+Rangli tasvir (RGB) <strong>3 ta matritsadan</strong> iborat:<br />
+🔴 <strong>R (Red)</strong> – Qizil rang matritsasi<br />
+🟢 <strong>G (Green)</strong> – Yashil rang matritsasi<br />
+🔵 <strong>B (Blue)</strong> – Ko‘k rang matritsasi</p>
+
+<p>Har bir matritsa <strong>0 dan 255 gacha</strong> bo‘lgan qiymatlardan iborat bo‘lib, tasvirning har bir pikselini ifodalaydi.<br />
+<strong>Misol:</strong> Quyidagi rangli tasvirni <strong>uchta matritsaga</strong> ajratish mumkin:</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rgb-compose-Alim_Khan.jpg/2560px-Rgb-compose-Alim_Khan.jpg" width="600" /></p>
+
+<p>📷 <strong>Tasvir haqida ma’lumot</strong>:<br />
+Bu rasm <strong>Buxoro amiri Muhammad Olimxon (1880–1944)</strong> ga tegishli bo‘lib, 1911-yilda Sergey Prokudin-Gorskiy tomonidan olingan.<br />
+Surat uch xil <strong>ko‘k, yashil va qizil (RGB)</strong> filtrlar yordamida tushirilgan va keyinchalik rangli tasvirga aylantirilgan.</p>
+
+<hr />
+<p><strong>📌 Kulrang Tasvir (Grayscale)</strong>
+Kulrang tasvirda faqat <strong>yorug‘lik intensivligi</strong> saqlanadi, ranglar esa yo‘qoladi.<br />
+Tasvirni kulrangga aylantirish uchun quyidagi formuladan foydalanamiz:</p>
+
+\[Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B\]
+
+<p>Bu yerda:<br />
+✅ <strong>Y</strong> – Yorug‘lik intensivligi matritsasi (grayscale)<br />
+✅ <strong>R, G, B</strong> – Qizil, yashil va ko‘k ranglar matritsalari</p>
+
+<hr />
+
+<p><strong>📌 Qadamlar</strong>
+🛠️ <strong>1. Tasvirning maksimum va minimum piksel qiymatlarini topish</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">np.max()</code> va <code class="language-plaintext highlighter-rouge">np.min()</code> funksiyalaridan foydalaning.</li>
+</ul>
+
+<p>📏 <strong>2. Tasvir o‘lchamini aniqlash</strong></p>
+<ul>
+  <li>Tasvir matritsasining <strong>qator, ustun va kanallar sonini</strong> toping.</li>
+</ul>
+
+<p>🌈 <strong>3. Tasvirni RGB kanallariga ajratish</strong></p>
+<ul>
+  <li>Har bir rang matritsasini ajratish uchun <code class="language-plaintext highlighter-rouge">img[:, :, i]</code> indekslashdan foydalaning.</li>
+</ul>
+
+<p>📊 <strong>4. Har bir rang matritsasini [0,1] oralig‘iga normallashtirish</strong></p>
+<ul>
+  <li><strong>Formula</strong>:<br />
+    \(I = \frac{X - X_{min}}{X_{max} - X_{min}}\)</li>
+</ul>
+
+<p>⚫ <strong>5. Tasvirni “Grayscale” ga o‘tkazish</strong></p>
+<ul>
+  <li><strong>Formula</strong>:<br />
+\(Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B\)</li>
+  <li>O‘lchamni o‘zgartirmasdan, ranglarni intensivlikka aylantiring.</li>
+</ul>
+
+<hr />
+
+<p>🎯 <strong>Natija</strong>: Siz tasvirni <strong>matritsalar asosida tahlil qilish</strong> va uni <strong>kulrang formatga o‘tkazish</strong> bo‘yicha bilim va tajriba olasiz! 🚀</p>
+
+<hr />
+
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin-1">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1Ql_fE5xR_Lys8y9Wq3DYCFTH0Hr_sKOU?usp=sharing"><strong>Vazifa 2: Matritsa Asoslari</strong></a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="vazifa-3-transformatsiya-va-chiziqli-tenglamalar-tizimi">Vazifa 3: Transformatsiya va Chiziqli Tenglamalar Tizimi</h2>
+
+<h3 id="vazifa-311-chiziqli-transformatsiya-linear-transformation">Vazifa 3.1.1 Chiziqli Transformatsiya (Linear Transformation)</h3>
+
+<p>Quyidagi funksiyalardan qaysinisi chiziqli transformatsiya (linear transformation) hisoblanadi?</p>
+<ol>
+  <li>$f_1: \mathbb{R}^2 \to \mathbb{R}^2, f_1(x, y) = (x, -y)$</li>
+  <li>$f_2: \mathbb{R}^3 \to \mathbb{R}^3, f_2(x, y, z) = (xy, x, y)$</li>
+</ol>
+
+<h3 id="vazifa-312-chiziqli-transformatsiyalarni-amalga-oshirish">Vazifa 3.1.2 Chiziqli Transformatsiyalarni amalga oshirish</h3>
+
+<ol>
+  <li>siljish (shear) y-o’qi bo’yicha $m = 1.5$</li>
+  <li>aks (reflection) y o’qiga nisbatan</li>
+  <li>siqish (squeeze) y o’qiga nisbatan $k = 0.2$ va x o’qiga nisbatan $l = 0.5$</li>
+  <li>masshtablash (scaling) $s = 2$</li>
+  <li>aylantirish (rotation) $\theta = 45^\circ$</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">transformations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sh">'</span><span class="s">Siljish</span><span class="sh">'</span><span class="p">:</span> <span class="p">,</span> <span class="c1"># matritsa yozing
+</span>    <span class="sh">'</span><span class="s">Aks</span><span class="sh">'</span><span class="p">:</span> <span class="p">,</span> <span class="c1"># matritsa yozing
+</span>    <span class="sh">'</span><span class="s">Siqish</span><span class="sh">'</span><span class="p">:</span> <span class="p">,</span> <span class="c1"># matritsa yozing
+</span>    <span class="sh">'</span><span class="s">Masshtablash</span><span class="sh">'</span><span class="p">:</span> <span class="p">,</span> <span class="c1"># matritsa yozing
+</span>    <span class="sh">'</span><span class="s">Aylantirish 45°</span><span class="sh">'</span><span class="p">:</span> <span class="c1"># matritsa yozing
+</span><span class="p">}</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="nf">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="n">axs</span><span class="p">.</span><span class="nf">flatten</span><span class="p">(),</span> <span class="n">transformations</span><span class="p">.</span><span class="nf">items</span><span class="p">()):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">x</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">quiver</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">angles</span><span class="o">=</span><span class="sh">'</span><span class="s">xy</span><span class="sh">'</span><span class="p">,</span> <span class="n">scale_units</span><span class="o">=</span><span class="sh">'</span><span class="s">xy</span><span class="sh">'</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">blue</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Original Vektor</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">quiver</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">angles</span><span class="o">=</span><span class="sh">'</span><span class="s">xy</span><span class="sh">'</span><span class="p">,</span> <span class="n">scale_units</span><span class="o">=</span><span class="sh">'</span><span class="s">xy</span><span class="sh">'</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">red</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">O</span><span class="se">\'</span><span class="s">zgargan Vector</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">black</span><span class="sh">'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">black</span><span class="sh">'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">.</span><span class="nf">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="vazifa-321-chiziqli-tenglamalar-tizimini-yechish">Vazifa 3.2.1: Chiziqli Tenglamalar Tizimini yechish</h3>
+<p>Berilgan chiziqning tenglamalar tizimini yeching:</p>
+<ol>
+  <li>Gauss usuli orqali</li>
+</ol>
+
+\[\begin{cases}
+x_1 + x_2 - 2x_3 = 1 \\
+2x_1 - 3x_2 + x_3 = -8 \\
+3x_1 + x_2 + 4x_3 = 3
+\end{cases}\]
+
+<ol>
+  <li>Teskari matritsa orqali</li>
+</ol>
+
+\[\begin{cases}
+x + 2y = 4 \\
+3x − 5y = 2
+\end{cases}\]
+
+<h3 id="33--mini-loyiha-iqtisodiy-tarmoqlararo-muvozanat-">3.3 🏦 <strong>Mini-Loyiha: Iqtisodiy Tarmoqlararo Muvozanat</strong> 📊</h3>
+
+<p>🎯 <strong>Maqsad</strong><br />
+Leontief Kirim-Chiqim Modeli yordamida <strong>iqtisodiy tarmoqlarning o‘zaro bog‘liqligini</strong> tahlil qilish va <strong>ishlab chiqarish talablarini bashorat qilish</strong>.</p>
+
+<hr />
+
+<p><strong>📖 Leontief Kirim-Chiqim Modeli</strong><br />
+Bu model <strong>iqtisodiyotdagi tarmoqlar o‘rtasidagi resurs almashinuvini</strong> ifodalaydi.<br />
+Har bir tarmoq:<br />
+✅ O‘z mahsulotining bir qismini boshqa tarmoqlarga yetkazib beradi.<br />
+✅ Ishlab chiqarish jarayonida boshqa tarmoqlarning mahsulotlaridan foydalanadi.</p>
+
+<p>👨‍💼 <strong>Misol</strong>: Sizda uchta iqtisodiy tarmoq mavjud:</p>
+<ul>
+  <li>🌾 <strong>Qishloq xo‘jaligi</strong></li>
+  <li>🏭 <strong>Sanoat</strong></li>
+  <li>🏢 <strong>Xizmatlar</strong></li>
+</ul>
+
+<p>Har bir tarmoq o‘z ishlab chiqarish jarayonida <strong>boshqa tarmoqlarning mahsulotlariga ehtiyoj sezadi</strong>.<br />
+Quyidagi jadval <strong>1 milliard so‘mlik mahsulot ishlab chiqarish uchun boshqa tarmoqlardan qancha xarajat talab qilinishini</strong> ko‘rsatadi:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Tarmoq</strong></th>
+      <th>🌾 Qishloq xo‘jaligi</th>
+      <th>🏢 Xizmatlar</th>
+      <th>🏭 Sanoat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>🌾 Qishloq xo‘jaligi</strong></td>
+      <td>0.01</td>
+      <td>0.002</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td><strong>🏢 Xizmatlar</strong></td>
+      <td>0.02</td>
+      <td>0.004</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>🏭 Sanoat</strong></td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>🔹 <strong>Tushuntirish</strong>:<br />
+Masalan, <strong>1 milliard so‘mlik</strong> tovar ishlab chiqarish uchun:</p>
+<ul>
+  <li><strong>Qishloq xo‘jaligi</strong> 0.01 milliard so‘m <strong>o‘ziga</strong>, 0.002 milliard so‘m <strong>xizmatlarga</strong>, va 0.04 milliard so‘m <strong>sanoatga</strong> sarflash kerak.</li>
+</ul>
+
+<hr />
+
+<p><strong>📌 Talab Vektori</strong><br />
+Davlat har bir tarmoq uchun <strong>yakuniy talab miqdorini</strong> belgilaydi:</p>
+<ul>
+  <li><strong>Qishloq xo‘jaligi</strong> → <strong>100 milliard so‘m</strong></li>
+  <li><strong>Xizmatlar</strong> → <strong>200 milliard so‘m</strong></li>
+  <li><strong>Sanoat</strong> → <strong>300 milliard so‘m</strong></li>
+</ul>
+
+<hr />
+
+<p><strong>❓ Savol</strong><br />
+Har bir tarmoq uchun <strong>umumiy ishlab chiqarish hajmi</strong> qancha?</p>
+
+<hr />
+
+<p><strong>📌 Yechim: Leontief Kirim-Chiqim Modeli</strong><br />
+Leontief modeliga ko‘ra, <strong>ishlab chiqarish vektori</strong> ($\mathbf{x}$) quyidagi tenglama orqali aniqlanadi:</p>
+
+\[\mathbf{x} = \mathbf{A} \mathbf{x} + \mathbf{y}\]
+
+<p>Bu yerda:<br />
+✅ <strong>$\mathbf{x}$</strong> – ishlab chiqarish hajmi vektori<br />
+✅ <strong>$\mathbf{y}$</strong> – yakuniy talab vektori<br />
+✅ <strong>$\mathbf{A}$</strong> – iste’mol matritsasi</p>
+
+<hr />
+
+<p><strong>📌 Qadamlar</strong></p>
+<ol>
+  <li><strong>Iste’mol matritsa ($\mathbf{A}$) va talab vektori ($\mathbf{y}$) ni yaratish</strong></li>
+  <li><strong>Ishlab chiqarish hajmini ($\mathbf{x}$) aniqlash</strong></li>
+  <li><strong>Chiziqli tenglamani yechish</strong></li>
+</ol>
+
+<hr />
+
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin-2">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1KnSM0wXSeYPoIljGCulBmtjyRHvXy1Tq?usp=sharing"><strong>Vazifa 3: Chiziqli Transformatsiya</strong></a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="vazifa-4-vektor-fazolar-va-ortogonalizatsiya">Vazifa 4: Vektor Fazolar va Ortogonalizatsiya</h2>
+
+<h3 id="vazifa-411-bazis-va-subfazolar">Vazifa 4.1.1 Bazis va Subfazolar</h3>
+
+<ol>
+  <li>\(\left \{ \begin{bmatrix} 1 \\ -2 \\ -1 \end{bmatrix}, \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix}, \begin{bmatrix} 5 \\ -8 \\ 1 \end{bmatrix} \right \}\)  vektorlar to’plami $R^3$ fazoga bazis bo’la oladimi?</li>
+  <li>$V$ subfazo hisoblanadimi?
+    <ul>
+      <li>
+\[V = \left \{ \begin{bmatrix} a \\ b \end{bmatrix} \in \mathbb{R}^2; 2a=3b \right \}\]
+      </li>
+      <li>
+\[V = \left \{ \begin{bmatrix} a \\ b \end{bmatrix} \in \mathbb{R}^2; ab=0 \right \}\]
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="vazifa-412-matritsa-rangi">Vazifa 4.1.2: Matritsa Rangi</h3>
+<p>Ushbu matritsalarni rangini aniqlang:</p>
+
+<ul>
+  <li>
+\[\begin{bmatrix} 3 &amp; -1 \\ 1 &amp; 3 \end{bmatrix}\]
+  </li>
+  <li>
+\[\begin{bmatrix} 1 &amp; 2 &amp; 1 \\ -2 &amp; -3 &amp; 1 \\ 3 &amp; 5 &amp; 0 \end{bmatrix}\]
+  </li>
+</ul>
+
+<h3 id="vazifa-42-ortogonallik-va-proeksiya">Vazifa 4.2: Ortogonallik va Proeksiya</h3>
+
+<ol>
+  <li>Ushbu vektorlar ortogonalmi?
+    <ul>
+      <li>\(\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}\) va \(\begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}\)</li>
+      <li>\(\begin{bmatrix} -1 \\ 1\\ 0 \end{bmatrix}\) va \(\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix}\)</li>
+    </ul>
+  </li>
+  <li>\(\mathbf{u}\) vektorni \(\mathbf{v}\) vektordagi proeksiyasini toping, agar:
+    <ul>
+      <li>\(\mathbf{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\) va \(\mathbf{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}\)</li>
+      <li>\(\mathbf{u} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}\) va \(\mathbf{v} = \begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix}\)</li>
+    </ul>
+  </li>
+  <li>\(\mathbf{v}\) vektorni \(\{ \mathbf{u}_1, \mathbf{u}_2 \}\) basiz vektorlardan tashkil topgan subfazoga proyeksiyasini toping, agar:
+    <ul>
+      <li>\(\mathbf{u}_1 = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}\), \(\mathbf{u}_2 = \begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix}\) va \(\mathbf{v} = \begin{bmatrix} 6 \\ 0 \\ 0 \end{bmatrix}\)</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="43-️-mini-loyiha-sotuv-miqdorini-modellashtirish-chiziqli-model-">4.3 🏘️ <strong>Mini-Loyiha: Sotuv Miqdorini Modellashtirish (Chiziqli Model)</strong> 📊</h3>
+
+<p>🎯 <strong>Maqsad</strong><br />
+Toshkent shahridagi kvartira narxlari va ularning maydoni (m²) o‘rtasidagi bog‘liqlikni tahlil qilish, va <strong>chiziqli model</strong> asosida <strong>kelajakdagi uy narxini bashorat qilish</strong>.</p>
+
+<hr />
+
+<h4 id="-voqea-tavsifi"><strong>📖 Voqea Tavsifi</strong></h4>
+<p>Sizga Toshkentdagi turli hududlarda joylashgan kvartiralarning <strong>maydoni (m²)</strong> va ularning <strong>narxi (ming dollar)</strong> bo‘yicha ma’lumotlar berilgan.<br />
+Ma’lumotlarni o‘rganish natijasida aniqlanganki, narx odatda <strong>maydon oshishi bilan chiziqli ravishda ortib boradi</strong>.</p>
+
+<p>Shunday qilib, quyidagi chiziqli model taklif qilinadi: 
+\(y = c_0 + c_1 x\)</p>
+
+<p>Bu yerda:</p>
+<ul>
+  <li>$y$ — kvartiraning narxi (ming dollar)</li>
+  <li>$x$ — kvartira maydoni (m²)</li>
+  <li>$c_0$ — boshlang‘ich narx (asosiy xizmatlar, joylashuv, va h.k.)</li>
+  <li>$c_1$ — har bir kvadrat metr uchun narx (ming dollar/m²)</li>
+</ul>
+
+<p>Sizga bir nechta kuzatish nuqtalari berilgan:</p>
+
+\[(x_0, y_0),\ (x_1, y_1),\ \dots,\ (x_n, y_n)\]
+
+<p>Modelni quyidagi matritsa ko‘rinishida yozamiz:</p>
+
+\[A =
+\begin{bmatrix}
+1 &amp; x_0 \\
+1 &amp; x_1 \\
+\vdots &amp; \vdots \\
+1 &amp; x_n
+\end{bmatrix}
+,\quad
+\mathbf{y} =
+\begin{bmatrix}
+y_0 \\
+y_1 \\
+\vdots \\
+y_n
+\end{bmatrix}
+,\quad
+\mathbf{c} =
+\begin{bmatrix}
+c_0 \\
+c_1
+\end{bmatrix}\]
+
+<p>Model tenglamasi:<br />
+\(A \mathbf{c} \approx \mathbf{y}\)</p>
+
+<hr />
+
+<h4 id="eng-kichik-kvadratlar-usuli-least-squares-method">Eng kichik kvadratlar usuli (Least Squares Method)</h4>
+
+<p>Chiziqli model parametrlarini aniqlash uchun <strong>eng kichik kvadratlar usulidan</strong> foydalanamiz:</p>
+
+\[\boxed{\mathbf{c} = (A^T A)^{-1} A^T \mathbf{y}}\]
+
+<h3 id="-amalga-oshirish-qadamlar"><strong>📌 Amalga oshirish Qadamlar</strong></h3>
+
+<p>1️⃣ $A$ matritsani yarating (ustunlar: 1 va $x$)<br />
+2️⃣ Hisoblang:</p>
+<ul>
+  <li>$A^T A$</li>
+  <li>$A^T \mathbf{y}$</li>
+  <li>$(A^T A)^{-1}$</li>
+</ul>
+
+<p>3️⃣ Quyidagi formula orqali $\mathbf{c}$ ni toping:
+\(\mathbf{c} = (A^T A)^{-1} A^T \mathbf{y}\)</p>
+
+<hr />
+
+<p>🎯 <strong>Natija</strong>: Siz ma’lumotlardan foydalangan holda <strong>chiziqli regressiya modelini</strong> yaratishni va eng kichik kvadratlar yordamida uning koeffitsiyentlarini aniqlashni o‘rganasiz — bu ma’lumot tahlili va mashinaviy o‘rganishning asosiy vositalaridan biridir. 🚀</p>
+
+<hr />
+
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin-3">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing"><strong>Vazifa 4: Vektor Fazolar va Ortogonalizatsiya</strong></a></p>
+</blockquote>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Vazifa 1: Vektorlar va Vektor Algebra]]></summary></entry><entry><title type="html">Modul 3. Transformatsiya va Chiziqli Tenglamalar</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" rel="alternate" type="text/html" title="Modul 3. Transformatsiya va Chiziqli Tenglamalar" /><published>2025-02-28T00:00:00+03:00</published><updated>2025-02-28T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/chiziqli-tenglamalar</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html"><![CDATA[<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_LsHZ--gX-U?si=rzupMLz-uhDqDuw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<blockquote class="block-tip">
+  <h5 id="birlik-matritsa">Birlik matritsa</h5>
+
+  <p>Diagonal elementlari birga teng bo’lgan (boshqa elementlari nol) kvadrat matritsa.
+\(\textit{I}_n := \begin{bmatrix} 1 &amp; 0 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; \cdots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \ddots &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \cdots &amp; 0 &amp; 1 \end{bmatrix} \in \mathbb{R}^{n \times n}\)</p>
+</blockquote>
+<p>Birlik matritsaga misollar:
+\(\ I_{2}={\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix}},\ I_{3}={\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{bmatrix}},\ \dots\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Birlik Matritsa yaratish
+</span><span class="n">np</span><span class="p">.</span><span class="nf">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<blockquote class="block-tip">
+  <h5 id="teskari-matritsa">Teskari matritsa</h5>
+
+  <p>Bizda $\mathbf{A} \in \mathbb{R}^{n \times n}$ matritsa bor. Unga teskari matritsa $\mathbf{A}^{-1}$ hisoblanadi, agar unda ushbu hususiyat bo’lsa:</p>
+
+\[\boxed {\mathbf{A} \mathbf{A}^{-1} = \mathbf{A}^{-1} \mathbf{A} = \mathbf{I}}\]
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Teskari Matritsani hisoblash
+</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.5</span> <span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">A_inv</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">A_inv</span>
+</code></pre></div></div>
+
+<h2 id="31-chiziqli-transformatsiya">3.1 Chiziqli Transformatsiya</h2>
+
+<p><em>Transformatsiya</em> - bu funksiya, biror vektorni oladi va boshqa vektor qaytaradi:</p>
+
+\[T(\mathbf{v}) = A\mathbf{v}\]
+
+<p>Transformatsiya <strong>chiziqli</strong> hisoblanadi agar, ushbu shartlar bajarilsa:</p>
+
+<ul>
+  <li>$T(\textbf{v} + \textbf{w}) = T(\textbf{v}) + T(\textbf{w})$</li>
+  <li>$T(c\textbf{v}) = cT(\textbf{v})$</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>$f(x,y)=(2x,y)$</th>
+      <th>${\textstyle f(\mathbf {a} +\mathbf {b} )=f(\mathbf {a} )+f(\mathbf {b} )}$</th>
+      <th>${\textstyle f(\lambda \mathbf {a} )=\lambda f(\mathbf {a} )}$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Streckung_eines_Vektors.gif/311px-Streckung_eines_Vektors.gif" alt="alt" /></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Streckung_der_Summe_zweier_Vektoren.gif" alt="alt" /></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Streckung_homogenitaet_Version_3.gif" alt="alt" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="311-chiziqli-transformatsiyaga-misollar">3.1.1 Chiziqli Transformatsiyaga Misollar</h3>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Siljish (Shear)</td>
+          <td>Aks (Reflection)</td>
+          <td>Siqish (Squeeze)</td>
+          <td>Masshtablash (Scaling)</td>
+          <td>Aylanish (Rotation)</td>
+        </tr>
+        <tr>
+          <td>\({\displaystyle {\begin{bmatrix}1&amp; m\\0&amp;1\end{bmatrix}}}\)</td>
+          <td>\({\displaystyle {\begin{bmatrix}-1&amp;0\\0&amp;1\end{bmatrix}}}\)</td>
+          <td>\({\displaystyle {\begin{bmatrix}{k}&amp;0\\0&amp;{\frac {1}{k}}\end{bmatrix}}}\)</td>
+          <td>\({\displaystyle {\begin{bmatrix}{m}&amp;0\\0&amp;{m}\end{bmatrix}}}\)</td>
+          <td>${\displaystyle {\begin{bmatrix}\cos (\theta)&amp;-\sin (\theta)\\sin (\theta)&amp;\cos (\theta)\end{bmatrix}}}$</td>
+        </tr>
+        <tr>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/VerticalShear_m%3D1.25.svg/350px-VerticalShear_m%3D1.25.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Flip_map.svg/300px-Flip_map.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Squeeze_r%3D1.5.svg/300px-Squeeze_r%3D1.5.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Scaling_by_1.5.svg/250px-Scaling_by_1.5.svg.png" alt="" /></td>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Rotation_by_pi_over_6.svg/250px-Rotation_by_pi_over_6.svg.png" alt="" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="312-affin-transformatsiya-affine-mapping">3.1.2 Affin Transformatsiya (Affine Mapping)</h3>
+<p>Affin transformatsiya 2 ta funksiyadan iborat: chiziqli transformatsiya + surish</p>
+
+\[\boxed{\displaystyle \mathbf {y} =f(\mathbf {x} )=\mathbf {A}\mathbf {x} +\mathbf {b}}\]
+
+<ul>
+  <li>$\mathbf {A}$ - chiziqli transformatsiya matritsasi</li>
+  <li>$\mathbf{b}$ - surish vektori</li>
+</ul>
+
+<p>Matritsa shaklida yozmoqchi bo’lsak, ushbu ko’rinishda yozishimiz mumkin:</p>
+
+\[{\displaystyle {\begin{bmatrix}\mathbf {y} \\1\end{bmatrix}}=\left[{\begin{array}{ccc|c}&amp;\mathbf {A}&amp;&amp;\mathbf {b} \\0&amp;\cdots &amp;0&amp;1\end{array}}\right]{\begin{bmatrix}\mathbf {x} \\1\end{bmatrix}}}\]
+
+<h2 id="32-chiziqli-tenglamalardan-iborat-tizim">3.2 Chiziqli tenglamalardan iborat tizim</h2>
+<p>Chiziqli tenglamalar tizimi quyidagi ko’rinishda ifodalanadi:</p>
+
+\[{\displaystyle {\begin{cases}a_{11}x_{1}+a_{12}x_{2}+\dots +a_{1n}x_{n}=b_{1}\\a_{21}x_{1}+a_{22}x_{2}+\dots +a_{2n}x_{n}=b_{2}\\\vdots \\a_{m1}x_{1}+a_{m2}x_{2}+\dots +a_{mn}x_{n}=b_{m},\end{cases}}}\]
+
+<ul>
+  <li>${\displaystyle x_{1},x_{2},\dots ,x_{n}}$ noma’lumlar</li>
+  <li>${\displaystyle a_{11},a_{12},\dots ,a_{mn}}$ koeffitsientlar</li>
+  <li>${\displaystyle b_{1},b_{2},\dots ,b_{m}}$ konstant sonlar</li>
+</ul>
+
+<p>Matritsa ko’rinishida biz ularni quyidagicha yozsak bo’ladi:</p>
+
+\[\boxed{\mathbf {A}\mathbf{x} = \mathbf{b}}\]
+
+<p>bu yerda $\mathbf{A}$ - matritsa, $\mathbf{x}$ - noma’lum vektor, $\mathbf{b}$ - javob vektori:</p>
+
+\[{\displaystyle \mathbf {A}={\begin{bmatrix}a_{11}&amp;a_{12}&amp;\cdots &amp;a_{1n}\\a_{21}&amp;a_{22}&amp;\cdots &amp;a_{2n}\\\vdots &amp;\vdots &amp;\ddots &amp;\vdots \\a_{m1}&amp;a_{m2}&amp;\cdots &amp;a_{mn}\end{bmatrix}},\quad \mathbf {x} ={\begin{bmatrix}x_{1}\\x_{2}\\\vdots \\x_{n}\end{bmatrix}},\quad \mathbf {b} ={\begin{bmatrix}b_{1}\\b_{2}\\\vdots \\b_{m}\end{bmatrix}}.}\]
+
+<h3 id="321-yechish-1-ozgaruvchilarni-yoq-qilish">3.2.1 Yechish 1: O’zgaruvchilarni yo’q qilish</h3>
+
+<p>Chiziqli tenglamalar tizimini yechishning eng oddiy usuli <em>o’zgaruvchilarni qayta-qayta yo’q qilish</em>dir. Ushbu usulni quyidagicha ta’riflash mumkin:</p>
+
+<ol>
+  <li>Birinchi tenglamada o’zgaruvchilardan birini boshqalari bilan ifodalanadi.</li>
+  <li>Ushbu ifodani qolgan tenglamalarga qo’yiladi. Bu bitta kamroq tenglamali va noma’lum tenglamalar tizimini beradi.</li>
+  <li>Tizim bitta chiziqli tenglamaga keltirilguncha 1 va 2-bosqichlar takrorlanadi.</li>
+  <li>Oxiri hosil bo’lgan tenglama yechiladi, so’ngra butun yechim topilguncha chiqqan natijalar noma’lumlar o’rniga qo’yib boriladi.</li>
+</ol>
+
+<p>Masalan, quyidagi chiziqli tenglamalar tizimini yechamiz:</p>
+
+\[{\displaystyle {\begin{cases}x+3y-2z=5\\3x+5y+6z=7\\2x+4y+3z=8\end{cases}}}\]
+
+<p>Bu yerda, biz $x$ noma’lumini boshqa noma’lumlar bilan ifodalaymiz. Misol uchun, birinchi tenglamadan $x$ ni ajratib olishimiz mumkin:
+\({\displaystyle x=5+2z-3y}\)
+va ikkinchi va uchinchi tenglamalarga $x$ o’rniga olgan ifodani kiritamiz:</p>
+
+\[{\displaystyle {\begin{cases}y=3z+2\\y={\tfrac {7}{2}}z+1\end{cases}}}\]
+
+<p>Shunda bizda:</p>
+
+\[{\displaystyle {\begin{aligned}3z+2={\tfrac {7}{2}}z+1\\\Rightarrow z=2\end{aligned}}}\]
+
+<p>va javob \({\displaystyle (x,y,z)=(-15,8,2)}\) bo’ladi.</p>
+
+<h3 id="322-yechish-2-gauss-usuli">3.2.2 Yechish 2: Gauss usuli</h3>
+
+<p><strong>Gauss usuli</strong> - chiziqli tenglamalar tizimini yechishning klassik usuli hisoblanadi. Nemis matematigi Karl Fridrix Gauss sharafiga nomlangan. Bu o’zgaruvchilarni ketma-ket yo’q qilish usuli bo’lib, elementar transformatsiyalar yordamida tenglamalar tizimi ekvivalent uchburchak tizimga tushiriladi. So’ngra, tizimning barcha o’zgaruvchilari oxiridan boshlab ketma-ket topiladi.</p>
+
+<p>Misol, bizga ushbu chiziqli tenglamalar tizimi berilgan:</p>
+
+\[{\displaystyle {\begin{cases}2x+y-z=8\\-3x-y+2z=-11\\-2x+y+2z=-3\end{cases}}}\]
+
+<p>Bu sistemadan koeffitsient matritsa $\mathbf{A}$, noma’lumlar vektori $\mathbf{x}$ va javob vektori $\mathbf{b}$ ni ajratib olamiz:</p>
+
+<p>\(\mathbf{A} =
+\begin{bmatrix}
+2 &amp; 1 &amp; -1\\
+-3 &amp; -1 &amp; 2\\
+-2 &amp; 1  &amp; 2
+\end{bmatrix}\), \(\mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}\), \(\mathbf{b} = \begin{bmatrix} 8 \\ -11 \\ -3 \end{bmatrix}\).</p>
+
+<p>Shunda, chiziqli tenglamalar tizimi quyidagi ko’rinishga keltiriladi:</p>
+
+\[\boxed{\mathbf{A}\mathbf{x} = \mathbf{b}}\]
+
+<p>Endi, Gauss usuli bo’yicha biz birinchi $\mathbf{A}$ matritsani $\mathbf{b}$ vektori bilan kengaytirib olamiz:</p>
+
+\[\begin{bmatrix} \mathbf{A} &amp; | &amp; \mathbf{b}  \end{bmatrix}\]
+
+<p>Ya’ni, quyidagi ko’rinishda:
+\({\displaystyle \left[{\begin{array}{rrr|r}2&amp;1&amp;-1&amp;8\\-3&amp;-1&amp;2&amp;-11\\-2&amp;1&amp;2&amp;-3\end{array}}\right]}\)</p>
+
+<p>Shu yerda biz qator ustida amallardan foydalanib kengaytirilgan $\mathbf{A}$ matritsani yuqoridan uchburchak matritsaga o’tkazamiz. Amallar quyidagicha:</p>
+
+<ol>
+  <li>Ikki qatorning o’rnini almashtirish.</li>
+  <li>Qatorni nolga teng bo’lmagan songa ko’paytirish.</li>
+  <li>Bitta qatorga boshqa qatorning skalyar ko’paytmasini qo’shish.</li>
+</ol>
+
+<p>Tepadagi misolni yechsak:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tenglamalar</th>
+      <th>Qator ustida amallar</th>
+      <th>Kengaytirilgan Matritsa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;{}-{}&amp;z&amp;{}={}&amp;8&amp;\\-3x&amp;{}-{}&amp;y&amp;{}+{}&amp;2z&amp;{}={}&amp;-11&amp;\\-2x&amp;{}+{}&amp;y&amp;{}+{}&amp;2z&amp;{}={}&amp;-3&amp;\end{alignedat}\)</td>
+      <td> </td>
+      <td>\(\left[{\begin{array}{rrrr}2&amp;1&amp;-1&amp;8\\-3&amp;-1&amp;2&amp;-11\\-2&amp;1&amp;2&amp;-3\end{array}}\right]\)</td>
+    </tr>
+    <tr>
+      <td>\(\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;{}-{}&amp;z&amp;{}={}&amp;8&amp;\\&amp;&amp;{\tfrac {1}{2}}y&amp;{}+{}&amp;{\tfrac {1}{2}}z&amp;{}={}&amp;1&amp;\\&amp;&amp;2y&amp;{}+{}&amp;z&amp;{}={}&amp;5&amp;\end{alignedat}\)</td>
+      <td>\({\displaystyle {\begin{aligned}Q_{2}+{\tfrac {3}{2}}Q_{1}&amp;\to Q_{2}\\Q_{3}+Q_{1}&amp;\to Q_{3}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;-1&amp;8\\0&amp;{\frac {1}{2}}&amp;{\frac {1}{2}}&amp;1\\0&amp;2&amp;1&amp;5\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;{}-{}&amp;z&amp;{}={}&amp;8&amp;\\&amp;&amp;{\tfrac {1}{2}}y&amp;{}+{}&amp;{\tfrac {1}{2}}z&amp;{}={}&amp;1&amp;\\&amp;&amp;&amp;&amp;-z&amp;{}={}&amp;1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle Q_{3}+-4Q_{2}\to Q_{3}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;-1&amp;8\\0&amp;{\frac {1}{2}}&amp;{\frac {1}{2}}&amp;1\\0&amp;0&amp;-1&amp;1\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;&amp;&amp;{}={}7&amp;\\&amp;&amp;{\tfrac {1}{2}}y&amp;&amp;&amp;{}={}{\tfrac {3}{2}}&amp;\\&amp;&amp;&amp;{}-{}&amp;z&amp;{}={}1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle {\begin{aligned}Q_{1}-Q_{3}&amp;\to Q_{1}\\Q_{2}+{\tfrac {1}{2}}Q_{3}&amp;\to Q_{2}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;0&amp;7\\0&amp;{\frac {1}{2}}&amp;0&amp;{\frac {3}{2}}\\0&amp;0&amp;-1&amp;1\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}2x&amp;{}+{}&amp;y&amp;\quad &amp;&amp;{}={}&amp;7&amp;\\&amp;&amp;y&amp;\quad &amp;&amp;{}={}&amp;3&amp;\\&amp;&amp;&amp;\quad &amp;z&amp;{}={}&amp;-1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle {\begin{aligned}2Q_{2}&amp;\to Q_{2}\\-Q_{3}&amp;\to Q_{3}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}2&amp;1&amp;0&amp;7\\0&amp;1&amp;0&amp;3\\0&amp;0&amp;1&amp;-1\end{array}}\right]}\)</td>
+    </tr>
+    <tr>
+      <td>\({\displaystyle {\begin{alignedat}{4}x&amp;\quad &amp;&amp;\quad &amp;&amp;{}={}&amp;2&amp;\\&amp;\quad &amp;y&amp;\quad &amp;&amp;{}={}&amp;3&amp;\\&amp;\quad &amp;&amp;\quad &amp;z&amp;{}={}&amp;-1&amp;\end{alignedat}}}\)</td>
+      <td>\({\displaystyle {\begin{aligned}Q_{1}-Q_{2}&amp;\to Q_{1}\\ {\tfrac {1}{2}}Q_{1}&amp;\to Q_{1}\end{aligned}}}\)</td>
+      <td>\({\displaystyle \left[{\begin{array}{rrrr}1&amp;0&amp;0&amp;2\\0&amp;1&amp;0&amp;3\\0&amp;0&amp;1&amp;-1\end{array}}\right]}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>va javob \({\displaystyle (x,y,z)=(2,3,-1)}\) bo’ladi.</p>
+
+<h3 id="323-yechish-3-teskari-matritsa-yordamida">3.2.3 Yechish 3: Teskari matritsa yordamida</h3>
+
+<p>Agar biz $\mathbf{A}$ kvadrat matritsaga teskari matritsa $\mathbf{A}^{-1}$ ni topa olsak, chiziqli tenglamalar tizimini quyidagi ko’rinishda yechishimiz mumkin:</p>
+
+\[\mathbf{A}\mathbf{x} =\mathbf{b},\]
+
+\[\mathbf{A}^{-1}\mathbf{A}\bf{x} = \mathbf{A}^{-1}\bf{b},\]
+
+\[\mathbf{I}\bf{x} = \mathbf{A}^{-1}\bf{b},\]
+
+\[\boxed{\bf{x} = \mathbf{A}^{-1}\bf{b}}\]
+
+<p>Ya’ni, shunchaki $\mathbf{A}^{-1}$ matritsasini topib, $\mathbf{b}$ vektoriga ko’paytirib yechishimiz mumkin.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Chiziqli tenglamalar tizimini yechish
+</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> 
+    <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> 
+    <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="p">])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Teskari matritsa yordamida yechish
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">inv</span><span class="p">(</span><span class="n">A</span><span class="p">).</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">x</span>
+</code></pre></div></div>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Modul 4. Vektor Fazolari va Ortogonalizatsiya</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-fazo.html" rel="alternate" type="text/html" title="Modul 4. Vektor Fazolari va Ortogonalizatsiya" /><published>2025-02-28T00:00:00+03:00</published><updated>2025-02-28T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/fazo</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-fazo.html"><![CDATA[<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZHZuSDF5fg?si=SaaW79TwQwzMW5Gp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<p><img src="../assets/rockets.jpg" /></p>
+
+<h2 id="41-vektor-fazolari-subfazolar-va-chiziqli-qobiqlar">4.1 Vektor fazolari, subfazolar va chiziqli qobiqlar</h2>
+<h3 id="411-vektor-fazo-va-subfazolar">4.1.1 Vektor fazo va subfazolar</h3>
+
+<p>Tasavvur qiling, butun koinot sizning o’yin maydoningiz va vektorlar kosmik raketalarga o’xshaydi. Vektor fazosi barcha raketalar (vektorlar) amal qilishi kerak bo’lgan maxsus qoidalarga ega galaktikaga deb tasavvur qilsak bo’ladi.</p>
+
+<p>Har bir raketa o’zining:</p>
+<ul>
+  <li><strong>yo’nalishi</strong> (masalan, qaysi tomonga uchayotgani)</li>
+  <li><strong>tezligi</strong> (uning dvigatellari qanchalik kuchli ekanligi)</li>
+</ul>
+
+<p>ega bo’ladi.</p>
+
+<p>Vektor fazo esa raketalar o’zaro qanday munosabatda bo’lishi va bir-biriga qanday ta’sir qilishini belgilovchi qoidalardan iborat:</p>
+<ol>
+  <li><strong>Vektorlar qo’shilishi</strong>: Agar siz ikkita raketani bir-biriga bog’lasangiz, ularning tezligi va yo’nalishlari qanday o’zgaradi?</li>
+  <li><strong>Vektorlarni skalar songa ko’paytirish</strong>: Agar siz raketani kuchli dvigatel bilan jihozlasangiz, u qanday tezlikka ega bo’ladi?</li>
+  <li>…</li>
+</ol>
+
+<blockquote class="block-tip">
+  <h5 id="vektor-fazo">Vektor fazo</h5>
+
+  <p>bo’sh bo’lmagan vektor to’plami $V$ bo’lib, u quyidagi shartlarni qanoatlantirsa, $V$ vektor fazosi deyiladi:</p>
+  <ul>
+    <li>$V$ to’plamida <strong>nol</strong> vektori mavjud.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u}, \mathbf{v} \in V$ vektorlar uchun $\mathbf{u} + \mathbf{v} \in V$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori va har qanday $c \in \mathbb{R}$ skalar uchun $c\mathbf{u} \in V$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u}, \mathbf{v} \in V$ vektorlar uchun $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ vektorlar uchun $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori uchun $\mathbf{u} + (-\mathbf{u}) = \mathbf{0}$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori va har qanday $c, d \in \mathbb{R}$ skalarlar uchun $c(d\mathbf{u}) = (cd)\mathbf{u}$.</li>
+    <li>$V$ to’plamida har qanday $\mathbf{u} \in V$ vektori va har qanday $c, d \in \mathbb{R}$ skalarlar uchun $(c + d)\mathbf{u} = c\mathbf{u} + d\mathbf{u}$.</li>
+  </ul>
+</blockquote>
+
+<p>Misollar:</p>
+<ul>
+  <li>$\mathbb{R}^2$ - ikki o’lchovli fazo</li>
+  <li>$\mathbb{R}^3$ - uch o’lchovli fazo</li>
+  <li>$\mathbb{R}^n$ - $n$ o’lchovli fazo</li>
+</ul>
+
+<blockquote class="block-tip">
+  <h5 id="vektor-subfazosi">Vektor subfazosi</h5>
+  <p>$\mathbf{V}$ fazosining kichik to’plami $\mathbf{U}$ - vektor subfazo deb hisoblanadi, agar ushbu qoidalar qanoatlantirilsa:</p>
+  <ol>
+    <li>$\mathbf{0} \in \mathbf{U}$</li>
+    <li>$\mathbf{u} + \mathbf{v} \in \mathbf{U}$</li>
+    <li>$\alpha \mathbf{u} \in \mathbf{U}$</li>
+  </ol>
+</blockquote>
+
+<p>Misol:</p>
+<ul>
+  <li>$\mathbb{R}^2$ fazosining subfazosi - $x$ o’qidagi barcha vektorlar to’plami.</li>
+  <li>$\mathbb{R}^3$ fazosining subfazosi - $x$ va $y$ o’qlaridagi barcha vektorlar to’plami.</li>
+</ul>
+
+<h3 id="412-chiziqli-qobiq">4.1.2 Chiziqli qobiq</h3>
+
+<p><img src="../assets/fleet.webp" /></p>
+
+<p>Tasavvur qiling, endi siz raketalar flotiga (vektorlar) qo’mondonlik qilayotgan kosmik admiralsiz. Sizning flotingiz masofasi - bu ularning kuchlarini birlashtirib (ularni masshtablash va qo’shish) erishishingiz mumkin bo’lgan barcha joylar.</p>
+
+<blockquote class="block-tip">
+  <h5 id="chiziqli-qobiq-linear-span">Chiziqli qobiq (Linear Span)</h5>
+
+  <p>Agar $\mathbf{v_1}, \mathbf{v_2}, \ldots, \mathbf{v_n}$ vektorlar to’plami berilgan bo’lsa, ularning chiziqli qobi $L(\mathbf{v_1}, \mathbf{v_2}, \ldots, \mathbf{v_n})$ deb ataladi va quyidagi ko’rinishda ifodalanadi:
+\(\boxed{\text{span}(\mathbf{v}_1, \mathbf{v}_2, ..., \mathbf{v}_n) = \{ \alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + ... + \alpha_n \mathbf{v}_n | \alpha_i \in \mathbb{R} \}}\)</p>
+</blockquote>
+
+<p>Misollar:</p>
+<ul>
+  <li>
+    <p>$\text{span}(\begin{bmatrix} 1 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \end{bmatrix})$ - $\mathbb{R}^2$ vektor fazosini tashkil etadi</p>
+  </li>
+  <li>
+    <p>$\text{span}(\begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 2 \end{bmatrix}, \begin{bmatrix} -1\ 1/2 \ 3 \end{bmatrix}, \begin{bmatrix} 1 \ 1 \ 1 \end{bmatrix})$ - $\mathbb{R}^3$ vektor fazosini tashkil etadi</p>
+  </li>
+</ul>
+
+<h3 id="413-bazis-basis">4.1.3 Bazis (Basis)</h3>
+
+<p>Tasavvur qiling, siz galaktika tadqiqotchisisiz va kosmik kemangizning navigatsiya tizimi raketa vektorlarida ishlaydi. <strong>Bazis</strong> bu sizning koinotning istalgan nuqtasiga (vektor fazosi) <em>ortiqcha raketalarsiz</em> yetib olishingiz uchun kerak bo’lgan <strong>eng kichik raketalar to’plamidir</strong>.</p>
+
+<blockquote class="block-tip">
+  <h5 id="bazis-basis">Bazis (Basis)</h5>
+
+  <p>bu vektorlar to’plami $\mathbf{v_1}, \mathbf{v_2}, …, \mathbf{v_n}$, va $\mathbf{V}$ vektor fazosini tashkil etadi, agar:</p>
+  <ul>
+    <li>$\text{span}(\mathbf{v}_1, \mathbf{v}_2, …, \mathbf{v}_n) = \mathbf{V}$</li>
+    <li>$\mathbf{v}_1, \mathbf{v}_2, …, \mathbf{v}_n$ o’zaro bog’liq emas</li>
+  </ul>
+</blockquote>
+
+<p>Misollar:</p>
+<ul>
+  <li>$\text{span}(\begin{bmatrix} 1 \ 2 \ 3 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 2 \end{bmatrix}, \begin{bmatrix} -1\ 1/2 \ 3 \end{bmatrix}, \begin{bmatrix} 1 \ 1 \ 1 \end{bmatrix})$ - $\mathbb{R}^3$ vektor fazosini tashkil etadi lekin bu bazis emas, chunki ular o’zaro bog’liq</li>
+  <li>$\text{span}(\begin{bmatrix} 1 \ 0 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 1 \ 0 \end{bmatrix}, \begin{bmatrix} 0 \ 0 \ 1 \end{bmatrix})$ - $\mathbb{R}^3$ vektor fazosini tashkil etadi va bu bazis</li>
+</ul>
+
+<h3 id="414-matritsa-rangi-rank-of-matrix">4.1.4 Matritsa rangi (Rank of Matrix)</h3>
+
+<p>Tasavvur qiling, siz raketalar flotiga (vektorlarga) ega bo’lgan galaktika qo’mondonisiz, lekin ba’zilari ortiqcha - ular sizning arsenalingizga yangi yo’nalishlarni qo’shmaydi. Matritsaning rangi sizning flotingizda qancha noyob raketa borligini ko’rsatadi.</p>
+
+<blockquote class="block-tip">
+  <h5 id="matritsa-rangi-rank-of-matrix">Matritsa rangi (Rank of Matrix)</h5>
+
+  <p>bu ustunlaridan hosil bo’lgan vektor fazosining o’lchami. Ya’ni, <em>chiziqli bog’liq bo’lmagan</em> barcha matritsaning ustunlar soni. 
+\(\boxed{\text{rank}(\mathbf{A}) = \text{dim}(\text{span}(\mathbf{A}))}\)</p>
+</blockquote>
+
+<p>Qanday aniqlaymiz?</p>
+
+\[{\displaystyle {\begin{aligned}{\begin{bmatrix}1&amp;2&amp;1\\-2&amp;-3&amp;1\\3&amp;5&amp;0\end{bmatrix}}&amp;\xrightarrow {2R_{1}+R_{2}\to R_{2}} {\begin{bmatrix}1&amp;2&amp;1\\0&amp;1&amp;3\\3&amp;5&amp;0\end{bmatrix}}\xrightarrow {-3R_{1}+R_{3}\to R_{3}} {\begin{bmatrix}1&amp;2&amp;1\\0&amp;1&amp;3\\0&amp;-1&amp;-3\end{bmatrix}}\\&amp;\xrightarrow {R_{2}+R_{3}\to R_{3}} \,\,{\begin{bmatrix}1&amp;2&amp;1\\0&amp;1&amp;3\\0&amp;0&amp;0\end{bmatrix}}\xrightarrow {-2R_{2}+R_{1}\to R_{1}} {\begin{bmatrix}1&amp;0&amp;-5\\0&amp;1&amp;3\\0&amp;0&amp;0\end{bmatrix}}~.\end{aligned}}}\]
+
+<p>Natijada, \(\text{rank}(\textbf{A}) = 2\).</p>
+
+<h3 id="415-ustun-fazo-va-nol-fazo-column-space-and-null-space">4.1.5 Ustun fazo va Nol fazo (Column space and Null Space)</h3>
+
+<ol>
+  <li>Ustun fazo: $\text{Col}(\textbf{A}) = \text{span}(\textbf{a}_1, \textbf{a}_2, …, \textbf{a}_n)$
+    <ul>
+      <li>$\textbf{A}$ matritsaning ustunlar qobig’i.</li>
+      <li>Ustun fazo $\textbf{Ax}$ ko’paytirish orqali erishish mumkin bo’lgan barcha vektorlarni ifodalaydi</li>
+    </ul>
+  </li>
+  <li>Nol fazo: $\text{Null}(\textbf{A}) = { \mathbf{x} \in \mathbb{R}^n | \textbf{A} \mathbf{x} = \mathbf{0} }$
+    <ul>
+      <li>Nol fazo $\textbf{A}$ matritsaga ko’paytirilganda $\mathbf{0}$ ga aylanadigan barcha vektorlarni ifodalaydi</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="42-ortogonalizatsiya-va-proeksiya-orthogonalization-and-projection">4.2 Ortogonalizatsiya va Proeksiya (Orthogonalization and Projection)</h2>
+
+<h3 id="421-ortogonallik">4.2.1 Ortogonallik</h3>
+
+<blockquote class="block-tip">
+  <h5 id="ortogonallik">Ortogonallik</h5>
+  <p>Agar $\mathbf{u}$ va $\mathbf{v}$ vektorlarining skalar ko’paytmasi $0$ ga teng bo’lsa, u holda $\mathbf{u}$ va $\mathbf{v}$ vektorlar ortogonal (perpendikulyar) deb ataladi.
+\(\mathbf{u} \cdot \mathbf{v} = 0\)</p>
+</blockquote>
+
+<p>Misol:</p>
+
+<ul>
+  <li>$\mathbf{u} = \begin{bmatrix} 1 \ 2 \end{bmatrix}$ va $\mathbf{v} = \begin{bmatrix} -2 \ 1 \end{bmatrix}$ ortogonal vektorlar</li>
+</ul>
+
+\[\mathbf{u} \cdot \mathbf{v} = 1 \times -2 + 2 \times 1 = 0\]
+
+<h3 id="422-proeksiya">4.2.2 Proeksiya</h3>
+
+<blockquote class="block-tip">
+  <h5 id="proeksiya">Proeksiya</h5>
+
+  <p>bu vektor fazo $\mathbf{V}$ dan o’ziga bo’lgan chiziqli transformatsiya $\mathbf{P}$ hisoblanadi, ya’ni:
+$\mathbf{P}: \mathbb{V} \to \mathbb{V}$, va $\mathbf{P}^2 = \mathbf{P}$.</p>
+</blockquote>
+
+<h4 id="4221-vektorning-oqdagi-proeksiyasi-projection-onto-line">4.2.2.1 Vektorning o’qdagi Proeksiyasi (Projection onto line)</h4>
+
+<p><img src="http://habrastorage.org/files/2fa/2d0/3be/2fa2d03be62e43f3a14f0e4c7bb1398c.png" alt="" /></p>
+
+<p>Proeksiya $\mathbf{b}$ vektorining $\mathbf{a}$ vektordagi “soyasini” ko’rsatadi .</p>
+<ul>
+  <li>$\mathbf{p}$ - $\mathbf{b}$ vektorining $\mathbf{a}$ vektorga proeksiyasi</li>
+  <li>$\mathbf{e}$ - proeksiya xatosi (xato minimum bo’lishi uchun $\mathbf{e} \perp \mathbf{a}$)</li>
+  <li>$\mathbf{e} = \mathbf{b} - \mathbf{p} = \mathbf{b} - \beta ~ \mathbf{a}$</li>
+  <li>Maqsad: $\beta$ ni topish</li>
+</ul>
+
+<ol>
+  <li>$\mathbf{e} \perp \mathbf{a}$, shunda $\mathbf{a} \cdot \mathbf{e} = 0 \Rightarrow  \mathbf{a}^T (\mathbf{b} - \beta ~ \mathbf{a}) = 0$
+\(\boxed{\beta = \frac{\mathbf{a}^T \mathbf{b}}{\mathbf{a}^T \mathbf{a}}}\)</li>
+  <li>Lekin, $\beta = \frac{| \mathbf{p} |}{| \mathbf{a} |} = \frac{\mathbf{a} \cdot \mathbf{b}}{| \mathbf{a} |^2}$ uzunlik</li>
+  <li>Biz $\mathbf{p}$ vektorni topishimiz kerak</li>
+</ol>
+
+<p>Shunchaki $\beta$ ni $\mathbf{a}$ vektorga ko’paytirish kerak:
+\({\displaystyle \operatorname {proj} _{\mathbf {a} }\mathbf {b} = \beta~ \mathbf{a} = {\frac {\mathbf {a} \cdot \mathbf {b} }{\left\|\mathbf {a} \right\|^{2}}}{\mathbf {a} }={\frac {\mathbf {a} ^T \mathbf {b} }{\mathbf {a} ^T \mathbf {a} }}{\mathbf {a} }~.}\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mf">1.</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">],</span> <span class="p">[</span><span class="mf">6.</span><span class="p">]])</span>
+<span class="n">proj_v</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span> <span class="o">*</span> <span class="n">b</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">proj_v</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="4222-proeksiya-matritsasi-projection-matrix">4.2.2.2 Proeksiya matritsasi (Projection Matrix)</h4>
+<p>Berilgan $\displaystyle \operatorname {proj} _{\mathbf {b} }\mathbf {a}={\frac {\mathbf {a} ^T \mathbf {b} }{\mathbf {b} ^T \mathbf {b} }}~{\mathbf {b} } = {\mathbf {b} }~ {\frac {\mathbf {b} ^T \mathbf {a} }{\mathbf {b} ^T \mathbf {b} }}$. Lekin biz buni matritsa yordamida ifodalamoqchimiz: \(\boxed{\textbf{p}=\textbf{Pb}}\)</p>
+
+<p>\({\displaystyle \operatorname {proj} _{\mathbf {b} }\mathbf {a}= \mathbf {b} {\frac {\mathbf {b} ^T \mathbf {a} }{\mathbf {b} ^T \mathbf {b} }}} = {\frac {\mathbf {b} \mathbf {b}^T  }{\mathbf {b} ^T \mathbf {b} }}~{\mathbf {a} }\)
+Biz proeksiya matritsasini olamiz:
+\(\textbf{P} = \frac {\mathbf {b} \mathbf {b}^T  }{\mathbf {b} ^T \mathbf {b} }\)</p>
+
+<p>Xossalari:</p>
+
+<ul>
+  <li>$ \textbf{P}^T = \textbf{P}$</li>
+  <li>$\textbf{P}^2 = \textbf{P}$</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">]])</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">P</span> <span class="o">@</span> <span class="n">P</span><span class="p">)</span>
+
+<span class="n">proj_v</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">proj_v</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="4223-vektorning-subfazoga-proeksiyasi-projection-onto-subspace">4.2.2.3 Vektorning subfazoga proeksiyasi (Projection onto subspace)</h4>
+
+<p>Faraz qilaylik, $\mathbf{A}\mathbf{x} = \mathbf{b}$ yechimi yo’q.</p>
+<ul>
+  <li>$\mathbf{b} \notin \text{Col}(\mathbf{A})$ - $\mathbf{b}$ vektori $\mathbf{A}$ ustunlar qobig’ida emas</li>
+  <li>lekin, $\mathbf{b}$ vektorini proeksiya orqali ustun fazosiga $\text{Col}(\mathbf{A})$ o’tkazish mumkin</li>
+  <li>$\text{Col}(\mathbf{A})$ ustun fazosi giper-tekislikni (hyperplane) hosil qiladi.</li>
+  <li>$\mathbf{b}$ vektorini giper-tekislikga proeksiya qilish kerak</li>
+</ul>
+
+<p>Misol: Tekislikka proeksiya $\mathbb{R}^3 \rightarrow \mathbb{R}^2$</p>
+
+<p>Faraz qilamiz, $\text{dim}(\text{Col}(\mathbf{A})) = 2$, ya’ni bazis $\mathbf{a_1}, \mathbf{a_2}$ vektorlar to’plami: $\textbf{A} = \Bigg[ \ \mathop{\mathbf a_1}\limits_|^| \ \mathop{\mathbf a_2}\limits_|^| \ \Bigg]$</p>
+
+<center><img src="http://habrastorage.org/files/245/834/296/245834296b494b6a8f42522ff1feb119.png" width="400" /></center>
+
+<ul>
+  <li>$\mathbf{p} = \hat x_1 ~ \mathbf{a}_1 +  \hat x_2 ~ \mathbf{a}_2 \Rightarrow  \mathbf{p} = \textbf{A}  \mathbf{\hat x}$</li>
+  <li>
+    <p>Maqsad: $\mathbf{\hat x}$ ni topish</p>
+  </li>
+  <li>$\mathbf{p} = \textbf{A}  \mathbf{\hat x}$</li>
+  <li>$\mathbf{e} = \mathbf{b} - \mathbf{p} = \mathbf{b} - \textbf{A}  \mathbf{\hat x}$</li>
+  <li>$\mathbf{e} \perp \text{Col}(\mathbf{A})$ - $\mathbf{e} \perp \mathbf{a}_1$ va $\mathbf{e} \perp \mathbf{a}_2$
+    <ul>
+      <li>
+        <p>$\mathbf{a}_1^T \mathbf{e} = \mathbf{a}_1^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0$</p>
+      </li>
+      <li>
+        <p>$\mathbf{a}_2^T \mathbf{e} = \mathbf{a}_2^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0$</p>
+      </li>
+    </ul>
+  </li>
+  <li>Matritsa ko’rinishida:
+\(\textbf{A}^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0\)</li>
+</ul>
+
+<p>$ \mathbf{\hat x} $ topish kerak:
+\(\textbf{A}^T (\mathbf{b} - \textbf{A}  \mathbf{\hat x}) = 0\)
+\(\textbf{A}^T \textbf{b} - \textbf{A}^T \textbf{A}  \mathbf{\hat x} = 0\)
+\(\textbf{A}^T \textbf{A}  \mathbf{\hat x} = \textbf{A}^T \textbf{b}\)
+\(\boxed{\mathbf{\hat x} = (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T \textbf{b}}\)</p>
+
+<p>Lekin, $\mathbf{\hat x}$ bu koeffitsientlar to’plami, proeksiya esa: 
+\(\mathbf{p} = \textbf{A}  \mathbf{\hat x} = \textbf{A} (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T \textbf{b}\)</p>
+
+<ul>
+  <li>$\textbf{P} = \textbf{A} (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T$ - proeksiya matritsasi</li>
+</ul>
+
+<h2 id="43-ortonormal-bazis-va-gram-shmit-jarayoni">4.3 Ortonormal bazis va Gram-Shmit jarayoni</h2>
+
+<h3 id="431-ortonormal-bazis-orthonormal-basis">4.3.1 Ortonormal bazis (Orthonormal basis)</h3>
+
+<p>${\textbf{q}_1, \textbf{q}_2, … \textbf{q}_n }$ vektorlar to’plami <strong>ortonormal</strong> hisoblanadi, agar:</p>
+
+\[\textbf{q}_i^T \textbf{q}_j=
+\begin{cases}
+    0, &amp; \text{qachonki} &amp; i\ne j &amp; \text{ortogonal vektor}\\
+    1, &amp; \text{when} &amp; i = j &amp; \text{birlik vektor}
+\end{cases}\]
+
+<table>
+  <tbody>
+    <tr>
+      <td>Matritsa ko’rinishida:   $Q = \Bigg[ \mathop{\mathbf q_1}\limits_</td>
+      <td>^</td>
+      <td>\ \mathop{\mathbf q_2}\limits_</td>
+      <td>^</td>
+      <td>\ \cdots \  \mathop{\mathbf q_n}\limits_</td>
+      <td>^</td>
+      <td>\Bigg]$</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p>$Q$ - <strong>ortonormal</strong> matritsa deb ataladi</p>
+
+    <ul>
+      <li>$\textit{Q}^T \textit{Q}= \textit{I}$</li>
+      <li>$\textit{Q}^T = \textit{Q}^{-1}$</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="432-ortogonal-bazisga-proeksiya-projection-onto-orthogonal-basis">4.3.2 Ortogonal bazisga proeksiya (Projection onto orthogonal basis)</h3>
+
+<p>Faraz qilaylik, $Q = \Bigg[ \mathop{\mathbf q_1}\limits_|^| \ \mathop{\mathbf q_2}\limits_|^| \ \cdots \  \mathop{\mathbf q_n}\limits_|^| \Bigg]$ ortonormal bazis bo’lsin. Biz $\mathbf{b}$ vektorini bu bazisga proeksiya qilishimiz kerak.</p>
+<ul>
+  <li>$\text{Col}(Q)$ - $\mathbf{b}$ vektorini proeksiya qilish uchun kerak bo’lgan fazo</li>
+  <li>odatda, proeksiya matritsasi $\textbf{P} = \textbf{A} (\textbf{A}^T \textbf{A})^{-1} \textbf{A}^T$ ko’rinishida topiladi</li>
+  <li>ortogonal bazis uchun proeksiya matritsasi $\textbf{P} = \textbf{Q} (\textbf{Q}^T \textbf{Q})^{-1} \textbf{Q}^T = \textbf{Q} \textbf{Q}^T$</li>
+</ul>
+
+\[\boxed{\textbf{P} = \textbf{Q} \textbf{Q}^T}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">]]),</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">]])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span><span class="p">)</span>
+<span class="c1"># euclidean norm of x and y
+</span><span class="n">x_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">y_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># normalized x or unit vector
+</span><span class="n">x_unit</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x_norm</span><span class="p">)</span>  
+<span class="n">y_unit</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">y_norm</span><span class="p">)</span> 
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Euclidean norm of x:</span><span class="se">\n</span><span class="si">{</span><span class="n">x_norm</span><span class="si">}</span><span class="se">\n</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Euclidean norm of y:</span><span class="se">\n</span><span class="si">{</span><span class="n">y_norm</span><span class="si">}</span><span class="se">\n</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Normalized x:</span><span class="se">\n</span><span class="si">{</span><span class="n">x_unit</span><span class="si">}</span><span class="se">\n</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Normalized y:</span><span class="se">\n</span><span class="si">{</span><span class="n">y_unit</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">x_unit</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span><span class="mi">1</span><span class="p">),</span>
+      <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">y_unit</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">x_unit</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y_unit</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> 
+      <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">x_unit</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">x_unit</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> 
+      <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">y_unit</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y_unit</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">column_stack</span><span class="p">((</span><span class="n">x_unit</span><span class="p">,</span> <span class="n">y_unit</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">Q</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">Q</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+</code></pre></div></div>
+
+<h3 id="433-gram-shmit-jarayoni-gram-schmidt-process">4.3.3 Gram-Shmit jarayoni (Gram-Schmidt process)</h3>
+
+<p>Gram-Shmidt jarayoni - bu vektorlar to’plamini ortonormal bazisga aylantirish usuli.</p>
+<ul>
+  <li>chiziqli bog’liq bo’lmagan vektorlar to’plamini qabul qiladi: ${\displaystyle S={\mathbf {v} _{1},\ldots ,\mathbf {v} _{k}}}$, $k ≤ n$</li>
+  <li>ortonormal bazis ${\displaystyle S’={\mathbf {u} _{1},\ldots ,\mathbf {u} _{k}}}$ hosil qiladi</li>
+</ul>
+
+<p><img src="https://gregorygundersen.com/image/gramschmidt/gram-schmidt.png" width="1000" /></p>
+
+\[{\displaystyle {\begin{aligned}\mathbf {u} _{1}&amp;=\mathbf {v} _{1},&amp;\!\mathbf {e} _{1}&amp;={\frac {\mathbf {u} _{1}}{\|\mathbf {u} _{1}\|}}\\\mathbf {u} _{2}&amp;=\mathbf {v} _{2}-\operatorname {proj} _{\mathbf {u} _{1}}(\mathbf {v} _{2}),&amp;\!\mathbf {e} _{2}&amp;={\frac {\mathbf {u} _{2}}{\|\mathbf {u} _{2}\|}}\\\mathbf {u} _{3}&amp;=\mathbf {v} _{3}-\operatorname {proj} _{\mathbf {u} _{1}}(\mathbf {v} _{3})-\operatorname {proj} _{\mathbf {u} _{2}}(\mathbf {v} _{3}),&amp;\!\mathbf {e} _{3}&amp;={\frac {\mathbf {u} _{3}}{\|\mathbf {u} _{3}\|}}\\\mathbf  \ \vdots &amp;&amp;{}\ \ \vdots \\\mathbf {u} _{k}&amp;=\mathbf {v} _{k}-\sum _{j=1}^{k-1}\operatorname {proj} _{\mathbf {u} _{j}}(\mathbf {v} _{k}),&amp;\!\mathbf {e} _{k}&amp;={\frac {\mathbf {u} _{k}}{\|\mathbf {u} _{k}\|}}.\end{aligned}}}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">A</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">A</span><span class="p">)</span> 
+
+<span class="c1"># Gram-Schmidt jarayoni
+</span><span class="n">u1</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">e1</span> <span class="o">=</span> <span class="n">u1</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">u1</span><span class="p">)</span>
+
+<span class="n">v2</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">u2</span> <span class="o">=</span> <span class="n">v2</span> <span class="o">-</span> <span class="p">((</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">u1</span><span class="p">))</span> <span class="o">*</span> <span class="n">u1</span>
+<span class="n">e2</span> <span class="o">=</span> <span class="n">u2</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">u2</span><span class="p">)</span>
+
+<span class="n">v3</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">u3</span> <span class="o">=</span> <span class="n">v3</span> <span class="o">-</span> <span class="p">(((</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">u1</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">u1</span><span class="p">))</span> <span class="o">*</span> <span class="n">u1</span><span class="p">)</span> <span class="o">-</span> <span class="p">(((</span><span class="n">u2</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">v3</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">u2</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">u2</span><span class="p">))</span> <span class="o">*</span> <span class="n">u2</span><span class="p">)</span> 
+<span class="n">e3</span> <span class="o">=</span> <span class="n">u3</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">u3</span><span class="p">)</span>
+
+<span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">column_stack</span><span class="p">((</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">e3</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">Q</span><span class="p">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">Q</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+</code></pre></div></div>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Modul 5. Il’gor matritsa tushunchalari</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" rel="alternate" type="text/html" title="Modul 5. Il’gor matritsa tushunchalari" /><published>2025-02-28T00:00:00+03:00</published><updated>2025-02-28T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/ilgor_matritsa</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html"><![CDATA[<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-J4fgV-iQ4?si=s5exf2dZ7Yc95q0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<p>Bu darsda biz matritsalar bilan bog’liq ba’zi muhim tushunchalarni ko’rib chiqamiz. Bu tushunchalar sizga matritsalar bilan ishlashda va ularni yanada chuqurroq tushunishga yordam beradi.</p>
+
+<h2 id="41-determinant">4.1 Determinant</h2>
+<h3 id="411-determinant-nima">4.1.1 Determinant nima?</h3>
+
+<p>Determinant - bu kvadrat matritsa bilan bog’liq bo’lgan son. U matritsaning o’ziga xos xossalarini ifodalaydi va ko’plab matematik va fizik muammolarni hal qilishda muhim rol o’ynaydi.
+U \(\text{det}(\mathbf{A})\) yoki \(|\mathbf{A}|\) bilan ifodalanadi.</p>
+
+<p>Determinantning asosiy xususiyatlari:</p>
+<ol>
+  <li>$\text{det}(\textbf{I}) = 1$</li>
+  <li>$\text{det}(\textbf{A}) = 0 \Rightarrow \textbf{A}$ matritsa teskari mavjud emas</li>
+  <li>$\text{det}(c \textbf{A}) = c^n \text{det}(\textbf{A})$</li>
+  <li>$\text{det}(\textbf{A}^T) = \text{det}(\textbf{A})$</li>
+  <li>$\text{det}(\textbf{A}^{-1}) = \frac{1}{\text{det}(\textbf{A})}$</li>
+  <li>$\text{det}(\textbf{AB}) = \text{det}(\textbf{A}) \text{det}(\textbf{B})$</li>
+  <li>$\text{det}(\textbf{A}^n) = (\text{det}(\textbf{A}))^n$</li>
+  <li>$\text{det}(\textbf{A}) = \prod_{i=1}^{n} a_{ii}~$, agar $\textbf{A}$ uchburchak matritsa bo’lsa</li>
+</ol>
+
+<h3 id="412-determinantning-geometrik-manosi">4.1.2 Determinantning Geometrik ma’nosi?</h3>
+
+<ul>
+  <li>2-D’da determinant - bu ikki vektor hosil qilgan parallelogramning maydoni</li>
+  <li>3-D’da determinant - bu uchta vektor hosil qilgan parallelepipedning hajmi</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2D parallelogram</td>
+      <td>3D parallelepiped</td>
+    </tr>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Area_parallelogram_as_determinant_modified.svg/500px-Area_parallelogram_as_determinant_modified.svg.png" alt="" /></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Determinant_parallelepiped.svg/570px-Determinant_parallelepiped.svg.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>\(\textbf{A} = \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\)</td>
+      <td>\(\textbf{A} = \begin{bmatrix} \mathbf{r_1} &amp; \mathbf{r_2} &amp; \mathbf{r_3} \end{bmatrix}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="413-determinantni-hisoblash">4.1.3 Determinantni hisoblash?</h3>
+<ol>
+  <li>$2 \times 2$ matritsa uchun:
+\(\text{det}(\textbf{A}) = \begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix} = ad - bc\)</li>
+  <li>$3 \times 3$ matritsa uchun:
+\(\text{det}(\textbf{A}) = \begin{vmatrix} a &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{vmatrix} = aei + bfg + cdh - ceg - bdi - afh\)</li>
+  <li>$n &gt; 3$ uchun:
+    <ul>
+      <li>kofaktorlar yordamida</li>
+      <li>tayanch (pivot) formulasi yordamida</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> 
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> 
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="p">])</span>
+<span class="n">det_A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A matritsaning determinanti: </span><span class="si">{</span><span class="n">det_A</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="42-eigen-tushuncha">4.2 “Eigen” tushuncha</h2>
+
+<p>Ushbu animatsiyada, qizil chiziq bo’yicha xarakatlanayotgan vektorlar ko’rsatilgan. Bu vektorlar matritsa bilan ko’paytirilganda o’z yo’nalishini o’zgartirmaydi, balki faqat uzunligi o’zgaradi. Bunday vektorlar <strong>eigenvektorlar</strong> deb ataladi:
+<br /></p>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Eigenvectors_of_a_linear_operator.gif/400px-Eigenvectors_of_a_linear_operator.gif" /></center>
+
+<p>Yana bir misol:
+Ushbu Mona Lisa rasmini transformatsiya (siljitish) qilganimizda, qizil ko’rsatkich yo’nalishini o’zgartirgan, ko’k ko’rsatgich esa o’z yo’nalishini o’zgartirmagan. Bunday ko’rsatgichlar <strong>eigenvektorlar</strong> deb ataladi. Ular transformatsiya ostida o’z yo’nalishini o’zgartirmaydi, balki faqat uzunligi o’zgaradi.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mona_Lisa_eigenvector_grid.png/960px-Mona_Lisa_eigenvector_grid.png" /></p>
+
+<p>Matematik tarzda bunday vektorlar quyidagi tenglama orqali ifodalanadi:</p>
+
+\[\boxed{\textbf{A} \mathbf{v} = \lambda \mathbf{v}}\]
+
+<p>Bu erda $\textbf{A}$ - matritsa, $\mathbf{v}$ - eigenvektor va $\lambda$ - eigenqiymat (eigenvalue).</p>
+
+<center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Eigenvalue_equation.svg/500px-Eigenvalue_equation.svg.png" width="400" />
+</center>
+
+<h3 id="421-eigenvektorlar-va-eigenqiymatlarni-topish">4.2.1 Eigenvektorlar va Eigenqiymatlarni topish</h3>
+<ol>
+  <li>$\textbf{A} \mathbf{v} = \lambda \mathbf{v}$ tenglamasini quyidagi ko’rinishga keltiramiz:
+\(\textbf{A} \mathbf{v} - \lambda \mathbf{v} = \mathbf{0}\)</li>
+  <li>So’ng quyidagi ko’rinishga keltiramiz:
+\((\textbf{A}- \lambda \mathbf{I}) \mathbf{v} = \mathbf{0}\)</li>
+  <li>$\mathbf{v}$ vektorning nolga teng bo’lmagan yechimi bo’lishi uchun, faqat va faqat $\text{det}(\textbf{A}- \lambda \mathbf{I}) = 0$ bo’lishi kerak. Bu erda $\mathbf{I}$ - birlik matritsa. Bu tenglama <strong>xarakteristik tenglama</strong> deb ataladi.</li>
+  <li>Bu tenglamani yechish orqali $\lambda$ eigenqiymatlarni topamiz.</li>
+  <li>Har bir $\lambda$ uchun $ (\textbf{A}- \lambda \mathbf{I}) \mathbf{v} = \mathbf{0}$ tenglamasini yechish orqali $\mathbf{v}$ eigenvektorlarni topamiz.</li>
+</ol>
+
+<p>Misol:</p>
+
+<p>Bizga \(\textbf{A} = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\) matritsa berilgan. Maqsadimiz uning eigenvektor va eigenqiymatlarini topish.</p>
+
+<p>Xarakteristik tenglama:</p>
+
+\[\det(A-\lambda I)={\begin{vmatrix}2-\lambda &amp;1\\1&amp;2-\lambda \end{vmatrix}}=3-4\lambda +\lambda ^{2}\]
+
+\[\lambda = 1 \text{ yoki } \lambda = 3\]
+
+<p>Shunda, eigenvektorlarni topish uchun quyidagi tenglamani yechamiz:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\lambda = 1$</td>
+      <td>$\lambda = 3$</td>
+    </tr>
+    <tr>
+      <td>\(\mathbf{A}-\lambda \mathbf{I} = \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}\)</td>
+      <td>\(\mathbf{A}-\lambda \mathbf{I} = \begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}\)</td>
+    </tr>
+    <tr>
+      <td>\(\begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}\textbf{v} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}\)</td>
+      <td>\(\begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}\textbf{v} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}\)</td>
+    </tr>
+    <tr>
+      <td>\(\mathbf {v}_{\lambda =1}={\begin{bmatrix}1\\-1\end{bmatrix}}\)</td>
+      <td>\(\mathbf {v} _{\lambda =3}={\begin{bmatrix}1\\1\end{bmatrix}}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="421-eigen-xossalari-va-eigen-vektor-matritsasi">4.2.1 Eigen xossalari va Eigen-vektor matritsasi</h3>
+
+<ul>
+  <li>${\displaystyle \operatorname {tr} (A)=\sum <em>{i=1}^{n}a</em>{ii}=\sum _{i=1}^{n}\lambda _{i}=\lambda _{1}+\lambda _{2}+\cdots +\lambda _{n}.}$</li>
+  <li>${\displaystyle \det(A)=\prod _{i=1}^{n}\lambda _{i}=\lambda _{1}\lambda _{2}\cdots \lambda _{n}.}$</li>
+  <li>$\textbf{A}$ matritsaning teskarisi mavjud, agar uning har bir eigenqiymatlari $0$ ga teng bo’lmasa.</li>
+  <li>
+    <p>Yuqoridan (quyidan) uchburchak matritsaning eigen-qiymatlari dioganal elementlarga teng</p>
+  </li>
+  <li>bizda $n$ ta chiziqli bog’liq bo’lmagan eigen-vektorlar mavjud ${ \textbf{s}_1, \textbf{s}_2, …, \textbf{s}_n }$</li>
+</ul>
+
+\[\textbf{S} = \Bigg[ \mathop{\mathbf s_1}\limits_|^| \ \mathop{\mathbf s_2}\limits_|^| \ \cdots \  \mathop{\mathbf s_n}\limits_|^| \Bigg]\]
+
+<ul>
+  <li>$\textbf{S}$ - eigen-vektor matritsasi</li>
+</ul>
+
+<h2 id="43-matritsa-normasi-matrix-norm">4.3 Matritsa normasi (Matrix norm)</h2>
+
+<h3 id="431--matritsa-normasi-tushunchasi-va-xossalari">4.3.1  Matritsa normasi tushunchasi va xossalari</h3>
+
+<p>Matritsa normasi - bu matritsaning “o’lcham”ini belgilovchi, manfiy bo’lmagan skalar qiymat qaytaruvchi funksiya.</p>
+
+<ul>
+  <li>
+\[\|A\| \geq 0\]
+  </li>
+  <li>
+\[\|\alpha A\| = |\alpha| \|A\|\]
+  </li>
+  <li>
+\[\|A + B\| \leq \|A\| + \|B\|\]
+  </li>
+  <li>
+\[\|AB\| \leq \|A\| \|B\|\]
+  </li>
+</ul>
+
+<h3 id="432--matritsa-normasi-turlari">4.3.2  Matritsa normasi turlari</h3>
+
+<ol>
+  <li>
+    <p>Frobenius normasi (Frobenius norm)</p>
+  </li>
+  <li>
+    <p>Frobenius normasi (Frobenius norm)</p>
+  </li>
+</ol>
+
+\[{\displaystyle \|A\|_{\text{F}}={\sqrt {\sum _{i}^{m}\sum _{j}^{n}|a_{ij}|^{2}}}}\]
+
+<ol>
+  <li>1-normasi (1-norm)</li>
+</ol>
+
+\[{\displaystyle \|A\|_{1 }=\max _{j = 1, ..., n}\sum_{j=1}^{n}|a_{ij}|.}\]
+
+<ol>
+  <li>Spektr normasi (Spectral norm)
+\({\displaystyle \|A\|_{2}={\sqrt {\lambda _{\max }\left(A^{T}A\right)}}}\)</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">frobenius_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="sh">'</span><span class="s">fro</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">max_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">spectral_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Frobenius norm: </span><span class="si">{</span><span class="n">frobenius_norm</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Maximum norm: </span><span class="si">{</span><span class="n">max_norm</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Spectral norm: </span><span class="si">{</span><span class="n">spectral_norm</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="44-matritsani-yoyish-matrix-decomposition">4.4 Matritsani Yoyish (Matrix Decomposition)</h2>
+
+<p>Matritsani yoyish degani bu matritsani boshqa matritsalarga bo’lishdir. Bu jarayon ko’plab matematik va fizik muammolarni hal qilishda qo’llaniladi. Yoyish jarayoni matritsaning o’ziga xos xossalarini aniqlashga yordam beradi. Masalan siz $6 = 2 \cdot 3$ deb yozishingiz mumkin. Bu erda $2$ va $3$ - $6$ ning yoyishidir ya’ni faktorlarga ajratish. Faktorlarga ajratganimizda masalan biz $6$ sonining xususiyatlarni aniqlaymiz: $2$ va $3$ ga bo’linishi, just son ekanligi.</p>
+
+<p>Matritsani yoyishning ko’plab usullari mavjud. Qo’llanilishiga qarab, ushbu usullarning ba’zilari boshqalarga qaraganda foydaliroqdir. Bu darsda biz matritsani yoyishning eng ko’p qo’llaniladigan usullari bilan tanishamiz:</p>
+<ol>
+  <li>$\textbf{LU}$ yoyish</li>
+  <li>$\textbf{QR}$ yoyish</li>
+  <li>$\textit{Eigen}$ yoyish</li>
+  <li>$\textbf{SVD}$ yoyish</li>
+</ol>
+
+<h3 id="441-textbflu-yoyish">4.4.1 $\textbf{LU}$ yoyish</h3>
+
+<p>Matritsani yoyishning keng tarqalgan usullaridan biri $\textbf{LU}$ yoyishdir. Odatda chiziqli tenglamalar tizimini yechishda va matritsaning determinantini topish uchun foydalaniladi.</p>
+
+<p>$\textbf{LU}$ yoyishi Gauss usulini osonroq bajarish uchun kvadrat matritsani ikkita uchburchak matritsalarga parchalaydi. U ushbu chiziqli algebra teoremasiga asoslanadi:</p>
+
+<p>Har qanday singulyar (ya’ni teskarisi mavjud emas) bo’lmagan kvadrat matritsa $\textbf{A}$, bir xil tartibdagi ikkita uchburchak matritsaning $\textbf{L}$ va $\textbf{U}$ ko’paytmasi sifatida yozilishi mumkin, shunday qilib</p>
+
+<ul>
+  <li>$\textbf{L}$  matritsa quyidan uchburchak matritsa (asosiy diagonal ustidagi barcha elementlar 0 ga teng)</li>
+  <li>$\textbf{U}$  yuqoridan uchburchak matritsa (asosiy diagonal ostidagi barcha elementlar 0 ga teng).</li>
+</ul>
+
+<p>Matematik ifodasi:</p>
+
+\[\begin{split}
+\underset{n\times n}{\mathbf{A}} &amp;= \underset{n\times n}{\mathbf{L}}~ \underset{n\times n}{\mathbf{U}} \\[2ex]
+&amp;= \begin{bmatrix}
+l_{11} &amp; 0 &amp; 0 &amp; \ldots &amp; 0\\
+l_{21}&amp; l_{22} &amp; 0 &amp; \ldots &amp; 0\\
+l_{31}&amp; l_{32} &amp; l_{33} &amp; \ldots &amp; 0\\
+\vdots &amp; \vdots &amp;\vdots &amp; \ddots &amp; \vdots \\
+l_{n1} &amp; l_{n2} &amp; l_{n3} &amp; \ldots &amp; l_{nn}
+\end{bmatrix}\begin{bmatrix}
+u_{11} &amp; u_{12} &amp; u_{13} &amp; \ldots &amp; u_{1n}\\
+0 &amp; u_{22} &amp; u_{23} &amp; \ldots &amp; u_{2n}\\
+0 &amp; 0 &amp; u_{33} &amp; \ldots &amp; u_{3n}\\
+\vdots &amp; \vdots  &amp;\vdots &amp; \ddots &amp; \vdots \\
+0 &amp; 0 &amp; 0 &amp; \ldots &amp; u_{nn}
+\end{bmatrix}
+\end{split}\]
+
+<h4 id="4411-textbflu-yoyishni-hisoblash">4.4.1.1 $\textbf{LU}$ yoyishni hisoblash</h4>
+
+<p>Maqsadimiz: bizga berilgan $\textbf{A}$ matritsasini $\textbf{LU}$ yoyish orqali $\textbf{L}$ va $\textbf{U}$ matritsalarini topish.</p>
+
+<p>Deylik, misol uchun, bizga quyidagi matritsa berilgan:</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \\ -2 &amp; 3 &amp; -2 \end{bmatrix}\]
+
+<p>Bu matritsanin $\textbf{LU}$ yoyishini topish uchun quyidagi qadamlarni bajaramiz:</p>
+
+<ol>
+  <li>$\textbf{A}$ matritsani birlik matritsa bilan kengaytiramiz:</li>
+</ol>
+
+\[\overbrace{\left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{array} \right]}^{\textbf{I}} \overbrace{ \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \\ -2 &amp; 3 &amp; -2 \end{array} \right]\nonumber}^{\textbf{A}}\]
+
+<ol>
+  <li>Qator ustida amallar orqali $\mathbf{A}$ matritsaning diagonalidan pastki elementlarni 0 ga aylantiramiz. Va har bir qator ustida amallar bajarish jarayonida $\textbf{I}$ matritsasini unga teskari qator ammalarni qo’llab boramiz.</li>
+</ol>
+
+<p>$R_2 = R_2 - 2R_1$ : \(\quad \left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{array} \right] \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ -2 &amp; 3 &amp; -2 \end{array} \right]\nonumber\)</p>
+
+<p>$R_3 = R_3 + 2 R_1$: \(\quad \left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{array} \right] \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ 0 &amp; 7 &amp; 4 \end{array} \right]\nonumber\)</p>
+
+<p>$R_3 = R_3 + 7 R_2$: \(\quad \left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ -2 &amp; -7 &amp; 1 \end{array} \right] \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ 0 &amp; 0 &amp; -31 \end{array} \right]\nonumber\)</p>
+
+\[\textbf{A} = \overbrace{\left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ -2 &amp; -7 &amp; 1 \end{array} \right]}^{\textbf{L}}  \overbrace{ \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ 0 &amp; 0 &amp; -31 \end{array} \right] }^{\textbf{U}}\nonumber\]
+
+<h4 id="4412-lu-yoyish-usuli-orqali-textita-mathbfx-mathbfb-yechish">4.4.1.2 LU Yoyish usuli orqali $\textit{A} \mathbf{x} =\mathbf{b}$ yechish</h4>
+<p>Agar biz $\textbf{A} \mathbf{x} = \mathbf{b}$ tenglamalar tizimini yechishni istasak, biz $\textbf{A} = \textbf{LU}$ ni topishimiz kerak.</p>
+
+\[\begin{aligned}
+{\bf A x} &amp;= {\bf b} \\
+{\bf L U x} &amp;= {\bf b} \\
+{\bf U x} &amp;= {\bf L}^{-1} {\bf b} \\
+{\bf x} &amp;= {\bf U}^{-1} ({\bf L}^{-1} {\bf b}),
+\end{aligned}\]
+
+<ul>
+  <li>$\textbf{L}^{-1}\mathbf{b}$ - to’g’ri o’rniga qo’yish (forward substitution)</li>
+  <li>$\textbf{U}^{-1}(\textbf{L}^{-1}\textbf{b})$ - teskari o’rniga qo’yish (backward substitution)</li>
+</ul>
+
+<h3 id="442-textbfqr-yoyish">4.4.2 $\textbf{QR}$ yoyish</h3>
+
+<p>$\textbf{QR}$ yoyish - bu matritsaning $\textbf{Q}$ ortogonal matritsa va $\textbf{R}$ yuqoridan uchburchak matritsa ko’rinishida yozilishi.</p>
+
+\[\boxed{\textbf{A} = \textbf{QR}}\]
+
+<p>$\textbf{QR}$ yoyishni topish uchun</p>
+<ol>
+  <li>Gram-Shmidt jarayonini qo’llash va $\textbf{Q}$ matritsasini topish</li>
+  <li>$\textbf{R}$ matritsasini topish
+\(\textbf{A} = \textbf{QR} = \Bigg[ \mathop{\mathbf e_1} \limits_|^| \ \mathop{\mathbf e_2} \limits_|^| \ \cdots \ \mathop{\mathbf e_n} \limits_|^| \Bigg] \begin{bmatrix} \mathbf{e}_1 \cdot \mathbf{a}_1 &amp; \mathbf{e}_1 \cdot \mathbf{a}_2 &amp; \cdots &amp; \mathbf{e}_1 \cdot \mathbf{a}_n \\ 0 &amp; \mathbf{e}_2 \cdot \mathbf{a}_2 &amp; \cdots &amp; \mathbf{e}_2 \cdot \mathbf{a}_n \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; \mathbf{e}_n \cdot \mathbf{a}_n \end{bmatrix}\)</li>
+</ol>
+
+<p>Misol: \({\displaystyle A={\begin{bmatrix}1&amp;1&amp;1\\0 &amp; 1 &amp; 1\\1&amp;1&amp;0\end{bmatrix}} }\).</p>
+
+\[\textbf{Q}={\begin{bmatrix}{\frac {\mathbf {u}_{1}}{\|\mathbf {u}_{1}\|}}&amp;{\frac {\mathbf {u}_{2}}{\|\mathbf {u}_{2}\|}}&amp;{\frac {\mathbf {u}_{3}}{\|\mathbf {u}_{3}\|}}\end{bmatrix}} = \begin{split}
+\begin{bmatrix}
+1/\sqrt{2} &amp; 0 &amp; 1/\sqrt{2} \\
+0 &amp; 1 &amp; 0 \\
+1/\sqrt{2} &amp; 0 &amp; -1/\sqrt{2}
+\end{bmatrix}
+\end{split}\]
+
+\[\textbf{A} = \textbf{QR} \Rightarrow \textbf{Q}^{\textsf {T}}\textbf{A}=\textbf{Q}^{\textsf {T}}\textbf{Q}\,\textbf{R}=\textbf{R};\]
+
+\[{\displaystyle {\begin{aligned}\\\textbf{R}&amp;=\textbf{Q}^{\textsf {T}}\textbf{A}={\begin{bmatrix}
+\sqrt{2} &amp; \sqrt{2} &amp; 1/\sqrt{2} \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1/\sqrt{2}
+\end{bmatrix}}.\end{aligned}}}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">Q</span><span class="p">,</span> <span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">qr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">R</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h3 id="443-textiteigen-yoyish">4.4.3 $\textit{Eigen}$ yoyish</h3>
+
+<p>Eigen yoyish - bu $n \times n$ kvadrat matritsaning eigen-qiymatlar va eigen-vektorlar bilan yoyish usuli.</p>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {X} \mathbf {\Lambda } \mathbf {X} ^{-1}}\]
+
+<ul>
+  <li>$\mathbf {X}$ - ustunlari eigen-vektorlardan hosil bo’lgan matritsa</li>
+  <li>$\mathbf {\Lambda }$ - diagonal matritsa, diagonal elementlari eigen-qiymatlar</li>
+</ul>
+
+<p>Eigen yoyishni topish uchun:</p>
+<ol>
+  <li>Eigen-qiymatlar $\lambda_1, \lambda_2, …, \lambda_n$ va eigen-vektorlar $\mathbf{v}_1, \mathbf{v}_2, …, \mathbf{v}_n$ topiladi</li>
+  <li>$\mathbf {X}$ va $\mathbf {\Lambda }$ matritsalarni topish</li>
+</ol>
+
+\[\textbf{A} = \textbf{X} \mathbf{\Lambda} \textbf{X}^{-1} = \Bigg[ \mathop{\mathbf v_1} \limits_|^| \ \mathop{\mathbf v_2} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] \begin{bmatrix} \lambda_1 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \lambda_2 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; \lambda_n \end{bmatrix}\Bigg[ \mathop{\mathbf v_1} \limits_|^| \ \mathop{\mathbf v_2} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] ^{-1}\]
+
+<p>Qulaylik:</p>
+<ul>
+  <li>$\mathbf {A }^k = \mathbf {X} \mathbf {\Lambda }^k \mathbf {X} ^{-1}$</li>
+</ul>
+
+<p>Misol: \({\displaystyle \mathbf {A} ={\begin{bmatrix}1&amp;2\\2&amp;1\end{bmatrix}}}\). Uning eigen yoyilishini toping.</p>
+
+<ol>
+  <li>Eigen-qiymatlar: $\lambda_1 = 3, \lambda_2 = -1$ va eigen-vektorlar: \(\mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} -1 \\ 1 \end{bmatrix}\)</li>
+  <li>\({\displaystyle \mathbf {X} ={\begin{bmatrix}1&amp;-1\\1&amp;1\end{bmatrix}}}\) va \({\displaystyle \mathbf {\Lambda }={\begin{bmatrix}3&amp;0\\0&amp;-1\end{bmatrix}}}\)</li>
+</ol>
+
+<h3 id="444-textbfsvd-yoyish">4.4.4 $\textbf{SVD}$ yoyish</h3>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {U\Sigma V^{T}}}\]
+
+<p>Eigen yoyish faqat $n \times n$ matritsalarda ishlaydi. Singulyar yoyish esa $m \times n$ matritsalar uchun ishlaydi.</p>
+
+<p>Singulyar qiymat - bu $\textbf{A}^T \textbf{A}$ va $\textbf{A} \textbf{A}^T$ matritsalarning eigen-qiymatlari.</p>
+
+<ul>
+  <li>$\lambda_1 \geq \lambda_2 \geq … \geq \lambda_r \geq 0$</li>
+  <li>$\sigma_i = \sqrt{\lambda_i}$ - singulyar qiymatlar</li>
+</ul>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {U\Sigma V^{T}}}\]
+
+<ul>
+  <li>$\mathbf {U}$ - $m \times m$ ortogonal matritsa: ustunlari $\textbf{A}\textbf{A}^T$ matritsaning eigen-vektorlaridan tashkil topkan</li>
+  <li>$\mathbf {V}$ - $n \times n$ ortogonal matritsa: ustunlari $\textbf{A}^T \textbf{A}$ matritsaning eigen-vektorlaridan tashkil topkan</li>
+  <li>$\mathbf {\Sigma}$ - $m \times n$ diagonal elementlari singulyar qiymatlar iborat diagonal matritsa</li>
+</ul>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {U\Sigma V^{T}}}\]
+
+\[\textbf{A} = \mathbf {U\Sigma V^{T}} = \Bigg[ \mathop{\mathbf u_1} \limits_|^| \ \mathop{\mathbf u_2} \limits_|^| \ \cdots \ \mathop{\mathbf u_m} \limits_|^| \Bigg] \left[\begin{array}{ccc|c}
+\sigma_1 &amp; &amp; &amp; \\
+&amp; \ddots &amp; &amp; \boldsymbol{0} \\
+&amp; &amp; \sigma_r &amp; \\ \hline
+&amp; \boldsymbol{0} &amp; &amp; \boldsymbol{0}
+\end{array} \right]_{m \times n} \Bigg[ \mathop{\mathbf v_1} \limits_|^| \ \mathop{\mathbf v_2} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] ^{T}\]
+
+<p>$\mathbf{u}_i$ va $\mathbf{v}_i$ orasidagi bog’liqlik:</p>
+<ul>
+  <li>$\mathbf{A}^T \mathbf{u}_i = \sigma_i \mathbf{v}_i$</li>
+  <li>$\mathbf{A} \mathbf{v}_i = \sigma_i \mathbf{u}_i$</li>
+</ul>
+
+<center>
+    <img src="https://gregorygundersen.com/image/svd/standard.png" width="400" />
+</center>
+
+<p>Singulyar yoyishni topish uchun:</p>
+<ol>
+  <li>$\textbf{A}^T \textbf{A}$ eigen-qiymatlari va eigen-vektorlar topish</li>
+  <li>$\mathbf{\Sigma}$ matritsasini singulyar qiymatlari bilan to’ldirish</li>
+  <li>$\textbf{V}$ ni normallashtirilgan eigen-vektorlar bilan to’ldirish</li>
+  <li>$\textbf{u}_i = \frac{1}{\sigma_i}\textbf{A}\mathbf{v}_i$ orqali $r$ vektor toping. $\mathbb{R}^m$ fazoga Gram-Shmit yoki boshqa yo’l bilan $r$ vektorlarni $m$ ortonormal bazislarga kengaytiring, va $\textbf{U}$ matritsaning shakllantiring</li>
+</ol>
+
+<p>Misol \({\displaystyle \mathbf {A} ={\begin{bmatrix} 1 &amp; 1 \\ 1 &amp; -1 \\ 0 &amp; 1 \end{bmatrix}}}\). Uning singulyar yoyilishini toping.</p>
+<ol>
+  <li>$\textbf{A}^T \textbf{A}$ = ${\displaystyle {\begin{bmatrix} 2 &amp; 0 \ 0 &amp; 3 \end{bmatrix}}}$
+    <ul>
+      <li>eigen-qiymatlar: $\lambda_1 \geq \lambda_2$, $\lambda_1 = 3, \lambda_2 = 2$</li>
+      <li>eigen-vektorlar (normallashtirilgan): $\mathbf{v}_1 = \begin{bmatrix} 0 \ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 1 \ 0 \end{bmatrix}$</li>
+      <li>singulyar qiymatlar: $\sigma_1 = \sqrt{3}, \sigma_2 = \sqrt{2}$</li>
+    </ul>
+  </li>
+  <li>
+\[\mathbf{\Sigma} = {\displaystyle {\begin{bmatrix} \sqrt{3} &amp; 0 \\ 0 &amp; \sqrt{2} \\ 0 &amp; 0\end{bmatrix}}}\]
+  </li>
+  <li>
+\[\textbf{V} = {\displaystyle {\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}}}\]
+  </li>
+  <li>
+\[\begin{split}
+\textbf{u}_1 = \frac{1}{\sigma_1} A\textbf{v}_1 = \frac{1}{\sqrt{3}} \left[ \begin{array}{r} 1 \\ -1 \\ 1 \end{array} \right]
+\hspace{5mm}
+\textbf{u}_2 = \frac{1}{\sigma_2} A\textbf{v}_2 = \frac{1}{\sqrt{2}} \left[ \begin{array}{r} 1 \\ 1 \\ 0 \end{array} \right]
+\end{split}\]
+  </li>
+</ol>
+
+<p>$\mathbf{u}_3$ ni aniqlash uchun biz, quyidagi shartlarni bajarish kerak:</p>
+<ul>
+  <li>$\mathbf{u}_1$ va $\mathbf{u}_2$ ga ortogonal bo’lishi kerak</li>
+  <li>${\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3 }$ vektor to’plamlari $\mathbb{R}^3$ ga bazis ortonolmal bo’lishi kerak.</li>
+</ul>
+
+<p>Buni amalga oshirish uchun biz $\mathbf{u}_1 \cdot \mathbf{u}_3 = 0$ va $\mathbf{u}_2 \cdot \mathbf{u}_3 = 0$ tenglamalardan tashkil topgan chiziqli tenglamalar sistemasini tuzamiz:
+\(\begin{split}
+\left[ \begin{array}{rrr|r} 1 &amp; -1 &amp; \phantom{+}1 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; 0 \end{array} \right]
+\hspace{5mm}
+\Rightarrow
+\hspace{5mm}
+\textbf{u}_3 = \frac{1}{\sqrt{6}} \left[ \begin{array}{r} -1 \\ 1 \\ 2 \end{array} \right]
+\end{split}\)</p>
+
+<p>Natija:</p>
+
+\[\begin{split}
+\mathbf A = \mathbf U \Sigma \mathbf {V}^T
+=
+\left[ \begin{array}{rcr} 1/\sqrt{3} &amp; 1/\sqrt{2} &amp; -1/\sqrt{6} \\ -1/\sqrt{3} &amp; 1/\sqrt{2} &amp; 1/\sqrt{6} \\ 1/\sqrt{3} &amp; 0 &amp; 2/\sqrt{6} \end{array} \right]
+\left[ \begin{array}{rr} \sqrt{3} &amp; 0 \\ 0 &amp; \sqrt{2} \\ 0 &amp; 0 \end{array} \right]  \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}^T
+\end{split}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">VT</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">svd</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">U:</span><span class="se">\n</span><span class="sh">"</span><span class="p">,</span> <span class="n">U</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">S:</span><span class="se">\n</span><span class="sh">"</span><span class="p">,</span> <span class="n">S</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">VT:</span><span class="se">\n</span><span class="sh">"</span><span class="p">,</span> <span class="n">VT</span><span class="p">)</span>
+
+</code></pre></div></div>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Modul 1. Vektorlar va vektor algebra</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" rel="alternate" type="text/html" title="Modul 1. Vektorlar va vektor algebra" /><published>2025-01-13T00:00:00+03:00</published><updated>2025-01-13T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/vektor-kirish</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html"><![CDATA[<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0AWdezwHRY0?si=VhIDHwGiUGmAqOSn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<blockquote class="block-tip">
+  <h5 id="vektor">Vektor</h5>
+
+  <p>sonlarning tartiblangan ro’yxati.</p>
+</blockquote>
+
+<p>Vektorlar odatda kvadrat yoki oddiy qavslar bilan o’ralgan massivlar bo’lib ular vertikal ravishda yoziladi:</p>
+
+\[\begin{bmatrix} -1.1 \\ 0.0 \\ 3.6 \end{bmatrix} \begin{pmatrix}-1.1 \\ 0.0 \\ 3.6 \end{pmatrix}\]
+
+<p>Ular vergul bilan ajratilgan va qavslar bilan o’ralgan raqamlar shaklida ham yozilishi mumkin:</p>
+
+\[(-1.1, 0.0, 3.6)\]
+
+<p>Umuman olganda, $n$ ta elementdan iborat vektor $\mathbf{x}$ quyidagi ko’rinishda yoziladi:</p>
+
+\[\mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\]
+
+<ul>
+  <li>$x_i$ - vektorning $i$-chi elementi</li>
+</ul>
+
+<blockquote class="block-warning">
+  <h5 id="diqqat">Diqqat!</h5>
+
+  <p>Butun darsda vektorlar $\mathbf{v}$ qalinlashtirilgan shaklda bilan ko’rsatiladi.
+Sonlar esa $v$ kursiv shaklda ko’rsatiladi.</p>
+</blockquote>
+
+<p>Vektorning geometrik tushunchasi esa, vektorning nuqtadan boshlab boshqa nuqta yo’nalishini ko’rsatadi.</p>
+<center>
+    <img src="../assets/vector.svg" />
+</center>
+<p><small>Manba: <a href="https://www.3blue1brown.com/">3blue1brown</a></small></p>
+
+<p><br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Vektor yaratish
+</span><span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">vektor</span><span class="p">)</span>
+
+<span class="c1"># Vektorning o'lchami
+</span><span class="nf">print</span><span class="p">(</span><span class="n">vektor</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># Vektorning elementlari
+</span><span class="nf">print</span><span class="p">(</span><span class="n">vektor</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">vektor</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">vektor</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="11-vektor-ustida-amallar">1.1 Vektor ustida amallar</h2>
+
+<p>Chiziqli algebraning yuragida ikkita vektor ustida amallar bor. Bular:</p>
+<ul>
+  <li>qo’shish</li>
+  <li>songa ko’paytirish</li>
+</ul>
+
+<h3 id="111-vektorlarni-qoshish">1.1.1 Vektorlarni Qo’shish</h3>
+
+<p>Ikkita vektorni (masalan, $\mathbf{v}$ va $\mathbf{w}$ ) bir biriga qo’shish uchun ularning mos elementlarini qo’shish kerak.</p>
+
+\[\mathbf{v} = \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} \quad \text{va} \quad \mathbf{w} = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}, \quad \mathbf{v} + \mathbf{w} = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} + \begin{bmatrix} w_1 \\ w_2  \end{bmatrix} = \begin{bmatrix} v_1 + w_1 \\ v_2 + w_2 \end{bmatrix}\]
+
+<p>Misol uchun, ikkita vektorning qo’shish amali quyidagicha:</p>
+
+\[\mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix} \quad \text{va} \quad \mathbf{w} = \begin{bmatrix} 4 \\ 5 \end{bmatrix}, \quad \mathbf{v} + \mathbf{w} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} + \begin{bmatrix} 4 \\ 5  \end{bmatrix} = \begin{bmatrix} 5 \\ 7 \end{bmatrix}\]
+
+<blockquote class="block-warning">
+  <h5 id="diqqat-1">Diqqat!</h5>
+
+  <p>Faqat bir hil o’lchamli vektorlarni qo’shish mumkin</p>
+</blockquote>
+
+<center>
+    <img src="../assets/vector_add.svg" />
+</center>
+<p><small>Manba: <a href="https://www.3blue1brown.com/">3blue1brown</a></small></p>
+
+<p><br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Vektor yaratish
+</span><span class="n">vektor1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+
+<span class="c1"># Vektorlarni qo'shish
+</span><span class="n">vektor3</span> <span class="o">=</span> <span class="n">vektor1</span> <span class="o">+</span> <span class="n">vektor2</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">vektor3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="112-vektorlarni-songa-kopaytirish">1.1.2 Vektorlarni songa ko’paytirish</h3>
+
+<p>Vektorni ma’lum bir songa ($\alpha \in \mathbb{R}$) ko’paytirish uchun, vektorning har bir elementini ushbu songa ko’paytiramiz.</p>
+
+\[\mathbf{v} = \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} \quad \text{va} \quad \alpha, \quad \alpha \cdot \mathbf{v} = \alpha \cdot \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} = \begin{bmatrix} \alpha \cdot v_1 \\ \alpha \cdot v_2 \end{bmatrix}\]
+
+<p>Misol uchun:</p>
+
+\[\mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix}, \quad \alpha = 3, \quad \alpha \cdot \mathbf{v} = 3 \cdot \begin{bmatrix} 1 \\ 2  \end{bmatrix} = \begin{bmatrix} 3 \\ 6 \end{bmatrix}\]
+
+<center>
+    <img src="../assets/vector_scale.svg" />
+</center>
+<p><small>Manba: <a href="https://www.3blue1brown.com/">3blue1brown</a></small></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">3.0</span>
+
+<span class="c1"># Vektorlarni songa ko'paytirish
+</span><span class="n">vektor_scaled</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">vektor</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">vektor_scaled</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="12-vektor-normalari-va-skalyar-kopaytirish">1.2 Vektor Normalari va Skalyar Ko’paytirish</h2>
+<p>Vektorlarning songa ko’paytirish va qo’shish amallarini o’rganishdan keyin, vektorlarning normalari va skalyar ko’paytirishini o’rganamiz.</p>
+
+<p><br /></p>
+
+<h3 id="121-vektorlarni-skalyar-kopaytirish">1.2.1 Vektorlarni Skalyar Ko’paytirish</h3>
+
+<p>Bizda  $\mathbf{a} = \begin{bmatrix} a_1 &amp; a_2 &amp; … &amp; a_n \end{bmatrix}$ va $\mathbf{b} = \begin{bmatrix} b_1 &amp; b_2 &amp; … &amp; b_n \end{bmatrix}$ vektorlar bor.</p>
+
+<p>Ularning skalyar ko’paytmasi:</p>
+
+\[\boxed{\mathbf{a} \cdot \mathbf{b} = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n}\]
+
+\[= \sum_{i=1}^{n} a_i b_i\]
+
+\[= \mathbf{a}^T \mathbf{b}\]
+
+<p>Misol: agar $\mathbf{a} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}$ va $\mathbf{b} = \begin{bmatrix} 4 &amp; 5 &amp; 6 \end{bmatrix}$ bo’lsa,
+\(\mathbf{a} \cdot \mathbf{b} = 1 \cdot 4 + 2 \cdot 5 + 3 \cdot 6 = 4 + 10 + 18 = 32\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># Skalyar ko'paytirish
+</span><span class="n">skalyar</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">vektor1</span><span class="p">,</span> <span class="n">vektor2</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">skalyar</span> <span class="o">=</span> <span class="n">vektor1</span> <span class="o">@</span> <span class="n">vektor2</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">skalyar</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="122-vektor-normasi">1.2.2 Vektor Normasi</h3>
+
+<p>Berilgan ${\displaystyle p\geq 1}$ haqiqiy soni uchun, $\mathbf{v} = \begin{bmatrix} v_1 &amp; v_2 &amp; \ldots &amp; v_n \end{bmatrix}$ vektorning $p$-normasi quyidagi ko’rinishda aniqlanadi:</p>
+
+\[\boxed{\| \mathbf{v} \|_p = \left( \sum_{i=1}^{n} |v_i|^p \right)^{1/p}}\]
+
+<p>Ko’p qo’llaniladigan normalar bular:</p>
+<ul>
+  <li>$p = 1$ - Manhettan uzunligi yoki $\ell_1$ normasi</li>
+</ul>
+
+\[\| \mathbf{v} \|_1 = |v_1| + |v_2| + \ldots + |v_n| = \sum_{i=1}^{n} |v_i|\]
+
+<ul>
+  <li>$p = 2$ - Evklid uzunligi yoki $\ell_2$ normasi</li>
+</ul>
+
+\[\| \mathbf{v} \|_2 = \sqrt{v_1^2 + v_2^2 + \ldots + v_n^2} = \sqrt{\sum_{i=1}^{n} v_i^2}\]
+
+<ul>
+  <li>$p = \infty$ - Maksimum normasi yani vektorning eng katta elementi $\max$ operatori orqali aniqlanadi.</li>
+</ul>
+
+\[\| \mathbf{v} \|_{\infty} = \max \{ |v_1|, |v_2|, \ldots, |v_n| \}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">l1_norma</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># L1 norma
+</span><span class="n">l2_norma</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># L2 norma
+</span><span class="n">l_inf_norma</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">inf</span><span class="p">)</span> <span class="c1"># L-inf norma
+</span>
+</code></pre></div></div>
+
+<h3 id="123-vektor-normalari-amalda-qollanilishi">1.2.3 Vektor Normalari Amalda Qo’llanilishi</h3>
+
+<p>Birlik vektor (normalangan vektor):</p>
+
+\[\boxed{\mathbf {\hat {u}} ={\frac {\mathbf {u} }{\|\mathbf {u} \|}}}\]
+
+<p>va uzunligi 1 ga teng bo’lgan vektor \(\|\mathbf {\hat {u}} \| = 1\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">birlik_vektor</span> <span class="o">=</span> <span class="n">vektor</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">birlik_vektor</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">uzunligi:</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">birlik_vektor</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Masofa (Distance) formulasi:</p>
+
+\[\boxed{d(\mathbf{v}, \mathbf{w}) = \| \mathbf{v} - \mathbf{w} \|}\]
+
+<p>Ikki vektor orasidagi burchak (Angle between vectors) formulasi:</p>
+
+\[\boxed{\cos \theta = \frac{\mathbf{v} \cdot \mathbf{w}}{\| \mathbf{v} \| \| \mathbf{w} \|}}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># Masofa
+</span><span class="n">masofa</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor1</span> <span class="o">-</span> <span class="n">vektor2</span><span class="p">)</span>
+
+<span class="c1"># Kosinus burchak
+</span><span class="n">cos_theta</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">vektor1</span><span class="p">,</span> <span class="n">vektor2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor2</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="13-chiziqli-kombinatsiya-va-chiziqli-bogliqlik">1.3 Chiziqli kombinatsiya va Chiziqli bog’liqlik</h2>
+
+<h3 id="131-chiziqli-kombinatsiya">1.3.1 Chiziqli Kombinatsiya</h3>
+
+<p>Agar $\mathbf{v_1}, \mathbf{v_2}, \ldots, \mathbf{v_n}$ vektorlar va $\alpha_1, \alpha_2, \ldots, \alpha_n$ skalyar sonlar bo’lsa, ularning chiziqli kombinatsiyalari yangi vektor:</p>
+
+\[\boxed{\mathbf{v} = \alpha_1 \mathbf{v_1} + \alpha_2 \mathbf{v_2} + \ldots + \alpha_n \mathbf{v_n}}\]
+
+<h3 id="132-chiziqli-bogliqlik">1.3.2 Chiziqli Bog’liqlik</h3>
+
+<p>Deylik $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ vektorlar to’plami. Agar $\alpha_1, \alpha_2, \ldots, \alpha_n$ skalyarlar bo’lsa va:</p>
+
+\[\boxed{\alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + \ldots + \alpha_n \mathbf{v}_n = \mathbf{0}}\]
+
+<p>bunda faqat $\alpha_1 = \alpha_2 = \ldots = \alpha_n = 0$ shartni qanoatlantirsa,</p>
+
+<p>$\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ vektorlar <strong>bog’liq emas</strong> deb ataladi.</p>
+
+<p>Aks holda, ular <strong>bog’liq</strong> deb ataladi.</p>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Modul 2. Matritsa Asoslari</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" rel="alternate" type="text/html" title="Modul 2. Matritsa Asoslari" /><published>2025-01-13T00:00:00+03:00</published><updated>2025-01-13T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/matritsalar</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html"><![CDATA[<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z2sn40AtLCE?si=1Mv43lAjin3cNAfn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<blockquote class="block-tip">
+  <h5 id="matritsa">Matritsa</h5>
+
+  <p>$m$ ta qator va $n$ ta ustundan tashkil topgan sonlarning ro’yxati.</p>
+</blockquote>
+
+<p>Matritsalar odatda kvadrat yoki oddiy qavslar bilan o’ralgan jadvallar bo’lib ular ushbu ko’rinishda yoziladi:</p>
+
+<p>\(\mathbf{A} = \begin{bmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} &amp; a_{m2} &amp; \ldots &amp; a_{mn} \end{bmatrix}\) yoki \(\mathbf{A} = \begin{pmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} &amp; a_{m2} &amp; \ldots &amp; a_{mn} \end{pmatrix}\)</p>
+
+<p>A - matritsa, $a_{ij}$ - matritsa elementlari, $i$ - qator, $j$ esa ustun raqamini ko’rsatadi.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Matritsa yaratish
+</span><span class="n">matritsa</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">[</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">]</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsa: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsa o</span><span class="sh">'</span><span class="s">lchami: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">1-qator, 3-chi ustunda joylashgan element: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matrits</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsaning 2-qatori: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Matritsaning 2-ustuni: </span><span class="sh">"</span><span class="p">,</span> <span class="n">matritsa</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="21-matritsa-turlari">2.1 Matritsa turlari</h2>
+<p>Matritsalar ko’p turli bo’lishi mumkin. Ammo, ularning asosiy turlari quyidagilardir:</p>
+
+<h3 id="211-kvadrat-matritsa">2.1.1 Kvadrat matritsa</h3>
+<p>$ n \times n $ o’lchamli matritsa. Bu matritsa qator va ustunlar soni bir xil bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \end{bmatrix}\]
+
+<h3 id="212-togri-tortburchak-matritsa">2.1.2 To’g’ri to’rtburchak matritsa</h3>
+<p>$ m \times n $ o’lchamli matritsa. Bu matritsa qator va ustunlar soni bir xil bo’lmagan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \end{bmatrix}\]
+
+<h3 id="213-nol-matritsa">2.1.3 Nol matritsa</h3>
+<p>Barcha elementlari nol bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix}\]
+
+<h3 id="214-diagonal-matritsa">2.1.4 Diagonal matritsa</h3>
+<p>Kvadrat matritsa bo’lib, diagonal elementlari nol bo’lmagan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{bmatrix}\]
+
+<h3 id="215-birlik-matritsa">2.1.5 Birlik matritsa</h3>
+
+<p>Diagonal elementlari bir bo’lgan diagonal matritsa. Misol uchun,</p>
+
+\[\mathbf{I} = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\]
+
+<h3 id="216-simmetrik-matritsa">2.1.6 Simmetrik matritsa</h3>
+<p>Diagonal bo’yicha bu matritsaning elementlari simmetrik bo’lgan matritsa. Ya’ni, $a_{ij} = a_{ji}$ shartni qanoatlantiradigan matritsa. Misol uchun,</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 4 &amp; 5 \\ 3 &amp; 5 &amp; 6 \end{bmatrix}\]
+
+<h3 id="217-uchburchak-matritsa">2.1.7 Uchburchak matritsa</h3>
+<p>Uchburchak matritsalar ikki turdagi bo’lishi mumkin:</p>
+<ul>
+  <li>Yuqoridan uchburchak matritsa</li>
+  <li>Quyidan uchburchak matritsa</li>
+</ul>
+
+<p>Yuqoridan uchburchak matritsa bu diagonal elentlaridan pastki elementlari nol bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{U} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 0 &amp; 4 &amp; 5 \\ 0 &amp; 0 &amp; 6 \end{bmatrix}\]
+
+<p>Quyidan uchburchak matritsa bu diagonal elentlaridan yuqori elementlari nol bo’lgan matritsa. Misol uchun,</p>
+
+\[\mathbf{L} = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 0 \\ 3 &amp; 5 &amp; 6 \end{bmatrix}\]
+
+<h2 id="22-matritsa-ustida-amallar">2.2 Matritsa ustida amallar</h2>
+
+<p>Chiziqli algebrada matritsalarnig ustida:</p>
+<ul>
+  <li>qo’shish</li>
+  <li>matritsani songa ko’paytirish</li>
+  <li>matritsani vektorga ko’paytirish</li>
+  <li>matritsani matritsaga ko’paytirish</li>
+</ul>
+
+<p>kabi amallar bajariladi.</p>
+
+<h3 id="221-matritsalarni-qoshish">2.2.1 Matritsalarni Qo’shish</h3>
+
+<p>Ikkita $m \times n$ o’lchamli matritsani (masalan, $\mathbf{A}$ va $\mathbf{B}$ ) bir biriga qo’shish uchun ularning mos elementlarini qo’shish kerak.</p>
+
+\[\mathbf{A} + \mathbf{B} = \begin{bmatrix} a_{11} + b_{11} &amp; a_{12} + b_{12} &amp; \ldots &amp; a_{1n} + b_{1n} \\ a_{21} + b_{21} &amp; a_{22} + b_{22} &amp; \ldots &amp; a_{2n} + b_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} + b_{m1} &amp; a_{m2} + b_{m2} &amp; \ldots &amp; a_{mn} + b_{mn} \end{bmatrix}\]
+
+<p>Misol uchun, ikkita matritsaning qo’shish amali quyidagicha: agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\)</p>
+
+\[\mathbf{A} + \mathbf{B} = \begin{bmatrix} 1+5 &amp; 2+6 \\ 3+7 &amp; 4+8 \end{bmatrix} = \begin{bmatrix} 6 &amp; 8 \\ 10 &amp; 12 \end{bmatrix}\]
+
+<blockquote class="block-warning">
+  <h5 id="diqqat">Diqqat!</h5>
+
+  <p>Faqat bir hil o’lchamli matritsalarni qo’shish mumkin</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Matritsa yaratish
+</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+<span class="c1"># Matritsalarni qo'shish
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="c1"># yoki
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="222-matritsani-songa-kopaytirish">2.2.2 Matritsani songa ko’paytirish</h3>
+
+<p>Matritsani ma’lum bir songa ($\lambda \in \mathbb{R}$) ko’paytirish uchun, matritsani har bir elementini ushbu songa ko’paytiramiz.</p>
+
+\[\lambda \mathbf{A} = \begin{bmatrix} \lambda a_{11} &amp; \lambda a_{12} &amp; \ldots &amp; \lambda a_{1n} \\ \lambda a_{21} &amp; \lambda a_{22} &amp; \ldots &amp; \lambda a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \lambda a_{m1} &amp; \lambda a_{m2} &amp; \ldots &amp; \lambda a_{mn} \end{bmatrix}\]
+
+<p>Misol uchun, agar $\lambda = 3$ bo’lsa va \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) bo’lsa,</p>
+
+\[\lambda \mathbf{A} = 3 \cdot \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} = \begin{bmatrix} 3 &amp; 6 \\ 9 &amp; 12 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="c1"># Matritsani songa ko'paytirish
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">l</span> <span class="o">*</span> <span class="n">A</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="223-matritsani-vektorga-kopaytirish">2.2.3 Matritsani vektorga ko’paytirish</h3>
+<p>Matritsani vektorga ko’paytirish uchun, matritsaning har bir qatorini vektorga skalyar ko’paytiramiz, va natijada yangi vektor hosil qilamiz.</p>
+
+\[\mathbf{A} = \begin{bmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} &amp; a_{m2} &amp; \ldots &amp; a_{mn} \end{bmatrix} \quad \text{va} \quad \mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\]
+
+\[\mathbf{A} \mathbf{v} = \begin{bmatrix} a_{11} v_1 + a_{12} v_2 + \ldots + a_{1n} v_n \\ a_{21} v_1 + a_{22} v_2 + \ldots + a_{2n} v_n \\ \vdots \\ a_{m1} v_1 + a_{m2} v_2 + \ldots + a_{mn} v_n \end{bmatrix} = \begin{bmatrix} \sum_{j=1}^{n} a_{1j} v_j \\ \sum_{j=1}^{n} a_{2j} v_j \\ \vdots \\ \sum_{j=1}^{n} a_{mj} v_j \end{bmatrix}\]
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{v} = \begin{bmatrix} 5 \\ 6 \end{bmatrix}\) bo’lsa,</p>
+
+\[\mathbf{A} \mathbf{v} = \begin{bmatrix} 1 \cdot 5 + 2 \cdot 6 \\ 3 \cdot 5 + 4 \cdot 6 \end{bmatrix} = \begin{bmatrix} 17 \\ 39 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]])</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">B</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">v</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="224-matritsani-matritsaga-kopaytirish">2.2.4 Matritsani matritsaga ko’paytirish</h3>
+
+<p>Matritsani matritsaga ko’paytirish uchun, matritsaning har bir qatorini ikkinchi matritsaning ustuniga ko’paytiramiz, va natijada yangi matritsa hosil qilamiz.</p>
+
+\[\mathbf{A} = \begin{bmatrix} a_{11} &amp; \ldots &amp; a_{1n} \\ \vdots &amp; \ddots &amp; \vdots \\ a_{m1} &amp; \ldots &amp; a_{mn} \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} b_{11} &amp; \ldots &amp; b_{1p} \\ \vdots &amp; \ddots &amp; \vdots \\ b_{n1} &amp; \ldots &amp; b_{np} \end{bmatrix}\]
+
+\[\mathbf{A} \mathbf{B} = \begin{bmatrix} a_{11} b_{11} + \ldots + a_{1n} b_{n1} &amp; \ldots &amp; a_{11} b_{1p} + \ldots + a_{1n} b_{np} \\ \vdots &amp; \ddots &amp; \vdots \\ a_{m1} b_{11} + \ldots + a_{mn} b_{n1} &amp; \ldots &amp; a_{m1} b_{1p} + \ldots + a_{mn} b_{np} \end{bmatrix}\]
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\) bo’lsa,</p>
+
+\[\mathbf{A} \mathbf{B} = \begin{bmatrix} 1 \cdot 5 + 2 \cdot 7 &amp; 1 \cdot 6 + 2 \cdot 8 \\ 3 \cdot 5 + 4 \cdot 7 &amp; 3 \cdot 6 + 4 \cdot 8 \end{bmatrix} = \begin{bmatrix} 19 &amp; 22 \\ 43 &amp; 50 \end{bmatrix}\]
+
+<blockquote class="block-warning">
+  <h5 id="diqqat-1">Diqqat!</h5>
+
+  <p>Matritsalar ko’paytirish amaliyotlari uchun matritsalar o’lchamlari mos kelishi kerak. Agar $\mathbf{A}$ matritsasi $m \times n$ o’lchamli bo’lsa, $\mathbf{B}$ matritsasi $n \times p$ o’lchamli bo’lishi kerak. Ya’ni, $\mathbf{A}$ matritsasining ustunlar soni $\mathbf{B}$ matritsasining qatorlar soniga teng bo’lishi kerak.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]])</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">B</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="225-hadamard-kopaytirish">2.2.5 Hadamard ko’paytirish</h3>
+
+<p>Matritsalarni Hadamard ko’paytirish uchun, ularning shunchaki mos elementlarini ko’paytiramiz.</p>
+
+\[\mathbf{A} \odot \mathbf{B} = \begin{bmatrix} a_{11} \cdot b_{11} &amp; a_{12} \cdot b_{12} &amp; \ldots &amp; a_{1n} \cdot b_{1n} \\ a_{21} \cdot b_{21} &amp; a_{22} \cdot b_{22} &amp; \ldots &amp; a_{2n} \cdot b_{2n} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ a_{m1} \cdot b_{m1} &amp; a_{m2} \cdot b_{m2} &amp; \ldots &amp; a_{mn} \cdot b_{mn} \end{bmatrix}\]
+
+<p>Misol uchun, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix} \quad \text{va} \quad \mathbf{B} = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\) bo’lsa,</p>
+
+\[\mathbf{A} \odot \mathbf{B} = \begin{bmatrix} 1 \cdot 5 &amp; 2 \cdot 6 \\ 3 \cdot 7 &amp; 4 \cdot 8 \end{bmatrix} = \begin{bmatrix} 5 &amp; 12 \\ 21 &amp; 32 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">multiply</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">*</span> <span class="n">B</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="23-matritsa-ustida-boshqa-amallar">2.3 Matritsa ustida boshqa amallar</h2>
+
+<p>Matritsalarni ustida boshqa amallar ham bajarish mumkin. Ularning ba’zilari quyidagilardir:</p>
+<ul>
+  <li>matritsa transponatsiyasi</li>
+  <li>matritsa izi (trace)</li>
+</ul>
+
+<h3 id="231-matritsa-transponatsiyasi">2.3.1 Matritsa transponatsiyasi</h3>
+<p>Matritsa transponatsiyasi - bu matritsaning ustunlarini qatorlariga, qatorlarini esa ustunlariga almashtirish amaliyotidir.</p>
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) bo’lsa, uning transponatasi quyidagicha bo’ladi:</p>
+
+\[\mathbf{A}^T = \begin{bmatrix} 1 &amp; 3 \\ 2 &amp; 4 \end{bmatrix}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="n">T</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">transpose</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="nf">transpose</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="232-matritsa-izi-trace">2.3.2 Matritsa izi (trace)</h3>
+
+<p>Matritsa izi - bu matritsaning diagonal elementlarini qo’shish amaliyotidir.</p>
+
+\[\text{trace}(\mathbf{A}) = \sum_{i=1}^{n} a_{ii} = a_{11} + a_{22} + \ldots + a_{nn}\]
+
+<p>Misol, agar \(\mathbf{A} = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\) bo’lsa, uning izi quyidagicha bo’ladi:</p>
+
+\[\text{trace}(\mathbf{A}) = 1 + 4 = 5\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">trace</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">t</span> <span class="o">=</span> <span class="n">A</span><span class="p">.</span><span class="nf">trace</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</code></pre></div></div>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[]]></summary></entry></feed>

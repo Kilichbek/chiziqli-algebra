@@ -1,0 +1,902 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Modul 5. Il&#39;gor matritsa tushunchalari · Chiziqli Algebra</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Chiziqli Algebra Sun'iy Idrok uchun
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Qilichbek Haydarov"><link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/style.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/rouge/pastie.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/chiziqli-algebra/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/chiziqli-algebra//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" />
+        
+
+        
+            <link rel="next" href="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/chiziqli-algebra/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra">
+            
+                <a href="/chiziqli-algebra/" onclick="pageScrollToTop(this)">
+                    Chiziqli Algebra
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" onclick="pageScrollToTop(this)">
+                                    Modul 1. Vektorlar va vektor algebra
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 2. Matritsa Asoslari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 3. Transformatsiya va Chiziqli Tenglamalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-fazo.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" onclick="pageScrollToTop(this)">
+                                    Modul 4. Vektor Fazolari va Ortogonalizatsiya
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" onclick="pageScrollToTop(this)">
+                                    Modul 5. Il&#39;gor matritsa tushunchalari
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#41-determinant" onclick="mobilePageScrollToAnchor(this)" >4.1 Determinant</a><ul><li><a href="#411-determinant-nima" onclick="mobilePageScrollToAnchor(this)" >4.1.1 Determinant nima?</a></li><li><a href="#412-determinantning-geometrik-manosi" onclick="mobilePageScrollToAnchor(this)" >4.1.2 Determinantning Geometrik ma’nosi?</a></li><li><a href="#413-determinantni-hisoblash" onclick="mobilePageScrollToAnchor(this)" >4.1.3 Determinantni hisoblash?</a></li></ul></li><li><a href="#42-eigen-tushuncha" onclick="mobilePageScrollToAnchor(this)" >4.2 “Eigen” tushuncha</a><ul><li><a href="#421-eigenvektorlar-va-eigenqiymatlarni-topish" onclick="mobilePageScrollToAnchor(this)" >4.2.1 Eigenvektorlar va Eigenqiymatlarni topish</a></li><li><a href="#421-eigen-xossalari-va-eigen-vektor-matritsasi" onclick="mobilePageScrollToAnchor(this)" >4.2.1 Eigen xossalari va Eigen-vektor matritsasi</a></li></ul></li><li><a href="#43-matritsa-normasi-matrix-norm" onclick="mobilePageScrollToAnchor(this)" >4.3 Matritsa normasi (Matrix norm)</a><ul><li><a href="#431--matritsa-normasi-tushunchasi-va-xossalari" onclick="mobilePageScrollToAnchor(this)" >4.3.1  Matritsa normasi tushunchasi va xossalari</a></li><li><a href="#432--matritsa-normasi-turlari" onclick="mobilePageScrollToAnchor(this)" >4.3.2  Matritsa normasi turlari</a></li></ul></li><li><a href="#44-matritsani-yoyish-matrix-decomposition" onclick="mobilePageScrollToAnchor(this)" >4.4 Matritsani Yoyish (Matrix Decomposition)</a><ul><li><a href="#441-textbflu-yoyish" onclick="mobilePageScrollToAnchor(this)" >4.4.1 $\textbf{LU}$ yoyish</a></li><li><a href="#442-textbfqr-yoyish" onclick="mobilePageScrollToAnchor(this)" >4.4.2 $\textbf{QR}$ yoyish</a></li><li><a href="#443-textiteigen-yoyish" onclick="mobilePageScrollToAnchor(this)" >4.4.3 $\textit{Eigen}$ yoyish</a></li><li><a href="#444-textbfsvd-yoyish" onclick="mobilePageScrollToAnchor(this)" >4.4.4 $\textbf{SVD}$ yoyish</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" onclick="pageScrollToTop(this)">
+                                    Vazifalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Modul 5. Il&#39;gor matritsa tushunchalari</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/ilgor_matritsa">Modul 5. Il&#39;gor matritsa tushunchalari</h1>
+                    
+
+                    <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-J4fgV-iQ4?si=s5exf2dZ7Yc95q0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<p>Bu darsda biz matritsalar bilan bog’liq ba’zi muhim tushunchalarni ko’rib chiqamiz. Bu tushunchalar sizga matritsalar bilan ishlashda va ularni yanada chuqurroq tushunishga yordam beradi.</p>
+
+<h2 id="41-determinant">4.1 Determinant</h2>
+<h3 id="411-determinant-nima">4.1.1 Determinant nima?</h3>
+
+<p>Determinant - bu kvadrat matritsa bilan bog’liq bo’lgan son. U matritsaning o’ziga xos xossalarini ifodalaydi va ko’plab matematik va fizik muammolarni hal qilishda muhim rol o’ynaydi.
+U \(\text{det}(\mathbf{A})\) yoki \(|\mathbf{A}|\) bilan ifodalanadi.</p>
+
+<p>Determinantning asosiy xususiyatlari:</p>
+<ol>
+  <li>$\text{det}(\textbf{I}) = 1$</li>
+  <li>$\text{det}(\textbf{A}) = 0 \Rightarrow \textbf{A}$ matritsa teskari mavjud emas</li>
+  <li>$\text{det}(c \textbf{A}) = c^n \text{det}(\textbf{A})$</li>
+  <li>$\text{det}(\textbf{A}^T) = \text{det}(\textbf{A})$</li>
+  <li>$\text{det}(\textbf{A}^{-1}) = \frac{1}{\text{det}(\textbf{A})}$</li>
+  <li>$\text{det}(\textbf{AB}) = \text{det}(\textbf{A}) \text{det}(\textbf{B})$</li>
+  <li>$\text{det}(\textbf{A}^n) = (\text{det}(\textbf{A}))^n$</li>
+  <li>$\text{det}(\textbf{A}) = \prod_{i=1}^{n} a_{ii}~$, agar $\textbf{A}$ uchburchak matritsa bo’lsa</li>
+</ol>
+
+<h3 id="412-determinantning-geometrik-manosi">4.1.2 Determinantning Geometrik ma’nosi?</h3>
+
+<ul>
+  <li>2-D’da determinant - bu ikki vektor hosil qilgan parallelogramning maydoni</li>
+  <li>3-D’da determinant - bu uchta vektor hosil qilgan parallelepipedning hajmi</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>2D parallelogram</td>
+      <td>3D parallelepiped</td>
+    </tr>
+    <tr>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Area_parallelogram_as_determinant_modified.svg/500px-Area_parallelogram_as_determinant_modified.svg.png" alt="" /></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Determinant_parallelepiped.svg/570px-Determinant_parallelepiped.svg.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td>\(\textbf{A} = \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\)</td>
+      <td>\(\textbf{A} = \begin{bmatrix} \mathbf{r_1} &amp; \mathbf{r_2} &amp; \mathbf{r_3} \end{bmatrix}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="413-determinantni-hisoblash">4.1.3 Determinantni hisoblash?</h3>
+<ol>
+  <li>$2 \times 2$ matritsa uchun:
+\(\text{det}(\textbf{A}) = \begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix} = ad - bc\)</li>
+  <li>$3 \times 3$ matritsa uchun:
+\(\text{det}(\textbf{A}) = \begin{vmatrix} a &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{vmatrix} = aei + bfg + cdh - ceg - bdi - afh\)</li>
+  <li>$n &gt; 3$ uchun:
+    <ul>
+      <li>kofaktorlar yordamida</li>
+      <li>tayanch (pivot) formulasi yordamida</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> 
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> 
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="p">])</span>
+<span class="n">det_A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">A matritsaning determinanti: </span><span class="si">{</span><span class="n">det_A</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="42-eigen-tushuncha">4.2 “Eigen” tushuncha</h2>
+
+<p>Ushbu animatsiyada, qizil chiziq bo’yicha xarakatlanayotgan vektorlar ko’rsatilgan. Bu vektorlar matritsa bilan ko’paytirilganda o’z yo’nalishini o’zgartirmaydi, balki faqat uzunligi o’zgaradi. Bunday vektorlar <strong>eigenvektorlar</strong> deb ataladi:
+<br /></p>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Eigenvectors_of_a_linear_operator.gif/400px-Eigenvectors_of_a_linear_operator.gif" /></center>
+
+<p>Yana bir misol:
+Ushbu Mona Lisa rasmini transformatsiya (siljitish) qilganimizda, qizil ko’rsatkich yo’nalishini o’zgartirgan, ko’k ko’rsatgich esa o’z yo’nalishini o’zgartirmagan. Bunday ko’rsatgichlar <strong>eigenvektorlar</strong> deb ataladi. Ular transformatsiya ostida o’z yo’nalishini o’zgartirmaydi, balki faqat uzunligi o’zgaradi.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Mona_Lisa_eigenvector_grid.png/960px-Mona_Lisa_eigenvector_grid.png" /></p>
+
+<p>Matematik tarzda bunday vektorlar quyidagi tenglama orqali ifodalanadi:</p>
+
+\[\boxed{\textbf{A} \mathbf{v} = \lambda \mathbf{v}}\]
+
+<p>Bu erda $\textbf{A}$ - matritsa, $\mathbf{v}$ - eigenvektor va $\lambda$ - eigenqiymat (eigenvalue).</p>
+
+<center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Eigenvalue_equation.svg/500px-Eigenvalue_equation.svg.png" width="400" />
+</center>
+
+<h3 id="421-eigenvektorlar-va-eigenqiymatlarni-topish">4.2.1 Eigenvektorlar va Eigenqiymatlarni topish</h3>
+<ol>
+  <li>$\textbf{A} \mathbf{v} = \lambda \mathbf{v}$ tenglamasini quyidagi ko’rinishga keltiramiz:
+\(\textbf{A} \mathbf{v} - \lambda \mathbf{v} = \mathbf{0}\)</li>
+  <li>So’ng quyidagi ko’rinishga keltiramiz:
+\((\textbf{A}- \lambda \mathbf{I}) \mathbf{v} = \mathbf{0}\)</li>
+  <li>$\mathbf{v}$ vektorning nolga teng bo’lmagan yechimi bo’lishi uchun, faqat va faqat $\text{det}(\textbf{A}- \lambda \mathbf{I}) = 0$ bo’lishi kerak. Bu erda $\mathbf{I}$ - birlik matritsa. Bu tenglama <strong>xarakteristik tenglama</strong> deb ataladi.</li>
+  <li>Bu tenglamani yechish orqali $\lambda$ eigenqiymatlarni topamiz.</li>
+  <li>Har bir $\lambda$ uchun $ (\textbf{A}- \lambda \mathbf{I}) \mathbf{v} = \mathbf{0}$ tenglamasini yechish orqali $\mathbf{v}$ eigenvektorlarni topamiz.</li>
+</ol>
+
+<p>Misol:</p>
+
+<p>Bizga \(\textbf{A} = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\) matritsa berilgan. Maqsadimiz uning eigenvektor va eigenqiymatlarini topish.</p>
+
+<p>Xarakteristik tenglama:</p>
+
+\[\det(A-\lambda I)={\begin{vmatrix}2-\lambda &amp;1\\1&amp;2-\lambda \end{vmatrix}}=3-4\lambda +\lambda ^{2}\]
+
+\[\lambda = 1 \text{ yoki } \lambda = 3\]
+
+<p>Shunda, eigenvektorlarni topish uchun quyidagi tenglamani yechamiz:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\lambda = 1$</td>
+      <td>$\lambda = 3$</td>
+    </tr>
+    <tr>
+      <td>\(\mathbf{A}-\lambda \mathbf{I} = \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}\)</td>
+      <td>\(\mathbf{A}-\lambda \mathbf{I} = \begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}\)</td>
+    </tr>
+    <tr>
+      <td>\(\begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}\textbf{v} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}\)</td>
+      <td>\(\begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}\textbf{v} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}\)</td>
+    </tr>
+    <tr>
+      <td>\(\mathbf {v}_{\lambda =1}={\begin{bmatrix}1\\-1\end{bmatrix}}\)</td>
+      <td>\(\mathbf {v} _{\lambda =3}={\begin{bmatrix}1\\1\end{bmatrix}}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="421-eigen-xossalari-va-eigen-vektor-matritsasi">4.2.1 Eigen xossalari va Eigen-vektor matritsasi</h3>
+
+<ul>
+  <li>${\displaystyle \operatorname {tr} (A)=\sum <em>{i=1}^{n}a</em>{ii}=\sum _{i=1}^{n}\lambda _{i}=\lambda _{1}+\lambda _{2}+\cdots +\lambda _{n}.}$</li>
+  <li>${\displaystyle \det(A)=\prod _{i=1}^{n}\lambda _{i}=\lambda _{1}\lambda _{2}\cdots \lambda _{n}.}$</li>
+  <li>$\textbf{A}$ matritsaning teskarisi mavjud, agar uning har bir eigenqiymatlari $0$ ga teng bo’lmasa.</li>
+  <li>
+    <p>Yuqoridan (quyidan) uchburchak matritsaning eigen-qiymatlari dioganal elementlarga teng</p>
+  </li>
+  <li>bizda $n$ ta chiziqli bog’liq bo’lmagan eigen-vektorlar mavjud ${ \textbf{s}_1, \textbf{s}_2, …, \textbf{s}_n }$</li>
+</ul>
+
+\[\textbf{S} = \Bigg[ \mathop{\mathbf s_1}\limits_|^| \ \mathop{\mathbf s_2}\limits_|^| \ \cdots \  \mathop{\mathbf s_n}\limits_|^| \Bigg]\]
+
+<ul>
+  <li>$\textbf{S}$ - eigen-vektor matritsasi</li>
+</ul>
+
+<h2 id="43-matritsa-normasi-matrix-norm">4.3 Matritsa normasi (Matrix norm)</h2>
+
+<h3 id="431--matritsa-normasi-tushunchasi-va-xossalari">4.3.1  Matritsa normasi tushunchasi va xossalari</h3>
+
+<p>Matritsa normasi - bu matritsaning “o’lcham”ini belgilovchi, manfiy bo’lmagan skalar qiymat qaytaruvchi funksiya.</p>
+
+<ul>
+  <li>
+\[\|A\| \geq 0\]
+  </li>
+  <li>
+\[\|\alpha A\| = |\alpha| \|A\|\]
+  </li>
+  <li>
+\[\|A + B\| \leq \|A\| + \|B\|\]
+  </li>
+  <li>
+\[\|AB\| \leq \|A\| \|B\|\]
+  </li>
+</ul>
+
+<h3 id="432--matritsa-normasi-turlari">4.3.2  Matritsa normasi turlari</h3>
+
+<ol>
+  <li>
+    <p>Frobenius normasi (Frobenius norm)</p>
+  </li>
+  <li>
+    <p>Frobenius normasi (Frobenius norm)</p>
+  </li>
+</ol>
+
+\[{\displaystyle \|A\|_{\text{F}}={\sqrt {\sum _{i}^{m}\sum _{j}^{n}|a_{ij}|^{2}}}}\]
+
+<ol>
+  <li>1-normasi (1-norm)</li>
+</ol>
+
+\[{\displaystyle \|A\|_{1 }=\max _{j = 1, ..., n}\sum_{j=1}^{n}|a_{ij}|.}\]
+
+<ol>
+  <li>Spektr normasi (Spectral norm)
+\({\displaystyle \|A\|_{2}={\sqrt {\lambda _{\max }\left(A^{T}A\right)}}}\)</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">frobenius_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="sh">'</span><span class="s">fro</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">max_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">spectral_norm</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Frobenius norm: </span><span class="si">{</span><span class="n">frobenius_norm</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Maximum norm: </span><span class="si">{</span><span class="n">max_norm</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Spectral norm: </span><span class="si">{</span><span class="n">spectral_norm</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="44-matritsani-yoyish-matrix-decomposition">4.4 Matritsani Yoyish (Matrix Decomposition)</h2>
+
+<p>Matritsani yoyish degani bu matritsani boshqa matritsalarga bo’lishdir. Bu jarayon ko’plab matematik va fizik muammolarni hal qilishda qo’llaniladi. Yoyish jarayoni matritsaning o’ziga xos xossalarini aniqlashga yordam beradi. Masalan siz $6 = 2 \cdot 3$ deb yozishingiz mumkin. Bu erda $2$ va $3$ - $6$ ning yoyishidir ya’ni faktorlarga ajratish. Faktorlarga ajratganimizda masalan biz $6$ sonining xususiyatlarni aniqlaymiz: $2$ va $3$ ga bo’linishi, just son ekanligi.</p>
+
+<p>Matritsani yoyishning ko’plab usullari mavjud. Qo’llanilishiga qarab, ushbu usullarning ba’zilari boshqalarga qaraganda foydaliroqdir. Bu darsda biz matritsani yoyishning eng ko’p qo’llaniladigan usullari bilan tanishamiz:</p>
+<ol>
+  <li>$\textbf{LU}$ yoyish</li>
+  <li>$\textbf{QR}$ yoyish</li>
+  <li>$\textit{Eigen}$ yoyish</li>
+  <li>$\textbf{SVD}$ yoyish</li>
+</ol>
+
+<h3 id="441-textbflu-yoyish">4.4.1 $\textbf{LU}$ yoyish</h3>
+
+<p>Matritsani yoyishning keng tarqalgan usullaridan biri $\textbf{LU}$ yoyishdir. Odatda chiziqli tenglamalar tizimini yechishda va matritsaning determinantini topish uchun foydalaniladi.</p>
+
+<p>$\textbf{LU}$ yoyishi Gauss usulini osonroq bajarish uchun kvadrat matritsani ikkita uchburchak matritsalarga parchalaydi. U ushbu chiziqli algebra teoremasiga asoslanadi:</p>
+
+<p>Har qanday singulyar (ya’ni teskarisi mavjud emas) bo’lmagan kvadrat matritsa $\textbf{A}$, bir xil tartibdagi ikkita uchburchak matritsaning $\textbf{L}$ va $\textbf{U}$ ko’paytmasi sifatida yozilishi mumkin, shunday qilib</p>
+
+<ul>
+  <li>$\textbf{L}$  matritsa quyidan uchburchak matritsa (asosiy diagonal ustidagi barcha elementlar 0 ga teng)</li>
+  <li>$\textbf{U}$  yuqoridan uchburchak matritsa (asosiy diagonal ostidagi barcha elementlar 0 ga teng).</li>
+</ul>
+
+<p>Matematik ifodasi:</p>
+
+\[\begin{split}
+\underset{n\times n}{\mathbf{A}} &amp;= \underset{n\times n}{\mathbf{L}}~ \underset{n\times n}{\mathbf{U}} \\[2ex]
+&amp;= \begin{bmatrix}
+l_{11} &amp; 0 &amp; 0 &amp; \ldots &amp; 0\\
+l_{21}&amp; l_{22} &amp; 0 &amp; \ldots &amp; 0\\
+l_{31}&amp; l_{32} &amp; l_{33} &amp; \ldots &amp; 0\\
+\vdots &amp; \vdots &amp;\vdots &amp; \ddots &amp; \vdots \\
+l_{n1} &amp; l_{n2} &amp; l_{n3} &amp; \ldots &amp; l_{nn}
+\end{bmatrix}\begin{bmatrix}
+u_{11} &amp; u_{12} &amp; u_{13} &amp; \ldots &amp; u_{1n}\\
+0 &amp; u_{22} &amp; u_{23} &amp; \ldots &amp; u_{2n}\\
+0 &amp; 0 &amp; u_{33} &amp; \ldots &amp; u_{3n}\\
+\vdots &amp; \vdots  &amp;\vdots &amp; \ddots &amp; \vdots \\
+0 &amp; 0 &amp; 0 &amp; \ldots &amp; u_{nn}
+\end{bmatrix}
+\end{split}\]
+
+<h4 id="4411-textbflu-yoyishni-hisoblash">4.4.1.1 $\textbf{LU}$ yoyishni hisoblash</h4>
+
+<p>Maqsadimiz: bizga berilgan $\textbf{A}$ matritsasini $\textbf{LU}$ yoyish orqali $\textbf{L}$ va $\textbf{U}$ matritsalarini topish.</p>
+
+<p>Deylik, misol uchun, bizga quyidagi matritsa berilgan:</p>
+
+\[\mathbf{A} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \\ -2 &amp; 3 &amp; -2 \end{bmatrix}\]
+
+<p>Bu matritsanin $\textbf{LU}$ yoyishini topish uchun quyidagi qadamlarni bajaramiz:</p>
+
+<ol>
+  <li>$\textbf{A}$ matritsani birlik matritsa bilan kengaytiramiz:</li>
+</ol>
+
+\[\overbrace{\left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{array} \right]}^{\textbf{I}} \overbrace{ \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 2 &amp; 3 &amp; 1 \\ -2 &amp; 3 &amp; -2 \end{array} \right]\nonumber}^{\textbf{A}}\]
+
+<ol>
+  <li>Qator ustida amallar orqali $\mathbf{A}$ matritsaning diagonalidan pastki elementlarni 0 ga aylantiramiz. Va har bir qator ustida amallar bajarish jarayonida $\textbf{I}$ matritsasini unga teskari qator ammalarni qo’llab boramiz.</li>
+</ol>
+
+<p>$R_2 = R_2 - 2R_1$ : \(\quad \left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{array} \right] \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ -2 &amp; 3 &amp; -2 \end{array} \right]\nonumber\)</p>
+
+<p>$R_3 = R_3 + 2 R_1$: \(\quad \left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{array} \right] \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ 0 &amp; 7 &amp; 4 \end{array} \right]\nonumber\)</p>
+
+<p>$R_3 = R_3 + 7 R_2$: \(\quad \left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ -2 &amp; -7 &amp; 1 \end{array} \right] \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ 0 &amp; 0 &amp; -31 \end{array} \right]\nonumber\)</p>
+
+\[\textbf{A} = \overbrace{\left[ \begin{array}{rrr} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ -2 &amp; -7 &amp; 1 \end{array} \right]}^{\textbf{L}}  \overbrace{ \left[ \begin{array}{rrr} 1 &amp; 2 &amp; 3 \\ 0 &amp; -1 &amp; -5 \\ 0 &amp; 0 &amp; -31 \end{array} \right] }^{\textbf{U}}\nonumber\]
+
+<h4 id="4412-lu-yoyish-usuli-orqali-textita-mathbfx-mathbfb-yechish">4.4.1.2 LU Yoyish usuli orqali $\textit{A} \mathbf{x} =\mathbf{b}$ yechish</h4>
+<p>Agar biz $\textbf{A} \mathbf{x} = \mathbf{b}$ tenglamalar tizimini yechishni istasak, biz $\textbf{A} = \textbf{LU}$ ni topishimiz kerak.</p>
+
+\[\begin{aligned}
+{\bf A x} &amp;= {\bf b} \\
+{\bf L U x} &amp;= {\bf b} \\
+{\bf U x} &amp;= {\bf L}^{-1} {\bf b} \\
+{\bf x} &amp;= {\bf U}^{-1} ({\bf L}^{-1} {\bf b}),
+\end{aligned}\]
+
+<ul>
+  <li>$\textbf{L}^{-1}\mathbf{b}$ - to’g’ri o’rniga qo’yish (forward substitution)</li>
+  <li>$\textbf{U}^{-1}(\textbf{L}^{-1}\textbf{b})$ - teskari o’rniga qo’yish (backward substitution)</li>
+</ul>
+
+<h3 id="442-textbfqr-yoyish">4.4.2 $\textbf{QR}$ yoyish</h3>
+
+<p>$\textbf{QR}$ yoyish - bu matritsaning $\textbf{Q}$ ortogonal matritsa va $\textbf{R}$ yuqoridan uchburchak matritsa ko’rinishida yozilishi.</p>
+
+\[\boxed{\textbf{A} = \textbf{QR}}\]
+
+<p>$\textbf{QR}$ yoyishni topish uchun</p>
+<ol>
+  <li>Gram-Shmidt jarayonini qo’llash va $\textbf{Q}$ matritsasini topish</li>
+  <li>$\textbf{R}$ matritsasini topish
+\(\textbf{A} = \textbf{QR} = \Bigg[ \mathop{\mathbf e_1} \limits_|^| \ \mathop{\mathbf e_2} \limits_|^| \ \cdots \ \mathop{\mathbf e_n} \limits_|^| \Bigg] \begin{bmatrix} \mathbf{e}_1 \cdot \mathbf{a}_1 &amp; \mathbf{e}_1 \cdot \mathbf{a}_2 &amp; \cdots &amp; \mathbf{e}_1 \cdot \mathbf{a}_n \\ 0 &amp; \mathbf{e}_2 \cdot \mathbf{a}_2 &amp; \cdots &amp; \mathbf{e}_2 \cdot \mathbf{a}_n \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; \mathbf{e}_n \cdot \mathbf{a}_n \end{bmatrix}\)</li>
+</ol>
+
+<p>Misol: \({\displaystyle A={\begin{bmatrix}1&amp;1&amp;1\\0 &amp; 1 &amp; 1\\1&amp;1&amp;0\end{bmatrix}} }\).</p>
+
+\[\textbf{Q}={\begin{bmatrix}{\frac {\mathbf {u}_{1}}{\|\mathbf {u}_{1}\|}}&amp;{\frac {\mathbf {u}_{2}}{\|\mathbf {u}_{2}\|}}&amp;{\frac {\mathbf {u}_{3}}{\|\mathbf {u}_{3}\|}}\end{bmatrix}} = \begin{split}
+\begin{bmatrix}
+1/\sqrt{2} &amp; 0 &amp; 1/\sqrt{2} \\
+0 &amp; 1 &amp; 0 \\
+1/\sqrt{2} &amp; 0 &amp; -1/\sqrt{2}
+\end{bmatrix}
+\end{split}\]
+
+\[\textbf{A} = \textbf{QR} \Rightarrow \textbf{Q}^{\textsf {T}}\textbf{A}=\textbf{Q}^{\textsf {T}}\textbf{Q}\,\textbf{R}=\textbf{R};\]
+
+\[{\displaystyle {\begin{aligned}\\\textbf{R}&amp;=\textbf{Q}^{\textsf {T}}\textbf{A}={\begin{bmatrix}
+\sqrt{2} &amp; \sqrt{2} &amp; 1/\sqrt{2} \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1/\sqrt{2}
+\end{bmatrix}}.\end{aligned}}}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">Q</span><span class="p">,</span> <span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">qr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">R</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h3 id="443-textiteigen-yoyish">4.4.3 $\textit{Eigen}$ yoyish</h3>
+
+<p>Eigen yoyish - bu $n \times n$ kvadrat matritsaning eigen-qiymatlar va eigen-vektorlar bilan yoyish usuli.</p>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {X} \mathbf {\Lambda } \mathbf {X} ^{-1}}\]
+
+<ul>
+  <li>$\mathbf {X}$ - ustunlari eigen-vektorlardan hosil bo’lgan matritsa</li>
+  <li>$\mathbf {\Lambda }$ - diagonal matritsa, diagonal elementlari eigen-qiymatlar</li>
+</ul>
+
+<p>Eigen yoyishni topish uchun:</p>
+<ol>
+  <li>Eigen-qiymatlar $\lambda_1, \lambda_2, …, \lambda_n$ va eigen-vektorlar $\mathbf{v}_1, \mathbf{v}_2, …, \mathbf{v}_n$ topiladi</li>
+  <li>$\mathbf {X}$ va $\mathbf {\Lambda }$ matritsalarni topish</li>
+</ol>
+
+\[\textbf{A} = \textbf{X} \mathbf{\Lambda} \textbf{X}^{-1} = \Bigg[ \mathop{\mathbf v_1} \limits_|^| \ \mathop{\mathbf v_2} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] \begin{bmatrix} \lambda_1 &amp; 0 &amp; \cdots &amp; 0 \\ 0 &amp; \lambda_2 &amp; \cdots &amp; 0 \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; 0 &amp; \cdots &amp; \lambda_n \end{bmatrix}\Bigg[ \mathop{\mathbf v_1} \limits_|^| \ \mathop{\mathbf v_2} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] ^{-1}\]
+
+<p>Qulaylik:</p>
+<ul>
+  <li>$\mathbf {A }^k = \mathbf {X} \mathbf {\Lambda }^k \mathbf {X} ^{-1}$</li>
+</ul>
+
+<p>Misol: \({\displaystyle \mathbf {A} ={\begin{bmatrix}1&amp;2\\2&amp;1\end{bmatrix}}}\). Uning eigen yoyilishini toping.</p>
+
+<ol>
+  <li>Eigen-qiymatlar: $\lambda_1 = 3, \lambda_2 = -1$ va eigen-vektorlar: \(\mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} -1 \\ 1 \end{bmatrix}\)</li>
+  <li>\({\displaystyle \mathbf {X} ={\begin{bmatrix}1&amp;-1\\1&amp;1\end{bmatrix}}}\) va \({\displaystyle \mathbf {\Lambda }={\begin{bmatrix}3&amp;0\\0&amp;-1\end{bmatrix}}}\)</li>
+</ol>
+
+<h3 id="444-textbfsvd-yoyish">4.4.4 $\textbf{SVD}$ yoyish</h3>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {U\Sigma V^{T}}}\]
+
+<p>Eigen yoyish faqat $n \times n$ matritsalarda ishlaydi. Singulyar yoyish esa $m \times n$ matritsalar uchun ishlaydi.</p>
+
+<p>Singulyar qiymat - bu $\textbf{A}^T \textbf{A}$ va $\textbf{A} \textbf{A}^T$ matritsalarning eigen-qiymatlari.</p>
+
+<ul>
+  <li>$\lambda_1 \geq \lambda_2 \geq … \geq \lambda_r \geq 0$</li>
+  <li>$\sigma_i = \sqrt{\lambda_i}$ - singulyar qiymatlar</li>
+</ul>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {U\Sigma V^{T}}}\]
+
+<ul>
+  <li>$\mathbf {U}$ - $m \times m$ ortogonal matritsa: ustunlari $\textbf{A}\textbf{A}^T$ matritsaning eigen-vektorlaridan tashkil topkan</li>
+  <li>$\mathbf {V}$ - $n \times n$ ortogonal matritsa: ustunlari $\textbf{A}^T \textbf{A}$ matritsaning eigen-vektorlaridan tashkil topkan</li>
+  <li>$\mathbf {\Sigma}$ - $m \times n$ diagonal elementlari singulyar qiymatlar iborat diagonal matritsa</li>
+</ul>
+
+\[\boxed{\displaystyle \mathbf {A} =\mathbf {U\Sigma V^{T}}}\]
+
+\[\textbf{A} = \mathbf {U\Sigma V^{T}} = \Bigg[ \mathop{\mathbf u_1} \limits_|^| \ \mathop{\mathbf u_2} \limits_|^| \ \cdots \ \mathop{\mathbf u_m} \limits_|^| \Bigg] \left[\begin{array}{ccc|c}
+\sigma_1 &amp; &amp; &amp; \\
+&amp; \ddots &amp; &amp; \boldsymbol{0} \\
+&amp; &amp; \sigma_r &amp; \\ \hline
+&amp; \boldsymbol{0} &amp; &amp; \boldsymbol{0}
+\end{array} \right]_{m \times n} \Bigg[ \mathop{\mathbf v_1} \limits_|^| \ \mathop{\mathbf v_2} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] ^{T}\]
+
+<p>$\mathbf{u}_i$ va $\mathbf{v}_i$ orasidagi bog’liqlik:</p>
+<ul>
+  <li>$\mathbf{A}^T \mathbf{u}_i = \sigma_i \mathbf{v}_i$</li>
+  <li>$\mathbf{A} \mathbf{v}_i = \sigma_i \mathbf{u}_i$</li>
+</ul>
+
+<center>
+    <img src="https://gregorygundersen.com/image/svd/standard.png" width="400" />
+</center>
+
+<p>Singulyar yoyishni topish uchun:</p>
+<ol>
+  <li>$\textbf{A}^T \textbf{A}$ eigen-qiymatlari va eigen-vektorlar topish</li>
+  <li>$\mathbf{\Sigma}$ matritsasini singulyar qiymatlari bilan to’ldirish</li>
+  <li>$\textbf{V}$ ni normallashtirilgan eigen-vektorlar bilan to’ldirish</li>
+  <li>$\textbf{u}_i = \frac{1}{\sigma_i}\textbf{A}\mathbf{v}_i$ orqali $r$ vektor toping. $\mathbb{R}^m$ fazoga Gram-Shmit yoki boshqa yo’l bilan $r$ vektorlarni $m$ ortonormal bazislarga kengaytiring, va $\textbf{U}$ matritsaning shakllantiring</li>
+</ol>
+
+<p>Misol \({\displaystyle \mathbf {A} ={\begin{bmatrix} 1 &amp; 1 \\ 1 &amp; -1 \\ 0 &amp; 1 \end{bmatrix}}}\). Uning singulyar yoyilishini toping.</p>
+<ol>
+  <li>$\textbf{A}^T \textbf{A}$ = ${\displaystyle {\begin{bmatrix} 2 &amp; 0 \ 0 &amp; 3 \end{bmatrix}}}$
+    <ul>
+      <li>eigen-qiymatlar: $\lambda_1 \geq \lambda_2$, $\lambda_1 = 3, \lambda_2 = 2$</li>
+      <li>eigen-vektorlar (normallashtirilgan): $\mathbf{v}_1 = \begin{bmatrix} 0 \ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 1 \ 0 \end{bmatrix}$</li>
+      <li>singulyar qiymatlar: $\sigma_1 = \sqrt{3}, \sigma_2 = \sqrt{2}$</li>
+    </ul>
+  </li>
+  <li>
+\[\mathbf{\Sigma} = {\displaystyle {\begin{bmatrix} \sqrt{3} &amp; 0 \\ 0 &amp; \sqrt{2} \\ 0 &amp; 0\end{bmatrix}}}\]
+  </li>
+  <li>
+\[\textbf{V} = {\displaystyle {\begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}}}\]
+  </li>
+  <li>
+\[\begin{split}
+\textbf{u}_1 = \frac{1}{\sigma_1} A\textbf{v}_1 = \frac{1}{\sqrt{3}} \left[ \begin{array}{r} 1 \\ -1 \\ 1 \end{array} \right]
+\hspace{5mm}
+\textbf{u}_2 = \frac{1}{\sigma_2} A\textbf{v}_2 = \frac{1}{\sqrt{2}} \left[ \begin{array}{r} 1 \\ 1 \\ 0 \end{array} \right]
+\end{split}\]
+  </li>
+</ol>
+
+<p>$\mathbf{u}_3$ ni aniqlash uchun biz, quyidagi shartlarni bajarish kerak:</p>
+<ul>
+  <li>$\mathbf{u}_1$ va $\mathbf{u}_2$ ga ortogonal bo’lishi kerak</li>
+  <li>${\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3 }$ vektor to’plamlari $\mathbb{R}^3$ ga bazis ortonolmal bo’lishi kerak.</li>
+</ul>
+
+<p>Buni amalga oshirish uchun biz $\mathbf{u}_1 \cdot \mathbf{u}_3 = 0$ va $\mathbf{u}_2 \cdot \mathbf{u}_3 = 0$ tenglamalardan tashkil topgan chiziqli tenglamalar sistemasini tuzamiz:
+\(\begin{split}
+\left[ \begin{array}{rrr|r} 1 &amp; -1 &amp; \phantom{+}1 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; 0 \end{array} \right]
+\hspace{5mm}
+\Rightarrow
+\hspace{5mm}
+\textbf{u}_3 = \frac{1}{\sqrt{6}} \left[ \begin{array}{r} -1 \\ 1 \\ 2 \end{array} \right]
+\end{split}\)</p>
+
+<p>Natija:</p>
+
+\[\begin{split}
+\mathbf A = \mathbf U \Sigma \mathbf {V}^T
+=
+\left[ \begin{array}{rcr} 1/\sqrt{3} &amp; 1/\sqrt{2} &amp; -1/\sqrt{6} \\ -1/\sqrt{3} &amp; 1/\sqrt{2} &amp; 1/\sqrt{6} \\ 1/\sqrt{3} &amp; 0 &amp; 2/\sqrt{6} \end{array} \right]
+\left[ \begin{array}{rr} \sqrt{3} &amp; 0 \\ 0 &amp; \sqrt{2} \\ 0 &amp; 0 \end{array} \right]  \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}^T
+\end{split}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">VT</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">svd</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">U:</span><span class="se">\n</span><span class="sh">"</span><span class="p">,</span> <span class="n">U</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">S:</span><span class="se">\n</span><span class="sh">"</span><span class="p">,</span> <span class="n">S</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">VT:</span><span class="se">\n</span><span class="sh">"</span><span class="p">,</span> <span class="n">VT</span><span class="p">)</span>
+
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Modul 4. Vektor Fazolari va Ortogonalizatsiya">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Vazifalar">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Vazifalar",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2025-05-02-vazifalar.md",
+            "ref": "_posts/2025-05-02-vazifalar.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Chiziqli Algebra",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-05-01-ilgor_matritsa.md",
+        "mtime": "2025-02-28 00:00:00 +0300",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-05-18 00:02:00 +0300"
+    },
+    "basePath": "/chiziqli-algebra",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/chiziqli-algebra/assets/gitbook/gitbook.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/theme.js"></script>
+
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/chiziqli-algebra/assets/gitbook/custom.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

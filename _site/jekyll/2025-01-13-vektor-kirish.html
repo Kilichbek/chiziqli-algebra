@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Modul 1. Vektorlar va vektor algebra · Chiziqli Algebra</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Chiziqli Algebra Sun'iy Idrok uchun
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Qilichbek Haydarov"><link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/style.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/rouge/pastie.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/chiziqli-algebra/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/chiziqli-algebra//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/chiziqli-algebra/" />
+        
+
+        
+            <link rel="next" href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/chiziqli-algebra/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra">
+            
+                <a href="/chiziqli-algebra/" onclick="pageScrollToTop(this)">
+                    Chiziqli Algebra
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" onclick="pageScrollToTop(this)">
+                                    Modul 1. Vektorlar va vektor algebra
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#11-vektor-ustida-amallar" onclick="mobilePageScrollToAnchor(this)" >1.1 Vektor ustida amallar</a><ul><li><a href="#111-vektorlarni-qoshish" onclick="mobilePageScrollToAnchor(this)" >1.1.1 Vektorlarni Qo’shish</a></li><li><a href="#112-vektorlarni-songa-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >1.1.2 Vektorlarni songa ko’paytirish</a></li></ul></li><li><a href="#12-vektor-normalari-va-skalyar-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >1.2 Vektor Normalari va Skalyar Ko’paytirish</a><ul><li><a href="#121-vektorlarni-skalyar-kopaytirish" onclick="mobilePageScrollToAnchor(this)" >1.2.1 Vektorlarni Skalyar Ko’paytirish</a></li><li><a href="#122-vektor-normasi" onclick="mobilePageScrollToAnchor(this)" >1.2.2 Vektor Normasi</a></li><li><a href="#123-vektor-normalari-amalda-qollanilishi" onclick="mobilePageScrollToAnchor(this)" >1.2.3 Vektor Normalari Amalda Qo’llanilishi</a></li></ul></li><li><a href="#13-chiziqli-kombinatsiya-va-chiziqli-bogliqlik" onclick="mobilePageScrollToAnchor(this)" >1.3 Chiziqli kombinatsiya va Chiziqli bog’liqlik</a><ul><li><a href="#131-chiziqli-kombinatsiya" onclick="mobilePageScrollToAnchor(this)" >1.3.1 Chiziqli Kombinatsiya</a></li><li><a href="#132-chiziqli-bogliqlik" onclick="mobilePageScrollToAnchor(this)" >1.3.2 Chiziqli Bog’liqlik</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 2. Matritsa Asoslari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 3. Transformatsiya va Chiziqli Tenglamalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-fazo.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-fazo.html" onclick="pageScrollToTop(this)">
+                                    Modul 4. Vektor Fazolari va Ortogonalizatsiya
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-ilgor_matritsa.html" onclick="pageScrollToTop(this)">
+                                    Modul 5. Il&#39;gor matritsa tushunchalari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" onclick="pageScrollToTop(this)">
+                                    Vazifalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Modul 1. Vektorlar va vektor algebra</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/vektor-kirish">Modul 1. Vektorlar va vektor algebra</h1>
+                    
+
+                    <center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0AWdezwHRY0?si=VhIDHwGiUGmAqOSn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</center>
+
+<blockquote class="block-tip">
+  <h5 id="vektor">Vektor</h5>
+
+  <p>sonlarning tartiblangan ro’yxati.</p>
+</blockquote>
+
+<p>Vektorlar odatda kvadrat yoki oddiy qavslar bilan o’ralgan massivlar bo’lib ular vertikal ravishda yoziladi:</p>
+
+\[\begin{bmatrix} -1.1 \\ 0.0 \\ 3.6 \end{bmatrix} \begin{pmatrix}-1.1 \\ 0.0 \\ 3.6 \end{pmatrix}\]
+
+<p>Ular vergul bilan ajratilgan va qavslar bilan o’ralgan raqamlar shaklida ham yozilishi mumkin:</p>
+
+\[(-1.1, 0.0, 3.6)\]
+
+<p>Umuman olganda, $n$ ta elementdan iborat vektor $\mathbf{x}$ quyidagi ko’rinishda yoziladi:</p>
+
+\[\mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\]
+
+<ul>
+  <li>$x_i$ - vektorning $i$-chi elementi</li>
+</ul>
+
+<blockquote class="block-warning">
+  <h5 id="diqqat">Diqqat!</h5>
+
+  <p>Butun darsda vektorlar $\mathbf{v}$ qalinlashtirilgan shaklda bilan ko’rsatiladi.
+Sonlar esa $v$ kursiv shaklda ko’rsatiladi.</p>
+</blockquote>
+
+<p>Vektorning geometrik tushunchasi esa, vektorning nuqtadan boshlab boshqa nuqta yo’nalishini ko’rsatadi.</p>
+<center>
+    <img src="../assets/vector.svg" />
+</center>
+<p><small>Manba: <a href="https://www.3blue1brown.com/">3blue1brown</a></small></p>
+
+<p><br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Vektor yaratish
+</span><span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">vektor</span><span class="p">)</span>
+
+<span class="c1"># Vektorning o'lchami
+</span><span class="nf">print</span><span class="p">(</span><span class="n">vektor</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># Vektorning elementlari
+</span><span class="nf">print</span><span class="p">(</span><span class="n">vektor</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">vektor</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">vektor</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="11-vektor-ustida-amallar">1.1 Vektor ustida amallar</h2>
+
+<p>Chiziqli algebraning yuragida ikkita vektor ustida amallar bor. Bular:</p>
+<ul>
+  <li>qo’shish</li>
+  <li>songa ko’paytirish</li>
+</ul>
+
+<h3 id="111-vektorlarni-qoshish">1.1.1 Vektorlarni Qo’shish</h3>
+
+<p>Ikkita vektorni (masalan, $\mathbf{v}$ va $\mathbf{w}$ ) bir biriga qo’shish uchun ularning mos elementlarini qo’shish kerak.</p>
+
+\[\mathbf{v} = \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} \quad \text{va} \quad \mathbf{w} = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}, \quad \mathbf{v} + \mathbf{w} = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix} + \begin{bmatrix} w_1 \\ w_2  \end{bmatrix} = \begin{bmatrix} v_1 + w_1 \\ v_2 + w_2 \end{bmatrix}\]
+
+<p>Misol uchun, ikkita vektorning qo’shish amali quyidagicha:</p>
+
+\[\mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix} \quad \text{va} \quad \mathbf{w} = \begin{bmatrix} 4 \\ 5 \end{bmatrix}, \quad \mathbf{v} + \mathbf{w} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} + \begin{bmatrix} 4 \\ 5  \end{bmatrix} = \begin{bmatrix} 5 \\ 7 \end{bmatrix}\]
+
+<blockquote class="block-warning">
+  <h5 id="diqqat-1">Diqqat!</h5>
+
+  <p>Faqat bir hil o’lchamli vektorlarni qo’shish mumkin</p>
+</blockquote>
+
+<center>
+    <img src="../assets/vector_add.svg" />
+</center>
+<p><small>Manba: <a href="https://www.3blue1brown.com/">3blue1brown</a></small></p>
+
+<p><br /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Vektor yaratish
+</span><span class="n">vektor1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+
+<span class="c1"># Vektorlarni qo'shish
+</span><span class="n">vektor3</span> <span class="o">=</span> <span class="n">vektor1</span> <span class="o">+</span> <span class="n">vektor2</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">vektor3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="112-vektorlarni-songa-kopaytirish">1.1.2 Vektorlarni songa ko’paytirish</h3>
+
+<p>Vektorni ma’lum bir songa ($\alpha \in \mathbb{R}$) ko’paytirish uchun, vektorning har bir elementini ushbu songa ko’paytiramiz.</p>
+
+\[\mathbf{v} = \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} \quad \text{va} \quad \alpha, \quad \alpha \cdot \mathbf{v} = \alpha \cdot \begin{bmatrix} v_1 \\ v_2  \end{bmatrix} = \begin{bmatrix} \alpha \cdot v_1 \\ \alpha \cdot v_2 \end{bmatrix}\]
+
+<p>Misol uchun:</p>
+
+\[\mathbf{v} = \begin{bmatrix} 1 \\ 2  \end{bmatrix}, \quad \alpha = 3, \quad \alpha \cdot \mathbf{v} = 3 \cdot \begin{bmatrix} 1 \\ 2  \end{bmatrix} = \begin{bmatrix} 3 \\ 6 \end{bmatrix}\]
+
+<center>
+    <img src="../assets/vector_scale.svg" />
+</center>
+<p><small>Manba: <a href="https://www.3blue1brown.com/">3blue1brown</a></small></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">])</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">3.0</span>
+
+<span class="c1"># Vektorlarni songa ko'paytirish
+</span><span class="n">vektor_scaled</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">vektor</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">vektor_scaled</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="12-vektor-normalari-va-skalyar-kopaytirish">1.2 Vektor Normalari va Skalyar Ko’paytirish</h2>
+<p>Vektorlarning songa ko’paytirish va qo’shish amallarini o’rganishdan keyin, vektorlarning normalari va skalyar ko’paytirishini o’rganamiz.</p>
+
+<p><br /></p>
+
+<h3 id="121-vektorlarni-skalyar-kopaytirish">1.2.1 Vektorlarni Skalyar Ko’paytirish</h3>
+
+<p>Bizda  $\mathbf{a} = \begin{bmatrix} a_1 &amp; a_2 &amp; … &amp; a_n \end{bmatrix}$ va $\mathbf{b} = \begin{bmatrix} b_1 &amp; b_2 &amp; … &amp; b_n \end{bmatrix}$ vektorlar bor.</p>
+
+<p>Ularning skalyar ko’paytmasi:</p>
+
+\[\boxed{\mathbf{a} \cdot \mathbf{b} = a_1 b_1 + a_2 b_2 + \ldots + a_n b_n}\]
+
+\[= \sum_{i=1}^{n} a_i b_i\]
+
+\[= \mathbf{a}^T \mathbf{b}\]
+
+<p>Misol: agar $\mathbf{a} = \begin{bmatrix} 1 &amp; 2 &amp; 3 \end{bmatrix}$ va $\mathbf{b} = \begin{bmatrix} 4 &amp; 5 &amp; 6 \end{bmatrix}$ bo’lsa,
+\(\mathbf{a} \cdot \mathbf{b} = 1 \cdot 4 + 2 \cdot 5 + 3 \cdot 6 = 4 + 10 + 18 = 32\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># Skalyar ko'paytirish
+</span><span class="n">skalyar</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">vektor1</span><span class="p">,</span> <span class="n">vektor2</span><span class="p">)</span>
+
+<span class="c1"># yoki
+</span><span class="n">skalyar</span> <span class="o">=</span> <span class="n">vektor1</span> <span class="o">@</span> <span class="n">vektor2</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">skalyar</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="122-vektor-normasi">1.2.2 Vektor Normasi</h3>
+
+<p>Berilgan ${\displaystyle p\geq 1}$ haqiqiy soni uchun, $\mathbf{v} = \begin{bmatrix} v_1 &amp; v_2 &amp; \ldots &amp; v_n \end{bmatrix}$ vektorning $p$-normasi quyidagi ko’rinishda aniqlanadi:</p>
+
+\[\boxed{\| \mathbf{v} \|_p = \left( \sum_{i=1}^{n} |v_i|^p \right)^{1/p}}\]
+
+<p>Ko’p qo’llaniladigan normalar bular:</p>
+<ul>
+  <li>$p = 1$ - Manhettan uzunligi yoki $\ell_1$ normasi</li>
+</ul>
+
+\[\| \mathbf{v} \|_1 = |v_1| + |v_2| + \ldots + |v_n| = \sum_{i=1}^{n} |v_i|\]
+
+<ul>
+  <li>$p = 2$ - Evklid uzunligi yoki $\ell_2$ normasi</li>
+</ul>
+
+\[\| \mathbf{v} \|_2 = \sqrt{v_1^2 + v_2^2 + \ldots + v_n^2} = \sqrt{\sum_{i=1}^{n} v_i^2}\]
+
+<ul>
+  <li>$p = \infty$ - Maksimum normasi yani vektorning eng katta elementi $\max$ operatori orqali aniqlanadi.</li>
+</ul>
+
+\[\| \mathbf{v} \|_{\infty} = \max \{ |v_1|, |v_2|, \ldots, |v_n| \}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">l1_norma</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># L1 norma
+</span><span class="n">l2_norma</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># L2 norma
+</span><span class="n">l_inf_norma</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">,</span> <span class="nb">ord</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">inf</span><span class="p">)</span> <span class="c1"># L-inf norma
+</span>
+</code></pre></div></div>
+
+<h3 id="123-vektor-normalari-amalda-qollanilishi">1.2.3 Vektor Normalari Amalda Qo’llanilishi</h3>
+
+<p>Birlik vektor (normalangan vektor):</p>
+
+\[\boxed{\mathbf {\hat {u}} ={\frac {\mathbf {u} }{\|\mathbf {u} \|}}}\]
+
+<p>va uzunligi 1 ga teng bo’lgan vektor \(\|\mathbf {\hat {u}} \| = 1\)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">birlik_vektor</span> <span class="o">=</span> <span class="n">vektor</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">birlik_vektor</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">uzunligi:</span><span class="sh">"</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">birlik_vektor</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Masofa (Distance) formulasi:</p>
+
+\[\boxed{d(\mathbf{v}, \mathbf{w}) = \| \mathbf{v} - \mathbf{w} \|}\]
+
+<p>Ikki vektor orasidagi burchak (Angle between vectors) formulasi:</p>
+
+\[\boxed{\cos \theta = \frac{\mathbf{v} \cdot \mathbf{w}}{\| \mathbf{v} \| \| \mathbf{w} \|}}\]
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="n">vektor1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">vektor2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># Masofa
+</span><span class="n">masofa</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor1</span> <span class="o">-</span> <span class="n">vektor2</span><span class="p">)</span>
+
+<span class="c1"># Kosinus burchak
+</span><span class="n">cos_theta</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">vektor1</span><span class="p">,</span> <span class="n">vektor2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="nf">norm</span><span class="p">(</span><span class="n">vektor2</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="13-chiziqli-kombinatsiya-va-chiziqli-bogliqlik">1.3 Chiziqli kombinatsiya va Chiziqli bog’liqlik</h2>
+
+<h3 id="131-chiziqli-kombinatsiya">1.3.1 Chiziqli Kombinatsiya</h3>
+
+<p>Agar $\mathbf{v_1}, \mathbf{v_2}, \ldots, \mathbf{v_n}$ vektorlar va $\alpha_1, \alpha_2, \ldots, \alpha_n$ skalyar sonlar bo’lsa, ularning chiziqli kombinatsiyalari yangi vektor:</p>
+
+\[\boxed{\mathbf{v} = \alpha_1 \mathbf{v_1} + \alpha_2 \mathbf{v_2} + \ldots + \alpha_n \mathbf{v_n}}\]
+
+<h3 id="132-chiziqli-bogliqlik">1.3.2 Chiziqli Bog’liqlik</h3>
+
+<p>Deylik $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ vektorlar to’plami. Agar $\alpha_1, \alpha_2, \ldots, \alpha_n$ skalyarlar bo’lsa va:</p>
+
+\[\boxed{\alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + \ldots + \alpha_n \mathbf{v}_n = \mathbf{0}}\]
+
+<p>bunda faqat $\alpha_1 = \alpha_2 = \ldots = \alpha_n = 0$ shartni qanoatlantirsa,</p>
+
+<p>$\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_n$ vektorlar <strong>bog’liq emas</strong> deb ataladi.</p>
+
+<p>Aks holda, ular <strong>bog’liq</strong> deb ataladi.</p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/chiziqli-algebra/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chiziqli Algebra">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Modul 2. Matritsa Asoslari">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Modul 2. Matritsa Asoslari",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2025-02-06-matritsalar.md",
+            "ref": "_posts/2025-02-06-matritsalar.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Chiziqli Algebra",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-01-13-vektor-kirish.md",
+        "mtime": "2025-01-13 00:00:00 +0300",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-05-18 00:02:00 +0300"
+    },
+    "basePath": "/chiziqli-algebra",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/chiziqli-algebra/assets/gitbook/gitbook.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/theme.js"></script>
+
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/chiziqli-algebra/assets/gitbook/custom.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

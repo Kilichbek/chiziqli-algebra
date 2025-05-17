@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Vazifalar · Chiziqli Algebra</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Chiziqli Algebra Sun'iy Idrok uchun
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="Qilichbek Haydarov"><link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/style.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/rouge/pastie.css">
+
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/chiziqli-algebra/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/chiziqli-algebra/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/chiziqli-algebra//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" />
+        
+
+        
+            <link rel="next" href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/chiziqli-algebra/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra">
+            
+                <a href="/chiziqli-algebra/" onclick="pageScrollToTop(this)">
+                    Chiziqli Algebra
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vektor-kirish.html" onclick="pageScrollToTop(this)">
+                                    Modul 1. Vektorlar va vektor algebra
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 2. Matritsa Asoslari
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/chiziqli-algebra/jekyll/2025-01-13-vazifalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-01-13-vazifalar.html" onclick="pageScrollToTop(this)">
+                                    Vazifalar
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#vazifa-1-vektorlar-va-vektor-algebra" onclick="mobilePageScrollToAnchor(this)" >Vazifa 1: Vektorlar va Vektor Algebra</a><ul><li><a href="#11-vektor-ustida-amallar" onclick="mobilePageScrollToAnchor(this)" >1.1 Vektor ustida amallar</a></li><li><a href="#12-vektor-normasi-va-skalyar-kopaytma" onclick="mobilePageScrollToAnchor(this)" >1.2 Vektor normasi va skalyar ko’paytma</a></li><li><a href="#13-chiziqli-kombinatsiya-va-bogliqlik" onclick="mobilePageScrollToAnchor(this)" >1.3 Chiziqli kombinatsiya va bog’liqlik</a></li><li><a href="#14--mini-loyiha-oddiy-film-tavsiya-qiluvchi-tizim" onclick="mobilePageScrollToAnchor(this)" >1.4 📌 Mini-Loyiha: Oddiy Film Tavsiya Qiluvchi Tizim</a></li></ul></li><li><a href="#vazifa-2-matritsa-asoslari" onclick="mobilePageScrollToAnchor(this)" >Vazifa 2: Matritsa Asoslari</a><ul><li><a href="#211--matritsani-elementlarini-ozgartirish" onclick="mobilePageScrollToAnchor(this)" >2.1.1  Matritsani elementlarini o’zgartirish</a></li><li><a href="#212-matritsa-yaratish" onclick="mobilePageScrollToAnchor(this)" >2.1.2 Matritsa Yaratish</a></li><li><a href="#22-matritsa-ustida-amallar" onclick="mobilePageScrollToAnchor(this)" >2.2 Matritsa Ustida Amallar</a></li><li><a href="#23--mini-loyiha-tasvirni-manipulyatsiya-qilish-️" onclick="mobilePageScrollToAnchor(this)" >2.3 🎨 <strong>Mini-Loyiha: Tasvirni Manipulyatsiya Qilish</strong> 🖼️</a></li></ul></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html">
+                            
+                                <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" onclick="pageScrollToTop(this)">
+                                    Modul 3. Transformatsiya va Chiziqli Tenglamalar
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >Vazifalar</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/vazifalar">Vazifalar</h1>
+                    
+
+                    <h2 id="vazifa-1-vektorlar-va-vektor-algebra">Vazifa 1: Vektorlar va Vektor Algebra</h2>
+
+<h3 id="11-vektor-ustida-amallar">1.1 Vektor ustida amallar</h3>
+
+<p>Agar \(\textbf{u}= \begin{bmatrix} 5 \\ 2 \\ 9 \end{bmatrix}\) va \(\textbf{v}= \begin{bmatrix} 1 \\ -8 \\ 6 \end{bmatrix}\), $c=0.5$ bo’lsa, quyidagilarni bajaring:</p>
+
+<ol>
+  <li>$\textbf{u} + \textbf{v}$</li>
+  <li>$\textbf{u} - \textbf{v}$</li>
+  <li>$c\textbf{u}$</li>
+  <li>$\textbf{v}$ uzunligi</li>
+  <li>$\textbf{u}$ larining birlik vektori ko’rinishi</li>
+</ol>
+
+<h3 id="12-vektor-normasi-va-skalyar-kopaytma">1.2 Vektor normasi va skalyar ko’paytma</h3>
+
+<p>Agar \(\textbf{u}= \begin{bmatrix} 1 \\ -1 \\ 2 \end{bmatrix}\) va \(\textbf{v}= \begin{bmatrix} 3 \\ -1 \\ 4 \end{bmatrix}\), quyidagilarni toping:</p>
+
+<ol>
+  <li>$\textbf{u}$ vektorining $L_1$ normasi</li>
+  <li>$\textbf{v}$ vektorining $L_2$ normasi</li>
+  <li>$\textbf{u} \cdot \textbf{v}$</li>
+  <li>$d(\textbf{u}, \textbf{v})$ (Evklid masofa)</li>
+  <li>$\textbf{u}$ va $\textbf{v}$ orasidagi burchak</li>
+</ol>
+
+<h3 id="13-chiziqli-kombinatsiya-va-bogliqlik">1.3 Chiziqli kombinatsiya va bog’liqlik</h3>
+
+<p>Quyidagilarni aniqlang:</p>
+
+<ol>
+  <li>
+    <p>\(\textbf{u}= \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \textbf{v}= \begin{bmatrix} 3 \\ 4 \end{bmatrix}, \textbf{w}= \begin{bmatrix} 5 \\ 6 \end{bmatrix}\) chiziqli bog’liqmi?</p>
+  </li>
+  <li>
+    <p>\(\textbf{u}= \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \textbf{v}= \begin{bmatrix} 3 \\ 4 \end{bmatrix}, \textbf{w}= \begin{bmatrix} 8 \\ 14 \end{bmatrix}\) chiziqli bog’liqmi?</p>
+  </li>
+</ol>
+
+<h3 id="14--mini-loyiha-oddiy-film-tavsiya-qiluvchi-tizim">1.4 📌 Mini-Loyiha: Oddiy Film Tavsiya Qiluvchi Tizim</h3>
+
+<p><img src="https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&amp;logo=netflix&amp;logoColor=white" alt="Netflix" />
+Tasavvur qiling siz Netflix  companiyasida ishlayapsiz. Ma’lumotlar bazasi:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Film nomi</th>
+      <th>Jangari ⚔️</th>
+      <th>Romantik 💕</th>
+      <th>Fantastika 🚀</th>
+      <th>Drama 🎭</th>
+      <th>Komediya 😂</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sheryurak</strong></td>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Titanik</strong></td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Avatar</strong></td>
+      <td>3</td>
+      <td>2</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Buyuk Getsbi</strong></td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Pushti Pantera</strong></td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Foydalanuvchi qiziqishlari</strong>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">Jangari</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Romantik</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Fantastika</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Drama</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Komediya</span> <span class="o">=</span> <span class="mi">2</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>🎯 <strong>Maqsad</strong>: Foydalanuvchining yoqtirgan kino janrlariga asoslanib, unga mos filmlarni tavsiya qilish.</p>
+
+<hr />
+
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1GTfQglVxzgAF2h5aPRuy_DD7g8YKZt_a?usp=sharing"><strong>Vazifa 1: Vektorlar va Vektor ustida amallar</strong></a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="vazifa-2-matritsa-asoslari">Vazifa 2: Matritsa Asoslari</h2>
+
+<h3 id="211--matritsani-elementlarini-ozgartirish">2.1.1  Matritsani elementlarini o’zgartirish</h3>
+<p>Quyidagi berilgan matritsa elementlarini shunda o’zgartiringki, natijada berilgan kulgan smaylik rasmi chiqsin.
+Izoh: siz pikselni o’zgartirishda, matritsa elementlarini o’zgartirish orqali rasmda o’zgarishni ko’rsatishingiz mumkin.
+Buning uchun 0 va 1 sonlaridan foydalanishingiz mumkin. 0 - oq rang, 1 - qora rang.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1"># &lt; sizning kodlaringiz bu yerda yozing&gt;
+</span><span class="n">smile</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># &lt;pastdagi matritsa elementlarini o'zgartirng&gt;
+</span><span class="n">smile</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">smile</span><span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+
+<span class="c1"># Yaratilgan matritsa shunday ko'rinishda bo'lish kerak
+</span><span class="n">plt</span><span class="p">.</span><span class="nf">imshow</span><span class="p">(</span><span class="n">smile</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="sh">'</span><span class="s">gray</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="212-matritsa-yaratish">2.1.2 Matritsa Yaratish</h3>
+
+<p>Quyidagi funksiyalardan foydalanib turli xil matritsalarni yarating:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># a va b orasidagi tasodifiy sonlar bilan to'ldirilgan m x n matritsa
+</span><span class="n">np</span><span class="p">.</span><span class="nf">zeros</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># nol elementlar bilan to'ldirilgan m x n matritsa
+</span><span class="n">np</span><span class="p">.</span><span class="nf">ones</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># bir elementlar bilan to'ldirilgan m x n matritsa
+</span></code></pre></div></div>
+
+<ol>
+  <li>5 x 100 elementlarini 0 va 50 orasidagi tasodifiy sonlar bilan to’ldirilgan matritsa</li>
+  <li>100 x 5 nol elementlar bilan to’ldirilgan matritsa</li>
+  <li>5 x 5 bir elementlar bilan to’ldirilgan matritsa</li>
+</ol>
+
+<h3 id="22-matritsa-ustida-amallar">2.2 Matritsa Ustida Amallar</h3>
+
+<p>Quyidagi matritsalarni yaratib, ular ustida amallar bajarib ko’ring:</p>
+
+<ol>
+  <li>\(A = \begin{bmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{bmatrix}\), \(B = \begin{bmatrix} 5 &amp; 6 \\ 7 &amp; 8 \end{bmatrix}\) matritsalarni yarating.</li>
+  <li>$A + B$ va $A - B$ amallarini toping</li>
+  <li>$A B$ amalini toping</li>
+  <li>$A \textbf{v}$ amalini toping, \(\textbf{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}\)</li>
+  <li>$A B \textbf{v}$ amalini toping</li>
+  <li>$A \odot B $ amalini toping</li>
+  <li>$A^T$ va $B^T$ amallarini toping</li>
+  <li>$A \odot B^T$ amalini toping</li>
+  <li>$A^T B$ amalini toping</li>
+  <li>$A^T B^T$ amalini toping</li>
+  <li>$\text{tr}(A)$ va $\text{tr}(B)$ amallarini toping</li>
+  <li>$\text{tr}(A B)$ va $\text{tr}(B A)$ amallarini toping</li>
+  <li>$\text{tr}(A B^T)$ va $\text{tr}(B^T A)$ amallarini toping</li>
+  <li>$\text{tr(A - B)}$ va $\text{tr(A) - tr(B)}$ tengliklarini tekshiring</li>
+</ol>
+
+<h3 id="23--mini-loyiha-tasvirni-manipulyatsiya-qilish-️">2.3 🎨 <strong>Mini-Loyiha: Tasvirni Manipulyatsiya Qilish</strong> 🖼️</h3>
+
+<p><strong>🎯 Maqsad</strong><br />
+Berilgan tasvir ustida <strong>matritsa amallari</strong> yordamida ishlov berish va uni <strong>kulrang tasvirga (grayscale)</strong> aylantirish.</p>
+
+<hr />
+
+<p><strong>📌 Tasvir va Matritsa Tushunchasi</strong><br />
+Rangli tasvir (RGB) <strong>3 ta matritsadan</strong> iborat:<br />
+🔴 <strong>R (Red)</strong> – Qizil rang matritsasi<br />
+🟢 <strong>G (Green)</strong> – Yashil rang matritsasi<br />
+🔵 <strong>B (Blue)</strong> – Ko‘k rang matritsasi</p>
+
+<p>Har bir matritsa <strong>0 dan 255 gacha</strong> bo‘lgan qiymatlardan iborat bo‘lib, tasvirning har bir pikselini ifodalaydi.<br />
+<strong>Misol:</strong> Quyidagi rangli tasvirni <strong>uchta matritsaga</strong> ajratish mumkin:</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rgb-compose-Alim_Khan.jpg/2560px-Rgb-compose-Alim_Khan.jpg" width="600" /></p>
+
+<p>📷 <strong>Tasvir haqida ma’lumot</strong>:<br />
+Bu rasm <strong>Buxoro amiri Muhammad Olimxon (1880–1944)</strong> ga tegishli bo‘lib, 1911-yilda Sergey Prokudin-Gorskiy tomonidan olingan.<br />
+Surat uch xil <strong>ko‘k, yashil va qizil (RGB)</strong> filtrlar yordamida tushirilgan va keyinchalik rangli tasvirga aylantirilgan.</p>
+
+<hr />
+<p><strong>📌 Kulrang Tasvir (Grayscale)</strong>
+Kulrang tasvirda faqat <strong>yorug‘lik intensivligi</strong> saqlanadi, ranglar esa yo‘qoladi.<br />
+Tasvirni kulrangga aylantirish uchun quyidagi formuladan foydalanamiz:</p>
+
+\[Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B\]
+
+<p>Bu yerda:<br />
+✅ <strong>Y</strong> – Yorug‘lik intensivligi matritsasi (grayscale)<br />
+✅ <strong>R, G, B</strong> – Qizil, yashil va ko‘k ranglar matritsalari</p>
+
+<hr />
+
+<p><strong>📌 Qadamlar</strong>
+🛠️ <strong>1. Tasvirning maksimum va minimum piksel qiymatlarini topish</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">np.max()</code> va <code class="language-plaintext highlighter-rouge">np.min()</code> funksiyalaridan foydalaning.</li>
+</ul>
+
+<p>📏 <strong>2. Tasvir o‘lchamini aniqlash</strong></p>
+<ul>
+  <li>Tasvir matritsasining <strong>qator, ustun va kanallar sonini</strong> toping.</li>
+</ul>
+
+<p>🌈 <strong>3. Tasvirni RGB kanallariga ajratish</strong></p>
+<ul>
+  <li>Har bir rang matritsasini ajratish uchun <code class="language-plaintext highlighter-rouge">img[:, :, i]</code> indekslashdan foydalaning.</li>
+</ul>
+
+<p>📊 <strong>4. Har bir rang matritsasini [0,1] oralig‘iga normallashtirish</strong></p>
+<ul>
+  <li><strong>Formula</strong>:<br />
+    \(I = \frac{X - X_{min}}{X_{max} - X_{min}}\)</li>
+</ul>
+
+<p>⚫ <strong>5. Tasvirni “Grayscale” ga o‘tkazish</strong></p>
+<ul>
+  <li><strong>Formula</strong>:<br />
+\(Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B\)</li>
+  <li>O‘lchamni o‘zgartirmasdan, ranglarni intensivlikka aylantiring.</li>
+</ul>
+
+<hr />
+
+<p>🎯 <strong>Natija</strong>: Siz tasvirni <strong>matritsalar asosida tahlil qilish</strong> va uni <strong>kulrang formatga o‘tkazish</strong> bo‘yicha bilim va tajriba olasiz! 🚀</p>
+
+<hr />
+
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin-1">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1Ql_fE5xR_Lys8y9Wq3DYCFTH0Hr_sKOU?usp=sharing"><strong>Vazifa 2: Matritsa Asoslari</strong></a></p>
+</blockquote>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/chiziqli-algebra/jekyll/2025-01-13-matritsalar.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Modul 2. Matritsa Asoslari">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Modul 3. Transformatsiya va Chiziqli Tenglamalar">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Modul 3. Transformatsiya va Chiziqli Tenglamalar",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2025-02-28-chiziqli-tenglamalar.md",
+            "ref": "_posts/2025-02-28-chiziqli-tenglamalar.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Chiziqli Algebra",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-03-02-vazifalar.md",
+        "mtime": "2025-01-13 00:00:00 +0300",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-03-02 17:12:42 +0300"
+    },
+    "basePath": "/chiziqli-algebra",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/chiziqli-algebra/assets/gitbook/gitbook.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/theme.js"></script>
+
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/chiziqli-algebra/assets/gitbook/custom.js"></script>
+<script src="/chiziqli-algebra/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
