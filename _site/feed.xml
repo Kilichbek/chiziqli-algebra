@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/chiziqli-algebra/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/chiziqli-algebra/" rel="alternate" type="text/html" /><updated>2025-05-18T00:02:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/feed.xml</id><title type="html">Chiziqli Algebra</title><subtitle>Chiziqli Algebra Sun&apos;iy Idrok uchun
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/chiziqli-algebra/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/chiziqli-algebra/" rel="alternate" type="text/html" /><updated>2025-05-31T14:43:17+03:00</updated><id>http://localhost:4000/chiziqli-algebra/feed.xml</id><title type="html">Chiziqli Algebra</title><subtitle>Chiziqli Algebra Sun&apos;iy Idrok uchun
 </subtitle><author><name>Qilichbek Haydarov</name></author><entry><title type="html">Vazifalar</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html" rel="alternate" type="text/html" title="Vazifalar" /><published>2025-03-02T00:00:00+03:00</published><updated>2025-03-02T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/vazifalar</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-03-02-vazifalar.html"><![CDATA[<h2 id="vazifa-1-vektorlar-va-vektor-algebra">Vazifa 1: Vektorlar va Vektor Algebra</h2>
 
 <h3 id="11-vektor-ustida-amallar">1.1 Vektor ustida amallar</h3>
@@ -575,6 +575,85 @@ c_1
   <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin-3">Google Colab da vazifani bajarishingiz mumkin!</h5>
 
   <p><a href="https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing"><strong>Vazifa 4: Vektor Fazolar va Ortogonalizatsiya</strong></a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="vazifa-5-ilgor-matritsa-tushunchalari">Vazifa 5: Ilg’or Matritsa tushunchalari</h2>
+
+<h3 id="vazifa-511-determinant-topish">Vazifa 5.1.1 Determinant topish</h3>
+
+<p>Ushbu matritsalarning determinantlarini toping:
+\(\mathbf{A} = \begin{bmatrix} 4 &amp; -2 \\ 1 &amp; -9 \end{bmatrix} \quad \quad \mathbf{B} = \begin{bmatrix} 4 &amp; 5 &amp; 3 \\ 1 &amp; 2 &amp; 3 \\ 1 &amp; 2 &amp; 3 \end{bmatrix}\)</p>
+
+<h3 id="vazifa-512-matritsaning-normasini-topish">Vazifa 5.1.2: Matritsaning normasini topish</h3>
+<p>Agar \(\mathbf{A} = \left[ \begin{array}{rr} -5 &amp; 2 \\ -7 &amp; 4 \end{array} \right]\), uning quyidagi normalarini toping:
+    - Frobenius normasini
+    - Maksimum norm  normasini
+    - Sprektral norm  normasini</p>
+
+<h3 id="vazifa-513-matritsani-yoyish">Vazifa 5.1.3: Matritsani yoyish</h3>
+<p>Agar \(\mathbf{A} = \left[ \begin{array}{rr} 4 &amp; 1 \\ 2 &amp; 3 \end{array} \right]\), uni
+    - $\textbf{LU}$ yoying
+    - $\textbf{QR}$ yoying
+    - $Eigen$ yoying</p>
+
+<h3 id="52--mini-loyiha-tasvirini-kompreslash">5.2 🌌 Mini-Loyiha: Tasvirini Kompreslash</h3>
+<p>🎯 <strong>Maqsad</strong><br />
+Singular yoyish (SVD) yordamida tasvirni <strong>hajm jihatidan siqish</strong> va faqat eng muhim komponentlar bilan <strong>tiklash sifatini tahlil qilish</strong>.</p>
+
+<hr />
+<center><img src="../public/assets/pillars.jpg" width="300" /></center>
+
+<p>Siz ishlayotgan tasvir — <strong>Habbl kosmik teleskopi</strong> tomonidan olingan mashhur <strong>“Yaratilish ustunlari
+“</strong> manzarasining <strong>kulrang (grayscale)</strong> versiyasi. Bu tasvir o‘zining yuqori aniqligi va murakkab tuzilishi bilan ma’lum.</p>
+
+<p>Ammo, rasm katta hajmi sababli, rasmni saqlash va uzatish uchun katta xotira va tezkor aloqa qurilmalar kerak bo’ladi. Lekin, tasvirni kompreslasak, ularga ehtiyoj sezilmaydi.</p>
+
+<p>Siz NASA’ga yordam berish uchun rasmni kompreslash algoritmini yaratishingiz kerak.</p>
+
+<p><strong>💡 SVD yordamida tasvirni kompresslash</strong></p>
+
+<p>Tasvirni <strong>matritsa</strong> sifatida qarasak ($A \in \mathbb{R}^{m \times n}$), uni quyidagicha <strong>Singular Yoyish</strong> (SVD) orqali ifodalash mumkin:</p>
+
+\[\textbf{A} = \mathbf {U\Sigma V^{T}} = \Bigg[ \mathop{\color{red}{\mathbf u_1}} \limits_|^| \ \mathop{\color{red}{\mathbf u_2}} \limits_|^| \ \cdots \ \mathop{\mathbf u_m} \limits_|^| \Bigg] \left[\begin{array}{cccc|c}
+\color{red}{\sigma_1} &amp; &amp; &amp; \\
+&amp; \color{red}{\sigma_2} &amp; &amp; \\
+&amp; &amp; \ddots &amp; &amp; \boldsymbol{0} \\
+&amp; &amp; &amp; \sigma_r &amp; \\ \hline
+&amp; \boldsymbol{0} &amp; &amp; \boldsymbol{0}
+\end{array} \right]_{m \times n} \Bigg[ \mathop{\color{red}{\mathbf v_1}} \limits_|^| \ \mathop{\color{red}{\mathbf v_2}} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] ^{T}\]
+
+<p>🔹 <strong>Asosiy g‘oya</strong>: Faqat eng muhim $k$ ta <strong>singular qiymat ($\sigma_1, \dots, \sigma_k$)</strong> va ularga mos ustun/qatordan foydalanib, matritsani <strong>taxminiy tiklash</strong> mumkin.  Masalan $k=2$ bo’lsa, biz qizil rangdagi vektor va singulyar qiymatlarni tanlab matritsaning qolgan qora rangdagi elementlarini tashlab yuborishimiz mumkin.</p>
+
+<hr />
+
+<p>🔧 <strong>Qadamlar: Tasvirni kompresslash va tiklash</strong></p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">np.linalg.svd()</code> yordamida $A = U \Sigma V^T$ ga yoying</li>
+  <li>Singulyar qiymatlarni <code class="language-plaintext highlighter-rouge">matplotlib</code> orqali grafik chizib tasvirlang</li>
+  <li>Quyidagi $k$ qiymatlar uchun tasvirni qayta tiklang:
+    <ul>
+      <li>$k=1, 10, 20, 50, 100$</li>
+    </ul>
+  </li>
+  <li>$k=100$ bo’lganida Kompresslash nisbatini toping
+    <ul>
+      <li>original rasm uchun qancha sonlar kerak</li>
+      <li>kompresslangan rasm uchun qancha sonlar kerak</li>
+      <li>qancha joy ortib qoldi: (org - komp) / org</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+<p><img src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&amp;logo=googlecolab&amp;logoColor=white" alt="Google Colab" /></p>
+
+<blockquote class="block-warning">
+  <h5 id="google-colab-da-vazifani-bajarishingiz-mumkin-4">Google Colab da vazifani bajarishingiz mumkin!</h5>
+
+  <p><a href="https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing"><strong>Vazifa 5: Ilg’or Matritsa Tushunchalari</strong></a></p>
 </blockquote>]]></content><author><name>Qilichbek Haydarov</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Vazifa 1: Vektorlar va Vektor Algebra]]></summary></entry><entry><title type="html">Modul 3. Transformatsiya va Chiziqli Tenglamalar</title><link href="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html" rel="alternate" type="text/html" title="Modul 3. Transformatsiya va Chiziqli Tenglamalar" /><published>2025-02-28T00:00:00+03:00</published><updated>2025-02-28T00:00:00+03:00</updated><id>http://localhost:4000/chiziqli-algebra/jekyll/chiziqli-tenglamalar</id><content type="html" xml:base="http://localhost:4000/chiziqli-algebra/jekyll/2025-02-28-chiziqli-tenglamalar.html"><![CDATA[<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_LsHZ--gX-U?si=rzupMLz-uhDqDuw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 </center>

@@ -481,3 +481,79 @@ $$
 >
 > [**Vazifa 4: Vektor Fazolar va Ortogonalizatsiya**](https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing)
 {: .block-warning }
+
+
+
+-------
+
+Vazifa 5: Ilg'or Matritsa tushunchalari
+-------------
+
+### Vazifa 5.1.1 Determinant topish
+
+Ushbu matritsalarning determinantlarini toping:
+$$\mathbf{A} = \begin{bmatrix} 4 & -2 \\ 1 & -9 \end{bmatrix} \quad \quad \mathbf{B} = \begin{bmatrix} 4 & 5 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \end{bmatrix}$$
+
+### Vazifa 5.1.2: Matritsaning normasini topish
+Agar $$\mathbf{A} = \left[ \begin{array}{rr} -5 & 2 \\ -7 & 4 \end{array} \right]$$, uning quyidagi normalarini toping:
+    - Frobenius normasini
+    - Maksimum norm  normasini
+    - Sprektral norm  normasini 
+
+### Vazifa 5.1.3: Matritsani yoyish
+Agar $$\mathbf{A} = \left[ \begin{array}{rr} 4 & 1 \\ 2 & 3 \end{array} \right]$$, uni
+    - $\textbf{LU}$ yoying
+    - $\textbf{QR}$ yoying
+    - $Eigen$ yoying
+
+
+### 5.2 🌌 Mini-Loyiha: Tasvirini Kompreslash 
+🎯 **Maqsad**  
+Singular yoyish (SVD) yordamida tasvirni **hajm jihatidan siqish** va faqat eng muhim komponentlar bilan **tiklash sifatini tahlil qilish**.
+
+---
+<center><img src="../public/assets/pillars.jpg" width="300"></center>
+
+Siz ishlayotgan tasvir — **Habbl kosmik teleskopi** tomonidan olingan mashhur **"Yaratilish ustunlari
+"** manzarasining **kulrang (grayscale)** versiyasi. Bu tasvir o‘zining yuqori aniqligi va murakkab tuzilishi bilan ma’lum.
+
+Ammo, rasm katta hajmi sababli, rasmni saqlash va uzatish uchun katta xotira va tezkor aloqa qurilmalar kerak bo'ladi. Lekin, tasvirni kompreslasak, ularga ehtiyoj sezilmaydi. 
+
+Siz NASA'ga yordam berish uchun rasmni kompreslash algoritmini yaratishingiz kerak. 
+
+**💡 SVD yordamida tasvirni kompresslash**
+
+Tasvirni **matritsa** sifatida qarasak ($A \in \mathbb{R}^{m \times n}$), uni quyidagicha **Singular Yoyish** (SVD) orqali ifodalash mumkin:
+
+$$\textbf{A} = \mathbf {U\Sigma V^{T}} = \Bigg[ \mathop{\color{red}{\mathbf u_1}} \limits_|^| \ \mathop{\color{red}{\mathbf u_2}} \limits_|^| \ \cdots \ \mathop{\mathbf u_m} \limits_|^| \Bigg] \left[\begin{array}{cccc|c}
+\color{red}{\sigma_1} & & & \\
+& \color{red}{\sigma_2} & & \\
+& & \ddots & & \boldsymbol{0} \\
+& & & \sigma_r & \\ \hline
+& \boldsymbol{0} & & \boldsymbol{0}
+\end{array} \right]_{m \times n} \Bigg[ \mathop{\color{red}{\mathbf v_1}} \limits_|^| \ \mathop{\color{red}{\mathbf v_2}} \limits_|^| \ \cdots \ \mathop{\mathbf v_n} \limits_|^| \Bigg] ^{T}$$
+
+
+🔹 **Asosiy g‘oya**: Faqat eng muhim $k$ ta **singular qiymat ($\sigma_1, \dots, \sigma_k$)** va ularga mos ustun/qatordan foydalanib, matritsani **taxminiy tiklash** mumkin.  Masalan $k=2$ bo'lsa, biz qizil rangdagi vektor va singulyar qiymatlarni tanlab matritsaning qolgan qora rangdagi elementlarini tashlab yuborishimiz mumkin.
+
+
+-------
+
+🔧 **Qadamlar: Tasvirni kompresslash va tiklash**
+
+1. `np.linalg.svd()` yordamida $A = U \Sigma V^T$ ga yoying  
+2. Singulyar qiymatlarni `matplotlib` orqali grafik chizib tasvirlang
+3. Quyidagi $k$ qiymatlar uchun tasvirni qayta tiklang: 
+    - $k=1, 10, 20, 50, 100$
+4. $k=100$ bo'lganida Kompresslash nisbatini toping
+    - original rasm uchun qancha sonlar kerak
+    - kompresslangan rasm uchun qancha sonlar kerak
+    - qancha joy ortib qoldi: (org - komp) / org 
+
+-------
+![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)
+
+> ##### Google Colab da vazifani bajarishingiz mumkin!
+>
+> [**Vazifa 5: Ilg'or Matritsa Tushunchalari**](https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing)
+{: .block-warning }
