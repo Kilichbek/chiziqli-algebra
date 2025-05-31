@@ -355,7 +355,7 @@ Bu yerda:
 Vazifa 4: Vektor Fazolar va Ortogonalizatsiya
 -------------
 
-### Vazifa 4.1.1 Bazis va Subfazolar
+### 4.1.1 Bazis va Subfazolar
 
 1. $$\left \{ \begin{bmatrix} 1 \\ -2 \\ -1 \end{bmatrix}, \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix}, \begin{bmatrix} 5 \\ -8 \\ 1 \end{bmatrix} \right \}$$  vektorlar to'plami $R^3$ fazoga bazis bo'la oladimi?
 2. $V$ subfazo hisoblanadimi?
@@ -363,13 +363,13 @@ Vazifa 4: Vektor Fazolar va Ortogonalizatsiya
 - $$V = \left \{ \begin{bmatrix} a \\ b \end{bmatrix} \in \mathbb{R}^2; ab=0 \right \}$$
 
 
-### Vazifa 4.1.2: Matritsa Rangi
+### 4.1.2: Matritsa Rangi
 Ushbu matritsalarni rangini aniqlang:
 
 - $$ \begin{bmatrix} 3 & -1 \\ 1 & 3 \end{bmatrix} $$   
 - $$ \begin{bmatrix} 1 & 2 & 1 \\ -2 & -3 & 1 \\ 3 & 5 & 0 \end{bmatrix}$$
 
-### Vazifa 4.2: Ortogonallik va Proeksiya
+### 4.2: Ortogonallik va Proeksiya
 
 
 1. Ushbu vektorlar ortogonalmi?
@@ -489,18 +489,18 @@ $$
 Vazifa 5: Ilg'or Matritsa tushunchalari
 -------------
 
-### Vazifa 5.1.1 Determinant topish
+### 5.1.1 Determinant topish
 
 Ushbu matritsalarning determinantlarini toping:
 $$\mathbf{A} = \begin{bmatrix} 4 & -2 \\ 1 & -9 \end{bmatrix} \quad \quad \mathbf{B} = \begin{bmatrix} 4 & 5 & 3 \\ 1 & 2 & 3 \\ 1 & 2 & 3 \end{bmatrix}$$
 
-### Vazifa 5.1.2: Matritsaning normasini topish
+### 5.1.2: Matritsaning normasini topish
 Agar $$\mathbf{A} = \left[ \begin{array}{rr} -5 & 2 \\ -7 & 4 \end{array} \right]$$, uning quyidagi normalarini toping:
     - Frobenius normasini
     - Maksimum norm  normasini
     - Sprektral norm  normasini 
 
-### Vazifa 5.1.3: Matritsani yoyish
+### 5.1.3: Matritsani yoyish
 Agar $$\mathbf{A} = \left[ \begin{array}{rr} 4 & 1 \\ 2 & 3 \end{array} \right]$$, uni
     - $\textbf{LU}$ yoying
     - $\textbf{QR}$ yoying
@@ -555,5 +555,5 @@ $$\textbf{A} = \mathbf {U\Sigma V^{T}} = \Bigg[ \mathop{\color{red}{\mathbf u_1}
 
 > ##### Google Colab da vazifani bajarishingiz mumkin!
 >
-> [**Vazifa 5: Ilg'or Matritsa Tushunchalari**](https://colab.research.google.com/drive/1dwm_sHCehMcRROgbQ0vtfVdWjZsswnpq?usp=sharing)
+> [**Vazifa 5: Ilg'or Matritsa Tushunchalari**](https://colab.research.google.com/drive/1TM1rPaoS3rkz5WffVUH-EFKamqqIYjQm?usp=sharing)
 {: .block-warning }

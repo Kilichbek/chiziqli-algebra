@@ -20,7 +20,9 @@ O'quvchidan talab qilinadigan narsalar:
 Ushbu kursda biz quyidagi mavzularni ko'ramiz:
 1. Vektor asoslari va vektor algebra
 2. Matritsa asoslari
-
+3. Transformatsiya va Chiziqli Tenglamalar Tizimi
+4. Vektor fazolari va Ortogonalizatsiya
+5. Ilg'or Matritsa Tushunchalari
 
 ### Hissa qo'shganlar:
 
